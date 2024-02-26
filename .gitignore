@@ -1,5 +1,8 @@
-# Ignored folder
+# Ignored folders
 /dataset/
+
+# Ignored files
+playground.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
