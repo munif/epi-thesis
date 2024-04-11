@@ -26,13 +26,11 @@ def load_histone_files():
 
 def count_histone(histone_df, row, threshold = 0.8, histone_length = 146):
     tss = row["tss"]
-    
-    hist_df = histone_df.loc[# (histone_df[histone_df['chrom'] == chromosome]) & 
-                            # Inside the +/- 2k from TSS
-                            (((histone_df["chromStart"] >= tss - 2000) & (histone_df["chromEnd"] <= tss + 2000)) |
-                            # Intersect with -2k or +2 from TSS
-                            (((histone_df["chromEnd"] - (tss - 2000))/histone_length).between(threshold, 1.0)) |
-                            ((((tss + 2000) - histone_df["chromStart"])/histone_length).between(threshold, 1.0)))]
+    hist_df = histone_df.loc[# Inside the +/- 2k from TSS
+                             (((histone_df["chromStart"] >= tss - 2000) & (histone_df["chromEnd"] <= tss + 2000)) |
+                             # Intersect with -2k or +2 from TSS
+                             (((histone_df["chromEnd"] - (tss - 2000))/histone_length).between(threshold, 1.0)) |
+                             ((((tss + 2000) - histone_df["chromStart"])/histone_length).between(threshold, 1.0)))]
     
     return len(hist_df.index)
 
