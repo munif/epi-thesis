@@ -1,5 +1,5 @@
 import pandas as pd
-from tqdm import tqdm
+from tqdm.auto import tqdm
 
 import epi_utils as eu
 
