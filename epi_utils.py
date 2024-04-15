@@ -34,6 +34,21 @@ def count_histone(histone_df, row, threshold = 0.8, histone_length = 146):
     
     return len(hist_df.index)
 
+def count_gene(gene_df, row, threshold = 0.8, tss_length = 4000):
+    tss = row["tss"]
+    hist_df = gene_df.loc[  # Inside the +/- 2k from TSS
+                             (((gene_df["chromStart"] >= tss - 2000) & (gene_df["chromEnd"] <= tss + 2000)) |
+                             
+                             # Intersect with -2k or +2 from TSS
+                             (((gene_df["chromEnd"] - (tss - 2000))/tss_length).between(threshold, 1.0)) |
+                             ((((tss + 2000) - gene_df["chromStart"])/tss_length).between(threshold, 1.0))) |
+                             
+                             # TSS inside the gene
+                             ((tss + 2000 <= gene_df["chromEnd"]) & (tss - 2000 >= gene_df["chromStart"]))
+                        ]
+    
+    return len(hist_df.index)
+
 def get_tss(row):
     if row['Strand'] == "+":
         return row['Start']
@@ -48,3 +63,10 @@ def load_ncbiRefSeq():
     hg19ncbiRefSeq_df = pr.read_gtf("dataset/hg19.ncbiRefSeq.gtf", as_df=True)
     hg19ncbiRefSeq_df.loc[:, "tss"] = hg19ncbiRefSeq_df.apply(lambda row: get_tss(row), axis=1)
     return hg19ncbiRefSeq_df
+
+# Flatten the array
+def flatten_concatenation(matrix):
+    flat_list = []
+    for row in matrix:
+        flat_list += row
+    return flat_list
