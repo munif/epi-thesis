@@ -7,12 +7,13 @@ histone_path = "dataset/histone/"
 ncbiRefSeq_path = "dataset/ncbiRefSeq/merged/"
 output_path = "dataset/histone_count/"
 
-tqdm.pandas(desc="Processing")
+tqdm.pandas()
 
 def data_processing():
-    chromosome_list = pd.read_csv("dataset/histone_chromosome.csv", names=["Chromosome"])["Chromosome"].to_list()
+    # Omitting the 'chrMT', 'chrUn' chromosome
+    chrom_list = pd.read_csv("dataset/chrom_list.csv")["Chromosome"].to_list()
 
-    for chrom in chromosome_list:
+    for chrom in chrom_list:
         print(f"--- Processing {chrom} ---")
 
         # Reading file
@@ -26,19 +27,19 @@ def data_processing():
         # Saving the result
         ncbiRefSeq_chr_df.to_csv(f"{output_path}{chrom}.csv", index=False)
 
-    # chrUn
-    chrom = 'chrUn'
-    processing_additional_chrom(chrom)
+    # # chrUn
+    # chrom = 'chrUn'
+    # processing_additional_chrom(chrom)
 
-    # chrMT
-    chrom = 'chrMT'
-    processing_additional_chrom(chrom)
+    # # chrMT
+    # chrom = 'chrMT'
+    # processing_additional_chrom(chrom)
 
-def processing_additional_chrom(chrom):
-    print(f"--- Processing {chrom} ---")
-    ncbiRefSeq_chr_df = pd.read_csv(f"{ncbiRefSeq_path}{chrom}.csv")
-    ncbiRefSeq_chr_df.loc[:, "histone_count"] = 0
-    ncbiRefSeq_chr_df.to_csv(f"{output_path}{chrom}.csv", index=False)
+# def processing_additional_chrom(chrom):
+#     print(f"--- Processing {chrom} ---")
+#     ncbiRefSeq_chr_df = pd.read_csv(f"{ncbiRefSeq_path}{chrom}.csv")
+#     ncbiRefSeq_chr_df.loc[:, "histone_count"] = 0
+#     ncbiRefSeq_chr_df.to_csv(f"{output_path}{chrom}.csv", index=False)
 
 def main():
     data_processing()
