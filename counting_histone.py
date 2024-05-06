@@ -14,32 +14,32 @@ def data_processing():
     chrom_list = pd.read_csv("dataset/chrom_list.csv")["Chromosome"].to_list()
 
     for chrom in chrom_list:
-        print(f"--- Processing {chrom} ---")
-
-        # Reading file
-        histone_chr_df = pd.read_csv(f"{histone_path}{chrom}.csv")
-        ncbiRefSeq_chr_df = pd.read_csv(f"{ncbiRefSeq_path}{chrom}.csv")
-
-        # Counting Histone
-        ncbiRefSeq_chr_df.loc[:, "histone_count"] = ncbiRefSeq_chr_df.progress_apply(\
-                                lambda row: eu.count_histone(histone_chr_df, row), axis=1)
+        print(f"Processing '{chrom}'")
         
+        # Loading histone
+        histone_df = pd.read_csv(f"dataset/histone/{chrom}.csv")
+
+        # Loading NCBI Refseq
+        refseq_df = pd.read_csv(f"dataset/ncbiRefSeq/merged/{chrom}.csv")
+
+        # Counting histone
+        refseq_df.loc[:, "hist_count_dict"] = refseq_df.progress_apply(lambda row: eu.count_histone(histone_df, row), axis = 1)
+
+        # Normalize the JSON column
+        refseq_df = pd.concat([refseq_df, pd.json_normalize(refseq_df['hist_count_dict'])], axis = 1)
+
+        # Handling null values and correcting the data types
+        refseq_df.drop(columns=["hist_count_dict"], inplace=True)
+        refseq_df.fillna(0, inplace=True)
+        refseq_df = refseq_df.astype({'h3k4me3': 'int32', 'h3k9ac':'int32', 'h3k9me3':'int32', 'h3k27ac':'int32', 'h3k27me3':'int32', 'histone_count_total':'int32'})
+
+        refseq_df = refseq_df[['Chromosome', 'Source', 'Feature', 'Start', 'End', 'Score', 'Strand',
+        'Frame', 'gene_id', 'transcript_id', 'gene_name', 'exon_number',
+        'exon_id', 'tss', 'h3k4me3',
+        'h3k9ac', 'h3k27ac', 'h3k27me3', 'h3k9me3', 'histone_count_total']]
+
         # Saving the result
-        ncbiRefSeq_chr_df.to_csv(f"{output_path}{chrom}.csv", index=False)
-
-    # # chrUn
-    # chrom = 'chrUn'
-    # processing_additional_chrom(chrom)
-
-    # # chrMT
-    # chrom = 'chrMT'
-    # processing_additional_chrom(chrom)
-
-# def processing_additional_chrom(chrom):
-#     print(f"--- Processing {chrom} ---")
-#     ncbiRefSeq_chr_df = pd.read_csv(f"{ncbiRefSeq_path}{chrom}.csv")
-#     ncbiRefSeq_chr_df.loc[:, "histone_count"] = 0
-#     ncbiRefSeq_chr_df.to_csv(f"{output_path}{chrom}.csv", index=False)
+        refseq_df.to_csv(f"dataset/histone_count/{chrom}.csv", header=True, index=False)
 
 def main():
     data_processing()
