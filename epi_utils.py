@@ -26,13 +26,28 @@ def load_histone_files():
 
 def count_histone(histone_df, row, threshold = 0.8, histone_length = 146):
     tss = row["tss"]
+
     hist_df = histone_df.loc[# Inside the +/- 2k from TSS
                              (((histone_df["chromStart"] >= tss - 2000) & (histone_df["chromEnd"] <= tss + 2000)) |
                              # Intersect with -2k or +2 from TSS
                              (((histone_df["chromEnd"] - (tss - 2000))/histone_length).between(threshold, 1.0)) |
                              ((((tss + 2000) - histone_df["chromStart"])/histone_length).between(threshold, 1.0)))]
     
-    return len(hist_df.index)
+    hist_count_dict = hist_df["type"].value_counts().to_dict()
+    hist_count_dict.update({'histone_count_total': len(hist_df.index)})
+
+    return hist_count_dict
+
+def hepg2_intersect_refseq(refseq_df, row):
+    hepg2_refseq = refseq_df[(refseq_df['tss'] >= row['chromStart']) & (refseq_df['tss'] <= row['chromEnd'])]
+    hepg2_dict = hepg2_refseq.sum(numeric_only=True).to_dict()
+
+    if (len(hepg2_refseq) == 0):
+        hepg2_dict.update({'status_refseq': 0})
+    else:
+      hepg2_dict.update({'status_refseq': 1})
+    
+    return hepg2_dict
 
 def count_gene(gene_df, row, threshold = 0.8, tss_length = 4000):
     tss = row["tss"]
