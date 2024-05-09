@@ -18,4 +18,12 @@ mysql.exe -u root hg38 < wgRna.sql
 mysql.exe -u root hg38 < xenoMrna.sql
 
 
-D:/Repo/hg38/database/
+SELECT `COLUMN_NAME` 
+FROM `INFORMATION_SCHEMA`.`COLUMNS` 
+WHERE `TABLE_SCHEMA`='hg19' 
+    AND `TABLE_NAME`='ncbirefseq';
+
+SELECT 'bin', 'name', 'chrom', 'strand', 'txStart', 'txEnd', 'cdsStart', 'cdsEnd', 'exonCount', 'exonStarts', 'exonEnds', 'score', 'name2', 'cdsStartStat', 'cdsEndStat', 'exonFrames'
+UNION
+SELECT bin, name, chrom, strand, txStart, txEnd, cdsStart, cdsEnd, exonCount, exonStarts, exonEnds, score, name2, cdsStartStat, cdsEndStat, exonFrames
+

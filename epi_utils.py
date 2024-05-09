@@ -64,6 +64,11 @@ def count_gene(gene_df, row, threshold = 0.8, tss_length = 4000):
     
     return len(hist_df.index)
 
+def get_tss_ncbi(row):
+    if row['strand'] == "+":
+        return row['txStart']
+    return row['txEnd']
+
 def get_tss(row):
     if row['Strand'] == "+":
         return row['Start']
