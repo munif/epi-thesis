@@ -4,6 +4,11 @@ LOAD DATA INFILE 'D:/Downloads/hg38/GeneReviews/geneReviewsDetail.txt' INTO TABL
 
 LOAD DATA INFILE D:/Downloads/ncbiRefSeq.txt INTO TABLE ncbirefseq;
 
+LOAD DATA INFILE 'D:/xampp/mysql/bin/ncbiRefSeq_hg38.txt' INTO TABLE ncbirefseq;
+
+LOAD DATA INFILE 'D:/xampp/mysql/bin/ncbiRefSeq_hg38.txt' INTO TABLE ncbirefseq;
+
+LOAD DATA INFILE 'D:/Repo/epi-thesis/dataset/hepg2_exp_transformed.csv' into table hepg2_exp_transformed;
 
 mysql.exe -u root hg38 < all_mrna.sql
 mysql.exe -u root hg38 < knownGene.sql
