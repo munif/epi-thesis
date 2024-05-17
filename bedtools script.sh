@@ -11,3 +11,10 @@ bedtools intersect -a hepg2_exp.bed -b ncbirefseq_hg19.bed -v > hepg2_ncbi_hg19_
 # NCBI RefSeq hg38
 bedtools intersect -a hepg2_exp.bed -b ncbirefseq_hg38.bed -wa -wb -f 0.80 > hepg2_ncbi_hg38_overlap.bed
 bedtools intersect -a hepg2_exp.bed -b ncbirefseq_hg38.bed -v > hepg2_ncbi_hg38_nonoverlap.bed
+
+# HepG2 + tss from NCBI RefSeq hg19 overlap with histone peak
+bedtools intersect -a overlap_2188.csv -b HepG2_Male.histone.H3K4me3.peak.bed -c > overlap_histone1.bed
+bedtools intersect -a overlap_histone1.bed -b HepG2_Male.histone.H3K9ac.peak.bed -c > overlap_histone2.bed
+bedtools intersect -a overlap_histone2.bed -b HepG2_Male.histone.H3K9me3.peak.bed -c > overlap_histone3.bed
+bedtools intersect -a overlap_histone3.bed -b HepG2_Male.histone.H3K27ac.peak.bed -c > overlap_histone4.bed
+bedtools intersect -a overlap_histone4.bed -b HepG2_Male.histone.H3K27me3.peak.bed -c > overlap_histone5.bed
