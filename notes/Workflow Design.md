@@ -17,3 +17,8 @@
 - Linear regression
     - histone count (5 columns of histone modification) -> value1, value2
     - add another features (chromosome, location, etc)
+
+
+ALB
+- HepG2 expression  = chr4:74269689-74287767
+- NCBI RefSeq       = chr4:74270003-74287199

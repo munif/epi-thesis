@@ -345,8 +345,6 @@ FROM hg19.hepg2_ncbi_hg19_overlap
 WHERE hepg2_chromStart <> ncbi_txStart 
 OR hepg2_chromEnd <> ncbi_txEnd 
 
-
-
 SELECT hepg2_chrom, hepg2_name, hepg2_chromStart, ncbi_name, ncbi_txStart, 
 	   hepg2_chromStart - ncbi_txStart AS diff_start,
 	   hepg2_chromEnd, ncbi_txEnd,
@@ -356,11 +354,13 @@ FROM hg19.hepg2_ncbi_hg19_overlap hnho
 WHERE (hepg2_chromEnd - hepg2_chromStart) - (ncbi_txEnd - ncbi_txStart) = 0
 
 
--- https://www.ncbi.nlm.nih.gov/datasets/gene/GCF_000001405.40/?search=ALB
--- NC_000004.12:73404287-73421482 --> hg38
 
--- https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/genes/
--- https://www.ncbi.nlm.nih.gov/datasets/gene/GCF_000001405.25/?search=ALB
--- NC_000004.11:74270004-74287199 --> hg19 used in NCBI Browser ?
+SELECT 	h_chrom, 
+		-- h_chromStart, h_chromEnd, 
+		-- H3K4me3, H3K9ac, H3K9me3, H3K27ac, H3K27me3, 
+		histone_total_count, 
+		h_value_1, h_value_2
+FROM common.histone_count hc 
+ORDER BY histone_total_count DESC, h_chrom DESC
 
 
