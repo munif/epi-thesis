@@ -1,0 +1,10 @@
+  h_chrom  tss_start  tss_end  ...  H3K27ac  H3K27me3 histone_total_count
+0    chr1      63418    67418  ...        0         0                   0
+1    chr1     321891   325891  ...        0         0                   0
+2    chr1     365658   369658  ...        0         0                   0
+3    chr1     760970   764970  ...        0         0                   0
+4    chr1     760970   764970  ...        0         0                   0
+
+[5 rows x 42 columns]
+
+Real-time duration: 2.838612675 seconds
