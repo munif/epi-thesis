@@ -1,0 +1,1 @@
+sbatch <your .sh files>
