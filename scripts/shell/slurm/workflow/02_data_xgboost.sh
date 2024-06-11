@@ -1,22 +1,22 @@
 #!/bin/bash
-#SBATCH --job-name=hello-kaya
+#SBATCH --job-name=xgboost
 #SBATCH --output=slurm-%j.out
 #SBATCH --error=slurm-%j.err
 #SBATCH --nodes=1
 #SBATCH --partition=work
-#SBATCH --ntasks=4
-#SBATCH --time=2-00:00:00
-#SBATCH --mem=10G
+#SBATCH --ntasks=32
+#SBATCH --time=1-00:00:00
+#SBATCH --mem=500GB
 
 # Record start time
 start_time=$(date +%s.%N)
 
 # Run Python script
-conda run -n epi-thesis python /group/pmc021/amunif/epi-thesis/scripts/shell/slurm/samples/read_file.py
+conda run -n epi-thesis python /group/pmc021/amunif/epi-thesis/scripts/shell/slurm/workflow/02_data_xgboost.py
 
 # Record end time
 end_time=$(date +%s.%N)
 
 # Calculate real-time duration
 execution_time=$(echo "$end_time - $start_time" | bc)
-echo "Real-time duration: $execution_time seconds"
+echo "Real-time duration: $execution_time seconds"
