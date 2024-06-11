@@ -1,7 +1,9 @@
-# Ignored folders
+# Ignored files and folders
 /dataset/
 workflow/**/*.csv
 workflow/**/*.parquet
+*.err
+*.out
 
 # Ignored files
 playground.ipynb

@@ -1,6 +1,6 @@
 import pandas as pd
 
-dataset_path = "/group/pmc021/amunif/project/dataset/"
+dataset_path = "/group/pmc021/amunif/epi-thesis/dataset/"
 
 gene_df = pd.read_csv(f"{dataset_path}histone_count_overlap80.csv", sep="\t")
 
