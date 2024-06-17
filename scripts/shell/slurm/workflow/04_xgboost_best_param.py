@@ -35,12 +35,13 @@ def load_large_csv(file_name, chunksize=20000):
     del mylist
     return gene_exp_df
 
+print("Finding the best parameters using grid_search")
 # Load the data
 X = load_large_csv(f"{dataset_path}histone_features.csv")
-print_df_info(X)
+# print_df_info(X)
 
 y = load_large_csv(f"{dataset_path}value_1_df.csv")
-print_df_info(y)
+# print_df_info(y)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=23)
 
@@ -51,17 +52,24 @@ dtest = xgb.DMatrix(X_test, label=y_test)
 xgb_reg = xgb.XGBRegressor(objective='reg:squarederror', random_state=42)
 
 # Define the parameter grid
+# param_grid = {
+#     'max_depth': [3, 5, 7],
+#     'learning_rate': [0.01, 0.1, 0.2],
+#     'n_estimators': [100, 200, 300],
+#     'subsample': [0.8, 1.0],
+#     'colsample_bytree': [0.8, 1.0]
+# }
+
 param_grid = {
-    'max_depth': [3, 5, 7],
-    'learning_rate': [0.01, 0.1, 0.2],
-    'n_estimators': [100, 200, 300],
-    'subsample': [0.8, 1.0],
+    'max_depth': [5, 7, 10],
+    'learning_rate': [0.01, 0.05, 0.1],
+    'subsample': [0.5, 0.8, 1.0],
     'colsample_bytree': [0.8, 1.0]
 }
 
 # Initialize GridSearchCV
 grid_search = GridSearchCV(estimator=xgb_reg, param_grid=param_grid, 
-                           scoring='r2', cv=3, verbose=1, n_jobs=-1)
+                           scoring='r2', cv=3, verbose=2, n_jobs=4)
 
 # Fit GridSearchCV
 grid_search.fit(X_train, y_train)

@@ -23,6 +23,8 @@ def load_large_csv(file_name, chunksize=20000):
     del mylist
     return gene_exp_df
 
+print("XGBoost with chromosome-fold validation\n")
+
 chrom_list = ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9', 'chr10', 'chr11', 'chr12', 'chr13', 'chr14', 'chr15', 'chr16', 'chr17', 'chr18', 'chr19', 'chr20', 'chr21', 'chr22', 'chrX', 'chrY']
 
 # Loading data
@@ -58,8 +60,10 @@ for current_chrom in chrom_list:
 
     params = {
         'objective': 'reg:squarederror',
-        'max_depth': 5,
+        'max_depth': 10,
         'learning_rate': 0.1,
+        'subsample': 0.8,
+        'colsample_bytree': 0.8,
         'seed': 42
     }
 
@@ -79,7 +83,8 @@ for current_chrom in chrom_list:
     print(f"MSE: {mse}")
     print(f"RMSE: {rmse}")
     print(f"MAE: {mae}")
-    print(f"R2 Score: {r2}")
+    print(f"R2 Score: {r2}\n")
+
 
     del X_train
     del y_train
