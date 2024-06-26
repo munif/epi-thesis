@@ -55,7 +55,7 @@ dtest = xgb.DMatrix(X_test, label=y_test)
 
 params = {
     'colsample_bytree': 0.8,
-    'subsample': 0.8,
+    'subsample': 1.0,
     'max_depth': 10,
     'learning_rate': 0.1,  # learning rate
     'objective': 'reg:squarederror',  # for regression
@@ -86,20 +86,24 @@ final_model = xgb.train(params, dtrain, num_boost_round=best_num_boost_round)
 # Make predictions on the test set
 y_pred = final_model.predict(dtest)
 
+print_evaluation(y_test, y_pred)
 
-# Evaluate the model
-mse = mean_squared_error(y_test, y_pred)
-rmse = np.sqrt(mse)
-mae = mean_absolute_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
+# # Evaluate the model
+# mse = mean_squared_error(y_test, y_pred)
+# rmse = np.sqrt(mse)
+# mae = mean_absolute_error(y_test, y_pred)
+# r2 = r2_score(y_test, y_pred)
 
-print(f"MSE: {mse}")
-print(f"RMSE: {rmse}")
-print(f"MAE: {mae}")
-print(f"R2 Score: {r2}\n")
+# print(f"MSE: {mse}")
+# print(f"RMSE: {rmse}")
+# print(f"MAE: {mae}")
+# print(f"R2 Score: {r2}\n")
 
-print(f"Test set Mean Squared Error: {mse}")
-print(f"Test set R-squared: {r2}")
+y_test.to_csv("y_test.csv", index=False)
+pd.DataFrame(y_pred).to_csv("y_pred.csv", index=False)
+
+# print(f"Test set Mean Squared Error: {mse}")
+# print(f"Test set R-squared: {r2}")
 
 # Evaluate the result
 print(cv_results)

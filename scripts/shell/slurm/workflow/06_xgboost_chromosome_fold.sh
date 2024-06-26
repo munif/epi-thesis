@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=xgboost-chromosome-fold
-#SBATCH --output=slurm-%j.out
-#SBATCH --error=slurm-%j.err
+#SBATCH --output=slurm-%x-%j.out
+#SBATCH --error=slurm-%x-%j.err
 #SBATCH --nodes=4
 #SBATCH --partition=work
 #SBATCH --ntasks=64
-#SBATCH --nodelist=n[010-013,024-025,028-031,033-034]
+#SBATCH --nodelist=n[010-013,019,028-031]
 #SBATCH --time=2-00:00:00
 #SBATCH --mem=200GB
 

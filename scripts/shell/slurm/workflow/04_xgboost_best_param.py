@@ -69,7 +69,7 @@ param_grid = {
 
 # Initialize GridSearchCV
 grid_search = GridSearchCV(estimator=xgb_reg, param_grid=param_grid, 
-                           scoring='r2', cv=3, verbose=2, n_jobs=4)
+                           scoring='neg_mean_squared_error', cv=10, verbose=2, n_jobs=4)
 
 # Fit GridSearchCV
 grid_search.fit(X_train, y_train)
@@ -78,7 +78,7 @@ grid_search.fit(X_train, y_train)
 best_params = grid_search.best_params_
 best_score = grid_search.best_score_
 print(f"Best parameters found: {best_params}")
-print(f"Best R2 score from GridSearchCV: {best_score}")
+print(f"Best Mean Squared Error from GridSearchCV: {best_score}")
 
 # Train the model with the best parameters using DMatrix
 final_model = xgb.train(best_params, dtrain, num_boost_round=100)
