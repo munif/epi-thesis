@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=xgboost
+#SBATCH --job-name=xgboost-best-param
 #SBATCH --output=slurm-%j.out
 #SBATCH --error=slurm-%j.err
-#SBATCH --nodes=4
+#SBATCH --nodes=8
 #SBATCH --partition=work
 #SBATCH --ntasks=64
-#SBATCH --nodelist=n[011-013,023-025,028-031,033-034]
+#SBATCH --nodelist=n[011-013,023-025,028-031,033]
 #SBATCH --time=2-00:00:00
 #SBATCH --mem=200GB
 

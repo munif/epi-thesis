@@ -70,7 +70,7 @@ param_grid = {
 
 # Initialize GridSearchCV
 grid_search = GridSearchCV(estimator=xgb_reg, param_grid=param_grid, 
-                           scoring='neg_mean_squared_error', cv=10, verbose=2, n_jobs=4)
+                           scoring='neg_mean_squared_error', cv=10, verbose=2, n_jobs=8)
 
 # Fit GridSearchCV
 grid_search.fit(X_train, y_train)
