@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=xgboost-gridsearch
-#SBATCH --output=slurm-%x-%j.out
-#SBATCH --error=slurm-%x-%j.err
+#SBATCH --job-name=xgboost
+#SBATCH --output=slurm-%j.out
+#SBATCH --error=slurm-%j.err
 #SBATCH --nodes=4
 #SBATCH --partition=work
 #SBATCH --ntasks=64
