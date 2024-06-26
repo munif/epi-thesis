@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=xgboost
+#SBATCH --job-name=xgboost-best-param
 #SBATCH --output=slurm-%j.out
 #SBATCH --error=slurm-%j.err
 #SBATCH --nodes=4
