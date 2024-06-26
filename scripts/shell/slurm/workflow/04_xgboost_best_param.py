@@ -63,6 +63,7 @@ xgb_reg = xgb.XGBRegressor(objective='reg:squarederror', random_state=42)
 param_grid = {
     'max_depth': [5, 7, 10],
     'learning_rate': [0.01, 0.05, 0.1],
+    'n_estimators': [100, 200, 300],
     'subsample': [0.5, 0.8, 1.0],
     'colsample_bytree': [0.8, 1.0]
 }
