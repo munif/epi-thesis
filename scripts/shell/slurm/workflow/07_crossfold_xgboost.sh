@@ -5,7 +5,7 @@
 #SBATCH --nodes=4
 #SBATCH --partition=work
 #SBATCH --ntasks=64
-#SBATCH --nodelist=n[010-013,024,028-031,033-034]
+#SBATCH --nodelist=n[010-013,023,029-031]
 #SBATCH --time=2-00:00:00
 #SBATCH --mem=200GB
 

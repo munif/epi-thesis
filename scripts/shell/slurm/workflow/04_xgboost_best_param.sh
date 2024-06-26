@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=xgboost
-#SBATCH --output=slurm-%j.out
-#SBATCH --error=slurm-%j.err
+#SBATCH --job-name=xgboost-gridsearch
+#SBATCH --output=slurm-%x-%j.out
+#SBATCH --error=slurm-%x-%j.err
 #SBATCH --nodes=4
 #SBATCH --partition=work
-#SBATCH --ntasks=32
-#SBATCH --nodelist=n[011-013,024-025,028-031,033-034]
+#SBATCH --ntasks=64
+#SBATCH --nodelist=n[011-013,023-025,028-031,033-034]
 #SBATCH --time=2-00:00:00
 #SBATCH --mem=200GB
 
