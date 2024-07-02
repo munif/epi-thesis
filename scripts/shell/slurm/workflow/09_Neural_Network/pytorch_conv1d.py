@@ -1,0 +1,158 @@
+# Import required libraries
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, TensorDataset, random_split
+
+import pandas as pd
+
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+
+import numpy as np
+
+from datetime import datetime
+
+
+dataset_path = "/group/pmc021/amunif/epi-thesis/dataset/"
+
+# Prepare the progress file
+current_time = datetime.now().strftime("%Y%m%d%H%M%S")
+progress_file = f'/group/pmc021/amunif/epi-thesis/scripts/shell/slurm/workflow/output/09/progress_conv1d_{current_time}.txt'
+
+'''
+User defined functions
+'''
+def load_large_csv(file_name, chunksize=20000):
+    # Read the CSV file
+    mylist = []
+
+    for chunk in pd.read_csv(file_name, chunksize = chunksize):
+        mylist.append(chunk)
+
+    df = pd.concat(mylist, axis = 0)
+    
+    del mylist
+    return df
+
+def save_progress(file_name, message):
+    with open(file_name, 'a+') as file:
+        file.write(message + "\n")
+
+
+# Load the data
+X = load_large_csv(f"{dataset_path}histone_features.csv")
+y = load_large_csv(f"{dataset_path}value_1_df.csv")
+
+save_progress(progress_file, "Finished load the data")
+
+# X = pd.read_csv(f"{dataset_path}histone_features.csv", nrows=100)
+# y = pd.read_csv(f"{dataset_path}value_1_df.csv", nrows=100)
+
+# Convert to numpy
+X_np = X.to_numpy()
+y_np = y.to_numpy()
+
+# Split the data into training and testing
+X_train_np, X_test_np, y_train_np, y_test_np = train_test_split(X_np, y_np, test_size=0.2, random_state=42)
+
+# Convert NumPy arrays to PyTorch tensors
+X_train_tensor = torch.tensor(X_train_np, dtype=torch.float32).unsqueeze(1)
+y_train_tensor = torch.tensor(y_train_np, dtype=torch.float32)
+X_test_tensor = torch.tensor(X_test_np, dtype=torch.float32).unsqueeze(1)
+y_test_tensor = torch.tensor(y_test_np, dtype=torch.float32)
+
+# Create TensorDataset for training and testing sets
+train_dataset = TensorDataset(X_train_tensor, y_train_tensor)
+test_dataset = TensorDataset(X_test_tensor, y_test_tensor)
+
+# Create a DataLoader
+train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
+
+save_progress(progress_file, "Finished preparing the train and test")
+
+# Create CNN1D class
+class HighDimCNN1D(nn.Module):
+    def __init__(self, input_size):
+        super(HighDimCNN1D, self).__init__()
+        self.conv1 = nn.Conv1d(in_channels=1, out_channels=64, kernel_size=3, stride=1, padding=1)
+        self.pool = nn.MaxPool1d(kernel_size=2, stride=2)
+        self.conv2 = nn.Conv1d(in_channels=64, out_channels=128, kernel_size=3, stride=1, padding=1)
+        self.pool2 = nn.MaxPool1d(kernel_size=2, stride=2)
+        self.conv3 = nn.Conv1d(in_channels=128, out_channels=256, kernel_size=3, stride=1, padding=1)
+        self.pool3 = nn.MaxPool1d(kernel_size=2, stride=2)
+        
+        # Calculate the size after the convolution and pooling layers
+        conv_output_size = input_size // 8  # Adjust this based on the number of pooling layers
+        
+        self.fc1 = nn.Linear(256 * conv_output_size, 512)
+        self.fc2 = nn.Linear(512, 1)
+
+    def forward(self, x):
+        x = self.pool(torch.relu(self.conv1(x)))
+        x = self.pool2(torch.relu(self.conv2(x)))
+        x = self.pool3(torch.relu(self.conv3(x)))
+        x = x.view(x.size(0), -1)  # Flatten the tensor
+        x = torch.relu(self.fc1(x))
+        x = self.fc2(x)
+        return x
+
+'''
+Training
+'''
+input_size = 20000  # Number of features in the input
+model = HighDimCNN1D(input_size=input_size)
+
+# Loss function and optimizer
+criterion = nn.MSELoss()
+optimizer = optim.Adam(model.parameters(), lr=0.001)
+
+save_progress(progress_file, "Start training ...")
+# Training loop
+num_epochs = 100
+for epoch in range(num_epochs): 
+    model.train()
+    for inputs, targets in train_loader:
+        optimizer.zero_grad()
+        outputs = model(inputs)
+        loss = criterion(outputs, targets)
+        loss.backward()
+        optimizer.step()
+    message = f'Epoch {epoch+1}, Loss: {loss.item()}'
+    print(message)
+    save_progress(progress_file, message)
+
+'''
+Evaluation
+'''
+# Evaluation
+model.eval()
+all_targets = []
+all_predictions = []
+
+# Evaluate the model
+with torch.no_grad():
+    for inputs, targets in test_loader:
+        outputs = model(inputs)
+        all_targets.extend(targets.numpy())
+        all_predictions.extend(outputs.numpy())
+
+all_targets = np.array(all_targets)
+all_predictions = np.array(all_predictions)
+
+mse = mean_squared_error(all_targets, all_predictions)
+rmse = np.sqrt(mse)
+mae = mean_absolute_error(all_targets, all_predictions)
+r2 = r2_score(all_targets, all_predictions)
+
+print(f'MSE: {mse}')
+print(f'RMSE: {rmse}')
+print(f'MAE: {mae}')
+print(f'R2 Score: {r2}')
+
+# Save the test targets and predictions to a CSV file
+results_df = pd.DataFrame({'y_test': all_targets.flatten(), 'y_pred': all_predictions.flatten()})
+results_df.to_csv(f'predictions_conv1d_{current_time}.csv', index=False)
+
+print(f'Predictions saved to predictions_conv1d_{current_time}.csv')

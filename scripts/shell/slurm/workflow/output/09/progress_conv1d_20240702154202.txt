@@ -1,0 +1,6 @@
+Finished load the data
+Finished preparing the train and test
+Start training ...
+Epoch 1, Loss: 128.74998474121094
+Epoch 2, Loss: 183.13002014160156
+Epoch 3, Loss: 47.97071075439453
