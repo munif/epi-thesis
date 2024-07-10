@@ -4,6 +4,7 @@ Start training ...
 Epoch 1, Loss: 128.74998474121094
 Epoch 2, Loss: 183.13002014160156
 Epoch 3, Loss: 47.97071075439453
+<<<<<<< HEAD
 Epoch 4, Loss: 886.322509765625
 Epoch 5, Loss: 1089.853271484375
 Epoch 6, Loss: 51.750160217285156
@@ -100,3 +101,5 @@ Epoch 96, Loss: 64.76078033447266
 Epoch 97, Loss: 69.50675964355469
 Epoch 98, Loss: 22.884912490844727
 Epoch 99, Loss: 33.34272384643555
+=======
+>>>>>>> afa18c04fdf209d6b14f1c2be166149dd6dfc6a7

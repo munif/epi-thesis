@@ -1,6 +1,9 @@
 module avail
 module load Anaconda3/2023.09
+<<<<<<< HEAD
 module load cuda/12.4
+=======
+>>>>>>> afa18c04fdf209d6b14f1c2be166149dd6dfc6a7
 module list
 
 conda init
