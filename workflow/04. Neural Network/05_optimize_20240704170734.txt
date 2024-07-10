@@ -1,0 +1,4 @@
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu

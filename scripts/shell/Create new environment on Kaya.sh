@@ -1,5 +1,6 @@
 module avail
 module load Anaconda3/2023.09
+module load cuda/12.4
 module list
 
 conda init
