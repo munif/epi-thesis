@@ -25,20 +25,6 @@ progress_file = f'{working_dir}progress_conv1d_v1_{current_time}.txt'
 '''
 User defined functions
 '''
-def load_large_csv(file_name, chunksize=1000):
-    # Read the CSV file
-    mylist = []
-
-    print('Loading the data ...')
-    for chunk in pd.read_csv(file_name, chunksize = chunksize):
-        print('Loading the chunk ...')
-        mylist.append(chunk)
-
-    df = pd.concat(mylist, axis = 0)
-    
-    del mylist
-    return df
-
 def save_progress(file_name, message):
     with open(file_name, 'a+') as file:
         file.write(message + "\n")
