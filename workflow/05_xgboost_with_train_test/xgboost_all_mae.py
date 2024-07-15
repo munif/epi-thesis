@@ -44,6 +44,7 @@ test_eval_metric = []
 eval_metric = 'mae'
 
 y_train.write_csv(f"output-csv/{eval_metric}/y_train.csv")
+y_test.write_csv(f"output-csv/{eval_metric}/y_test.csv")
 
 for i in n_estimators:
     prefix = f"output-csv/{eval_metric}/xgboost_{i}_"
