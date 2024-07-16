@@ -33,10 +33,10 @@ def save_progress(file_name, message):
 
 
 # Loading file using polars
-X = pl.read_csv(f"{dataset_path}histone_features.csv", n_rows=100)
-y = pl.read_csv(f"{dataset_path}value_1_df.csv", n_rows=100)
-# X = pl.read_csv(f"{dataset_path}histone_features.csv")
-# y = pl.read_csv(f"{dataset_path}value_1_df.csv")
+# X = pl.read_csv(f"{dataset_path}histone_features.csv", n_rows=100)
+# y = pl.read_csv(f"{dataset_path}value_1_df.csv", n_rows=100)
+X = pl.read_csv(f"{dataset_path}histone_features.csv")
+y = pl.read_csv(f"{dataset_path}value_1_df.csv")
 
 save_progress(progress_file, "Finished load the data")
 
@@ -112,9 +112,8 @@ writer = SummaryWriter(LOG_DIR)
 best_test_loss = float('inf')
 
 # Training loop
-num_epochs = 10
+num_epochs = 200
 for epoch in range(num_epochs): 
-    print(f"Epoch {epoch + 1} ...")
     start_time = time.time()
     
     model.train()
@@ -219,6 +218,6 @@ results_df = pd.DataFrame({
 })
 
 # Save the DataFrame to a CSV file
-results_df.to_csv(f'predictions_conv1d_{current_time}.csv', index=False)
+results_df.to_csv(f'{working_dir}predictions/predictions_conv1d_{current_time}.csv', index=False)
 
 print(f"Predictions and true values saved to predictions_conv1d_tensorboard_{current_time}.csv.")

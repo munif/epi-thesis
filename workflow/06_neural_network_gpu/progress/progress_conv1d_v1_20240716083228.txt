@@ -1,0 +1,2 @@
+Finished load the data
+Using device: cuda

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=pytorch-conv1d
+#SBATCH --job-name=nn-pytorch
 #SBATCH --output=/group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/slurm-output/%x-%j.out
 #SBATCH --error=/group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/slurm-output/%x-%j.err
 #SBATCH --nodes=1
@@ -16,10 +16,10 @@ module load Anaconda3/2024.06
 # Record start time
 start_time=$(date +%s.%N)
 
-echo "Pytorch Conv1D"
+echo "Pytorch NN"
 
 # Run Python script
-conda run -p /group/pmc021/amunif/env/pytorch python /group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/pytorch_conv1d_v1.py
+conda run -p /group/pmc021/amunif/env/pytorch python /group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/pytorch_nn.py
 
 # Record end time
 end_time=$(date +%s.%N)

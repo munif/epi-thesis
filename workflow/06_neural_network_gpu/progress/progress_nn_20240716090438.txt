@@ -1,0 +1,25 @@
+Using device: cpu
+Epoch [1/10], Time: 0.3548, Loss: 602.1933, MAE: 8.6247
+Average loss on the test data: 2030.3730, MAE: 14.9689
+Epoch [2/10], Time: 0.3033, Loss: 1024.7564, MAE: 11.3602
+Average loss on the test data: 2006.7063, MAE: 14.6595
+Epoch [3/10], Time: 0.3088, Loss: 573.8807, MAE: 8.1818
+Average loss on the test data: 1906.6150, MAE: 14.1643
+Epoch [4/10], Time: 0.2968, Loss: 526.8737, MAE: 8.6488
+Average loss on the test data: 1709.0676, MAE: 14.0876
+Epoch [5/10], Time: 0.2960, Loss: 436.2525, MAE: 8.2430
+Average loss on the test data: 1505.0269, MAE: 13.1319
+Epoch [6/10], Time: 0.2941, Loss: 364.3614, MAE: 7.4867
+Average loss on the test data: 1324.1598, MAE: 12.2153
+Epoch [7/10], Time: 0.2961, Loss: 346.7549, MAE: 7.2457
+Average loss on the test data: 1068.0769, MAE: 11.2132
+Epoch [8/10], Time: 0.3049, Loss: 241.7327, MAE: 5.6455
+Average loss on the test data: 926.7323, MAE: 9.7849
+Epoch [9/10], Time: 0.2949, Loss: 207.1670, MAE: 4.7151
+Average loss on the test data: 777.5722, MAE: 8.9874
+Epoch [10/10], Time: 0.2957, Loss: 143.5667, MAE: 3.9791
+Average loss on the test data: 564.5077, MAE: 8.4405
+MSE: 564.5077514648438
+RMSE: 23.75937271118164
+MAE: 8.44049072265625
+R2 Score: 0.6879665735549401

@@ -1,0 +1,16 @@
+Finished load the data
+Using device: cuda
+Epoch 1, Time:107.91110920906067,  Train Loss: 17182.3724, Train MAE: 24.5406, Test Loss: 12919.4378, Test MAE: 20.7438
+Epoch 2, Time:107.45744514465332,  Train Loss: 16361.1169, Train MAE: 24.7136, Test Loss: 13515.9220, Test MAE: 34.7297
+Epoch 3, Time:107.46959352493286,  Train Loss: 14085.8777, Train MAE: 27.8479, Test Loss: 20723.6016, Test MAE: 19.2499
+Epoch 4, Time:107.47703909873962,  Train Loss: 20658.8329, Train MAE: 25.1505, Test Loss: 19161.5122, Test MAE: 33.9515
+Epoch 5, Time:107.46535801887512,  Train Loss: 13562.0323, Train MAE: 22.4915, Test Loss: 15142.3189, Test MAE: 19.9778
+Epoch 6, Time:107.4602792263031,  Train Loss: 13457.6918, Train MAE: 22.9724, Test Loss: 12634.9896, Test MAE: 19.0101
+Epoch 7, Time:107.43292450904846,  Train Loss: 13160.0681, Train MAE: 25.5059, Test Loss: 14659.8344, Test MAE: 26.1892
+Epoch 8, Time:107.38653016090393,  Train Loss: 13408.8040, Train MAE: 25.2203, Test Loss: 24664.7981, Test MAE: 20.5369
+Epoch 9, Time:107.37908911705017,  Train Loss: 12569.4300, Train MAE: 23.8338, Test Loss: 16072.6080, Test MAE: 21.6855
+Epoch 10, Time:107.44140124320984,  Train Loss: 13327.3785, Train MAE: 22.6508, Test Loss: 12276.7170, Test MAE: 24.9394
+Epoch 11, Time:107.62629079818726,  Train Loss: 14700.4544, Train MAE: 24.1044, Test Loss: 16866.0252, Test MAE: 23.6828
+Epoch 12, Time:107.44592761993408,  Train Loss: 12451.5412, Train MAE: 24.9336, Test Loss: 21636.1657, Test MAE: 27.8961
+Epoch 13, Time:107.5374686717987,  Train Loss: 14913.9896, Train MAE: 22.9000, Test Loss: 16602.0283, Test MAE: 51.3753
+Epoch 14, Time:107.53624153137207,  Train Loss: 15807.4359, Train MAE: 25.5134, Test Loss: 18825.8873, Test MAE: 19.0335
