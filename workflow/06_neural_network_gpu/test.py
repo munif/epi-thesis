@@ -16,3 +16,7 @@ from datetime import datetime
 import time
 
 print("Hello World!")
+
+# Setup the CUDA devices
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f"I am using: {device}")

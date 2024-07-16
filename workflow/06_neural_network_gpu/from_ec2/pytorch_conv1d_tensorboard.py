@@ -5,24 +5,21 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset, random_split
 
 import pandas as pd
+import numpy as np
 import polars as pl
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-import numpy as np
-
 from datetime import datetime
 import time
 
 from torch.utils.tensorboard import SummaryWriter
-
-dataset_path = "/group/pmc021/amunif/epi-thesis/dataset/"
-working_dir = "/group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/"
+import os
 
 # Prepare the progress file
 current_time = datetime.now().strftime("%Y%m%d%H%M%S")
-progress_file = f'{working_dir}progress/progress_conv1d_v1_{current_time}.txt'
+progress_file = f'progress_conv1d_tensorboard_{current_time}.txt'
 
 '''
 User defined functions
@@ -32,13 +29,15 @@ def save_progress(file_name, message):
         file.write(message + "\n")
 
 
-# Loading file using polars
-X = pl.read_csv(f"{dataset_path}histone_features.csv", n_rows=100)
-y = pl.read_csv(f"{dataset_path}value_1_df.csv", n_rows=100)
-# X = pl.read_csv(f"{dataset_path}histone_features.csv")
-# y = pl.read_csv(f"{dataset_path}value_1_df.csv")
-
+print("Loading the data")
+save_progress(progress_file, "Loading the data")
+# Load the data
+# X = pl.read_csv("histone_features.csv", n_rows=100)
+# y = pl.read_csv("value_1_df.csv", n_rows=100)
+X = pl.read_csv("histone_features.csv")
+y = pl.read_csv("value_1_df.csv")
 save_progress(progress_file, "Finished load the data")
+print("Finished load the data")
 
 # Convert to numpy
 X_np = X.to_numpy()
@@ -82,15 +81,15 @@ class HighDimCNN1D(nn.Module):
         
         self.fc1 = nn.Linear(256 * conv_output_size, 512)
         self.fc2 = nn.Linear(512, 1)
+
         self.leaky_relu = nn.LeakyReLU(negative_slope=0.01)
-        self.dropout = nn.Dropout(p=0.5)
 
     def forward(self, x):
         x = self.pool(self.leaky_relu(self.conv1(x)))
         x = self.pool2(self.leaky_relu(self.conv2(x)))
         x = self.pool3(self.leaky_relu(self.conv3(x)))
         x = x.view(x.size(0), -1)  # Flatten the tensor
-        x = self.dropout(self.leaky_relu(self.fc1(x)))
+        x = self.leaky_relu(self.fc1(x))
         x = self.fc2(x)
         return x
 
@@ -102,17 +101,17 @@ model = HighDimCNN1D(input_size=input_size).to(device)
 
 # Loss function and optimizer
 criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=0.01)
+optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Setup TensorBoard writer
-LOG_DIR = "/group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/runs/cnn1d"
+LOG_DIR = "runs/cnn1d_model"
 writer = SummaryWriter(LOG_DIR)
 
 # Track the best test loss
 best_test_loss = float('inf')
 
 # Training loop
-num_epochs = 10
+num_epochs = 200
 for epoch in range(num_epochs): 
     print(f"Epoch {epoch + 1} ...")
     start_time = time.time()
@@ -151,7 +150,7 @@ for epoch in range(num_epochs):
 
     test_loss /= len(test_loader.dataset)
     test_mae /= len(test_loader.dataset)
-
+    
     end_time = time.time()
     elapsed_time = end_time - start_time
     message = f'Epoch {epoch+1}, Time:{elapsed_time},  Train Loss: {train_loss:.4f}, Train MAE: {train_mae:.4f}, Test Loss: {test_loss:.4f}, Test MAE: {test_mae:.4f}'
@@ -219,6 +218,6 @@ results_df = pd.DataFrame({
 })
 
 # Save the DataFrame to a CSV file
-results_df.to_csv(f'predictions_conv1d_{current_time}.csv', index=False)
+results_df.to_csv(f'predictions_conv1d_tensorboard_{current_time}.csv', index=False)
 
 print(f"Predictions and true values saved to predictions_conv1d_tensorboard_{current_time}.csv.")

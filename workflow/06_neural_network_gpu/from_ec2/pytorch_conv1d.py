@@ -5,7 +5,6 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset, random_split
 
 import pandas as pd
-import polars as pl
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
@@ -15,28 +14,35 @@ import numpy as np
 from datetime import datetime
 import time
 
-from torch.utils.tensorboard import SummaryWriter
-
-dataset_path = "/group/pmc021/amunif/epi-thesis/dataset/"
-working_dir = "/group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/"
-
 # Prepare the progress file
 current_time = datetime.now().strftime("%Y%m%d%H%M%S")
-progress_file = f'{working_dir}progress/progress_conv1d_v1_{current_time}.txt'
+progress_file = f'progress_conv1d_tensorboard_{current_time}.txt'
 
 '''
 User defined functions
 '''
+def load_large_csv(file_name, chunksize=1000):
+    # Read the CSV file
+    mylist = []
+
+    print('Loading the data ...')
+    for chunk in pd.read_csv(file_name, chunksize = chunksize):
+        print('Loading the chunk ...')
+        mylist.append(chunk)
+
+    df = pd.concat(mylist, axis = 0)
+    
+    del mylist
+    return df
+
 def save_progress(file_name, message):
     with open(file_name, 'a+') as file:
         file.write(message + "\n")
 
 
-# Loading file using polars
-X = pl.read_csv(f"{dataset_path}histone_features.csv", n_rows=100)
-y = pl.read_csv(f"{dataset_path}value_1_df.csv", n_rows=100)
-# X = pl.read_csv(f"{dataset_path}histone_features.csv")
-# y = pl.read_csv(f"{dataset_path}value_1_df.csv")
+# Load the data
+X = load_large_csv('histone_features.csv')
+y = load_large_csv('value_1_df.csv')
 
 save_progress(progress_file, "Finished load the data")
 
@@ -82,15 +88,13 @@ class HighDimCNN1D(nn.Module):
         
         self.fc1 = nn.Linear(256 * conv_output_size, 512)
         self.fc2 = nn.Linear(512, 1)
-        self.leaky_relu = nn.LeakyReLU(negative_slope=0.01)
-        self.dropout = nn.Dropout(p=0.5)
 
     def forward(self, x):
-        x = self.pool(self.leaky_relu(self.conv1(x)))
-        x = self.pool2(self.leaky_relu(self.conv2(x)))
-        x = self.pool3(self.leaky_relu(self.conv3(x)))
+        x = self.pool(torch.relu(self.conv1(x)))
+        x = self.pool2(torch.relu(self.conv2(x)))
+        x = self.pool3(torch.relu(self.conv3(x)))
         x = x.view(x.size(0), -1)  # Flatten the tensor
-        x = self.dropout(self.leaky_relu(self.fc1(x)))
+        x = torch.relu(self.fc1(x))
         x = self.fc2(x)
         return x
 
@@ -102,77 +106,29 @@ model = HighDimCNN1D(input_size=input_size).to(device)
 
 # Loss function and optimizer
 criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=0.01)
-
-# Setup TensorBoard writer
-LOG_DIR = "/group/pmc021/amunif/epi-thesis/workflow/06_neural_network_gpu/runs/cnn1d"
-writer = SummaryWriter(LOG_DIR)
-
-# Track the best test loss
-best_test_loss = float('inf')
+optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Training loop
-num_epochs = 10
+num_epochs = 100
 for epoch in range(num_epochs): 
-    print(f"Epoch {epoch + 1} ...")
     start_time = time.time()
     
     model.train()
-    train_loss = 0.0
-    train_mae = 0.0
     for inputs, targets in train_loader:
         optimizer.zero_grad()
-        inputs, targets = inputs.to(device), targets.to(device)
         outputs = model(inputs)
         loss = criterion(outputs, targets)
-        mae = mean_absolute_error(targets.cpu().numpy(), outputs.cpu().detach().numpy())
-        
         loss.backward()
         optimizer.step()
-
-        train_loss += loss.item() * inputs.size(0)
-        train_mae += mae * inputs.size(0)
     
-    train_loss /= len(train_loader.dataset)
-    train_mae /= len(train_loader.dataset)
-
-    # Test step
-    model.eval()
-    test_loss = 0.0
-    test_mae = 0.0
-    with torch.no_grad():
-        for inputs, targets in test_loader:
-            inputs, targets = inputs.to(device), targets.to(device)  # Move data to GPU
-            outputs = model(inputs)
-            loss = criterion(outputs, targets)
-            mae = mean_absolute_error(targets.cpu().numpy(), outputs.cpu().numpy())
-            test_loss += loss.item() * inputs.size(0)
-            test_mae += mae * inputs.size(0)
-
-    test_loss /= len(test_loader.dataset)
-    test_mae /= len(test_loader.dataset)
-
     end_time = time.time()
     elapsed_time = end_time - start_time
-    message = f'Epoch {epoch+1}, Time:{elapsed_time},  Train Loss: {train_loss:.4f}, Train MAE: {train_mae:.4f}, Test Loss: {test_loss:.4f}, Test MAE: {test_mae:.4f}'
+    message = f'Epoch {epoch+1}, Time:{elapsed_time},  Loss: {loss.item()}'
     print(message)
     save_progress(progress_file, message)
 
-    writer.add_scalar('Loss/Train', train_loss, epoch)
-    writer.add_scalar('Loss/Test', test_loss, epoch)
-    writer.add_scalar('MAE/Train', train_mae, epoch)
-    writer.add_scalar('MAE/Test', test_mae, epoch)
-
-    # Save the best model
-    if test_loss < best_test_loss:
-        best_test_loss = test_loss
-        torch.save(model.state_dict(), 'best_conv1d_model.pth')
-        print(f'Saved best model at epoch {epoch+1} with test loss: {test_loss:.4f}')
-
-writer.close()
-
-# Load the best model's state dictionary
-model.load_state_dict(torch.load('best_conv1d_model.pth'))
+# Save the model
+torch.save(model, 'model_v1.pt')
 
 '''
 Evaluation
@@ -193,6 +149,17 @@ with torch.no_grad():
 
         all_targets.extend(targets.cpu().numpy())
         all_predictions.extend(outputs.cpu().numpy())
+
+print(f'Average loss on the test data: {total_loss/len(test_loader):.4f}')
+save_progress(progress_file, f'Average loss on the test data: {total_loss/len(test_loader):.4f}')
+
+# # Making predictions with the test data
+# with torch.no_grad():
+#     predictions = model(X_test_tensor)
+
+# # Convert predictions and true values to NumPy arrays
+# predictions_np = predictions.cpu().numpy()  # Move predictions to CPU before converting to NumPy
+# y_test_np = y_test_tensor.cpu().numpy()  # Move true values to CPU before converting to NumPy
 
 all_targets = np.array(all_targets)
 all_predictions = np.array(all_predictions)
@@ -219,6 +186,6 @@ results_df = pd.DataFrame({
 })
 
 # Save the DataFrame to a CSV file
-results_df.to_csv(f'predictions_conv1d_{current_time}.csv', index=False)
+results_df.to_csv(f'predictions_conv1d_v1_{current_time}.csv', index=False)
 
-print(f"Predictions and true values saved to predictions_conv1d_tensorboard_{current_time}.csv.")
+print(f"Predictions and true values saved to predictions_v1_conv1d_{current_time}.csv.")

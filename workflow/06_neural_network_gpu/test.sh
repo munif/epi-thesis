@@ -16,7 +16,6 @@ module load cuda/11.8
 # Record start time
 start_time=$(date +%s.%N)
 
-echo "Test"
 nvidia-smi
 
 # Run Python script
