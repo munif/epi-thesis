@@ -1,0 +1,405 @@
+Using device: cuda
+Epoch [1/200], Time: 11.5109, Loss: 16779.4244, MAE: 19.7839
+Average loss on the test data: 11515.9584, MAE: 16.2197
+Epoch [2/200], Time: 11.3971, Loss: 14555.0736, MAE: 16.8205
+Average loss on the test data: 12050.0962, MAE: 15.9025
+Epoch [3/200], Time: 11.4131, Loss: 13454.7298, MAE: 15.6756
+Average loss on the test data: 19969.7926, MAE: 16.4781
+Epoch [4/200], Time: 11.4012, Loss: 16728.7737, MAE: 15.1164
+Average loss on the test data: 21417.3153, MAE: 16.4775
+Epoch [5/200], Time: 11.4018, Loss: 11913.5866, MAE: 14.1799
+Average loss on the test data: 14439.9977, MAE: 15.4645
+Epoch [6/200], Time: 11.4426, Loss: 9744.0012, MAE: 13.0919
+Average loss on the test data: 16563.4694, MAE: 15.4188
+Epoch [7/200], Time: 11.3998, Loss: 11958.4530, MAE: 13.7426
+Average loss on the test data: 23219.8862, MAE: 16.2191
+Epoch [8/200], Time: 11.3828, Loss: 10504.3488, MAE: 12.6964
+Average loss on the test data: 21833.6865, MAE: 15.3806
+Epoch [9/200], Time: 11.3747, Loss: 12219.8550, MAE: 12.6819
+Average loss on the test data: 12348.8635, MAE: 14.8106
+Epoch [10/200], Time: 11.3844, Loss: 9983.0739, MAE: 12.4847
+Average loss on the test data: 12187.9400, MAE: 14.4983
+Epoch [11/200], Time: 11.3872, Loss: 8786.9157, MAE: 12.1733
+Average loss on the test data: 10965.4528, MAE: 14.7338
+Epoch [12/200], Time: 11.3883, Loss: 9255.9783, MAE: 12.2469
+Average loss on the test data: 24261.2258, MAE: 15.6802
+Epoch [13/200], Time: 11.3879, Loss: 7891.7922, MAE: 11.6543
+Average loss on the test data: 21936.2769, MAE: 15.1936
+Epoch [14/200], Time: 11.4045, Loss: 8771.3817, MAE: 11.4180
+Average loss on the test data: 19380.0494, MAE: 14.6433
+Epoch [15/200], Time: 11.3930, Loss: 11824.2394, MAE: 11.8294
+Average loss on the test data: 14534.1409, MAE: 14.6802
+Epoch [16/200], Time: 11.4026, Loss: 8113.0165, MAE: 11.3135
+Average loss on the test data: 14510.7075, MAE: 14.4000
+Epoch [17/200], Time: 12.0594, Loss: 8540.0292, MAE: 11.4187
+Average loss on the test data: 13888.2688, MAE: 14.3088
+Epoch [18/200], Time: 12.0399, Loss: 7960.1432, MAE: 11.0999
+Average loss on the test data: 16499.0277, MAE: 14.1894
+Epoch [19/200], Time: 12.0512, Loss: 8611.5033, MAE: 11.1802
+Average loss on the test data: 15922.5518, MAE: 14.0160
+Epoch [20/200], Time: 12.0511, Loss: 8588.7906, MAE: 11.4226
+Average loss on the test data: 17004.8564, MAE: 14.6009
+Epoch [21/200], Time: 11.3997, Loss: 10039.6648, MAE: 11.3608
+Average loss on the test data: 17973.8509, MAE: 14.6673
+Epoch [22/200], Time: 12.0652, Loss: 9447.5042, MAE: 11.4627
+Average loss on the test data: 16185.7415, MAE: 14.3273
+Epoch [23/200], Time: 12.0432, Loss: 9015.3080, MAE: 11.3119
+Average loss on the test data: 16166.5608, MAE: 14.6409
+Epoch [24/200], Time: 12.0456, Loss: 11561.4520, MAE: 11.3272
+Average loss on the test data: 17049.9616, MAE: 14.3636
+Epoch [25/200], Time: 11.3918, Loss: 8734.0760, MAE: 11.4018
+Average loss on the test data: 11314.8697, MAE: 14.0309
+Epoch [26/200], Time: 11.3904, Loss: 9228.0781, MAE: 11.7524
+Average loss on the test data: 15636.5084, MAE: 14.8982
+Epoch [27/200], Time: 11.3962, Loss: 12991.5230, MAE: 11.6326
+Average loss on the test data: 15119.9172, MAE: 14.4920
+Epoch [28/200], Time: 11.3921, Loss: 11412.4427, MAE: 11.1476
+Average loss on the test data: 17802.9190, MAE: 14.5015
+Epoch [29/200], Time: 12.0590, Loss: 12505.0442, MAE: 11.3310
+Average loss on the test data: 11291.3364, MAE: 14.0277
+Epoch [30/200], Time: 12.0490, Loss: 10030.0096, MAE: 11.5844
+Average loss on the test data: 11866.5946, MAE: 14.4634
+Epoch [31/200], Time: 11.4046, Loss: 8692.8646, MAE: 10.9918
+Average loss on the test data: 11848.5118, MAE: 14.3165
+Epoch [32/200], Time: 11.4028, Loss: 8308.1983, MAE: 11.1307
+Average loss on the test data: 33581.4980, MAE: 16.4177
+Epoch [33/200], Time: 11.3965, Loss: 8900.3487, MAE: 11.1996
+Average loss on the test data: 26784.4140, MAE: 14.9636
+Epoch [34/200], Time: 11.3920, Loss: 10795.1316, MAE: 11.3873
+Average loss on the test data: 23301.6273, MAE: 14.4835
+Epoch [35/200], Time: 11.3849, Loss: 8062.8905, MAE: 11.0538
+Average loss on the test data: 14997.4141, MAE: 14.3946
+Epoch [36/200], Time: 11.4079, Loss: 8845.1386, MAE: 11.0105
+Average loss on the test data: 14181.2648, MAE: 13.8608
+Epoch [37/200], Time: 12.0519, Loss: 12739.8379, MAE: 11.3362
+Average loss on the test data: 18185.5637, MAE: 15.2793
+Epoch [38/200], Time: 11.3997, Loss: 13451.0069, MAE: 11.5047
+Average loss on the test data: 13649.0412, MAE: 14.8147
+Epoch [39/200], Time: 11.4018, Loss: 8445.2607, MAE: 11.0326
+Average loss on the test data: 15846.8000, MAE: 14.5538
+Epoch [40/200], Time: 11.3911, Loss: 9449.4056, MAE: 11.4150
+Average loss on the test data: 11279.8724, MAE: 14.4122
+Epoch [41/200], Time: 11.3901, Loss: 9933.7239, MAE: 11.1481
+Average loss on the test data: 12602.2988, MAE: 14.5445
+Epoch [42/200], Time: 11.4062, Loss: 11230.6769, MAE: 11.5189
+Average loss on the test data: 17571.6224, MAE: 14.4014
+Epoch [43/200], Time: 11.4188, Loss: 9330.3874, MAE: 11.2133
+Average loss on the test data: 25699.1566, MAE: 15.6769
+Epoch [44/200], Time: 11.4122, Loss: 10780.8806, MAE: 11.5188
+Average loss on the test data: 14641.7961, MAE: 14.5727
+Epoch [45/200], Time: 11.4112, Loss: 7825.5715, MAE: 10.8747
+Average loss on the test data: 10425.9792, MAE: 14.0117
+Epoch [46/200], Time: 11.4273, Loss: 10190.0040, MAE: 11.5034
+Average loss on the test data: 13972.5440, MAE: 14.9630
+Epoch [47/200], Time: 11.4053, Loss: 9449.9815, MAE: 11.4031
+Average loss on the test data: 11075.0409, MAE: 14.1878
+Epoch [48/200], Time: 11.3878, Loss: 8663.6206, MAE: 11.2934
+Average loss on the test data: 16132.1763, MAE: 14.7226
+Epoch [49/200], Time: 11.3822, Loss: 10433.6082, MAE: 11.2710
+Average loss on the test data: 10924.3170, MAE: 13.9503
+Epoch [50/200], Time: 11.3944, Loss: 10201.8179, MAE: 11.3743
+Average loss on the test data: 12728.2597, MAE: 15.2387
+Epoch [51/200], Time: 11.3883, Loss: 8549.9906, MAE: 11.2112
+Average loss on the test data: 18971.7771, MAE: 15.5849
+Epoch [52/200], Time: 11.3840, Loss: 10775.3563, MAE: 11.2384
+Average loss on the test data: 11941.6968, MAE: 14.9880
+Epoch [53/200], Time: 11.3908, Loss: 8788.2153, MAE: 11.2190
+Average loss on the test data: 11922.1229, MAE: 14.1316
+Epoch [54/200], Time: 11.4090, Loss: 8579.1354, MAE: 11.3339
+Average loss on the test data: 22847.1166, MAE: 15.4012
+Epoch [55/200], Time: 11.3915, Loss: 10794.2991, MAE: 11.3171
+Average loss on the test data: 15806.8574, MAE: 14.2851
+Epoch [56/200], Time: 11.4319, Loss: 9555.8402, MAE: 11.3191
+Average loss on the test data: 12241.9496, MAE: 14.3870
+Epoch [57/200], Time: 11.4178, Loss: 9121.1489, MAE: 11.0290
+Average loss on the test data: 14058.5193, MAE: 14.2914
+Epoch [58/200], Time: 11.4221, Loss: 10764.7927, MAE: 11.0936
+Average loss on the test data: 11966.2964, MAE: 14.1955
+Epoch [59/200], Time: 11.4263, Loss: 9964.1376, MAE: 11.5780
+Average loss on the test data: 13807.3815, MAE: 14.6636
+Epoch [60/200], Time: 12.0731, Loss: 10698.5316, MAE: 11.5213
+Average loss on the test data: 14675.9649, MAE: 14.6296
+Epoch [61/200], Time: 11.4253, Loss: 8723.3799, MAE: 11.1781
+Average loss on the test data: 24514.1088, MAE: 15.6516
+Epoch [62/200], Time: 11.4175, Loss: 8072.7622, MAE: 11.3107
+Average loss on the test data: 12572.8061, MAE: 14.2378
+Epoch [63/200], Time: 11.4158, Loss: 10625.2139, MAE: 11.8688
+Average loss on the test data: 14440.4873, MAE: 15.1615
+Epoch [64/200], Time: 11.4098, Loss: 9042.8513, MAE: 11.5756
+Average loss on the test data: 29146.3655, MAE: 15.2778
+Epoch [65/200], Time: 11.4202, Loss: 11105.7263, MAE: 11.7919
+Average loss on the test data: 13600.1215, MAE: 16.3564
+Epoch [66/200], Time: 11.4130, Loss: 9794.4776, MAE: 12.0871
+Average loss on the test data: 12549.7362, MAE: 14.7528
+Epoch [67/200], Time: 11.4129, Loss: 9120.9662, MAE: 11.6566
+Average loss on the test data: 11062.9964, MAE: 15.1108
+Epoch [68/200], Time: 11.4154, Loss: 9475.8063, MAE: 11.7097
+Average loss on the test data: 11938.1534, MAE: 14.4956
+Epoch [69/200], Time: 11.4245, Loss: 8599.6445, MAE: 11.4197
+Average loss on the test data: 17750.4383, MAE: 15.7977
+Epoch [70/200], Time: 11.4246, Loss: 9613.4561, MAE: 11.7812
+Average loss on the test data: 12704.8729, MAE: 14.8837
+Epoch [71/200], Time: 11.4088, Loss: 10147.5235, MAE: 11.4157
+Average loss on the test data: 16868.0297, MAE: 15.5333
+Epoch [72/200], Time: 11.4288, Loss: 14440.2552, MAE: 11.8475
+Average loss on the test data: 13108.6700, MAE: 14.9337
+Epoch [73/200], Time: 11.4318, Loss: 9563.6145, MAE: 11.4473
+Average loss on the test data: 13341.4282, MAE: 15.4354
+Epoch [74/200], Time: 11.4221, Loss: 10190.7847, MAE: 11.8922
+Average loss on the test data: 17107.7651, MAE: 15.4528
+Epoch [75/200], Time: 11.4076, Loss: 12196.4180, MAE: 11.6900
+Average loss on the test data: 25725.7755, MAE: 15.6674
+Epoch [76/200], Time: 11.4076, Loss: 10112.2785, MAE: 11.7542
+Average loss on the test data: 13665.4088, MAE: 15.1941
+Epoch [77/200], Time: 11.4058, Loss: 8485.1136, MAE: 11.3907
+Average loss on the test data: 13243.8901, MAE: 14.9108
+Epoch [78/200], Time: 11.4210, Loss: 7805.9523, MAE: 11.0902
+Average loss on the test data: 16480.0124, MAE: 15.0629
+Epoch [79/200], Time: 11.4198, Loss: 11336.8570, MAE: 11.4826
+Average loss on the test data: 20850.1513, MAE: 15.2067
+Epoch [80/200], Time: 11.4351, Loss: 9842.8237, MAE: 11.4298
+Average loss on the test data: 17717.4399, MAE: 15.2260
+Epoch [81/200], Time: 11.4195, Loss: 10162.5085, MAE: 11.3708
+Average loss on the test data: 14600.6169, MAE: 15.3094
+Epoch [82/200], Time: 11.3968, Loss: 8201.6742, MAE: 11.0705
+Average loss on the test data: 15376.7038, MAE: 15.2610
+Epoch [83/200], Time: 11.4016, Loss: 8631.5234, MAE: 11.4658
+Average loss on the test data: 13184.5676, MAE: 14.7615
+Epoch [84/200], Time: 11.3901, Loss: 9829.4282, MAE: 11.7561
+Average loss on the test data: 11462.8866, MAE: 14.6539
+Epoch [85/200], Time: 11.3982, Loss: 8885.7617, MAE: 11.6047
+Average loss on the test data: 14090.1213, MAE: 15.2647
+Epoch [86/200], Time: 11.3924, Loss: 9613.8553, MAE: 11.3115
+Average loss on the test data: 14685.8880, MAE: 15.4711
+Epoch [87/200], Time: 11.3813, Loss: 9907.0691, MAE: 11.8107
+Average loss on the test data: 12176.0356, MAE: 14.6533
+Epoch [88/200], Time: 11.4276, Loss: 9454.7105, MAE: 11.7756
+Average loss on the test data: 11583.4948, MAE: 14.9657
+Epoch [89/200], Time: 11.4308, Loss: 10086.6170, MAE: 12.0387
+Average loss on the test data: 17456.9216, MAE: 15.5839
+Epoch [90/200], Time: 11.4188, Loss: 8886.7645, MAE: 11.6790
+Average loss on the test data: 15093.0403, MAE: 14.3821
+Epoch [91/200], Time: 11.4088, Loss: 10056.0680, MAE: 11.8744
+Average loss on the test data: 10844.2452, MAE: 14.9651
+Epoch [92/200], Time: 11.3961, Loss: 8850.0760, MAE: 11.5394
+Average loss on the test data: 22012.2480, MAE: 15.1331
+Epoch [93/200], Time: 11.4151, Loss: 9391.6262, MAE: 11.5589
+Average loss on the test data: 14026.5604, MAE: 15.0180
+Epoch [94/200], Time: 11.3948, Loss: 8158.3803, MAE: 11.7876
+Average loss on the test data: 12303.7830, MAE: 15.2421
+Epoch [95/200], Time: 11.3856, Loss: 8924.4057, MAE: 11.6821
+Average loss on the test data: 10353.6645, MAE: 15.5962
+Epoch [96/200], Time: 11.4046, Loss: 11392.8175, MAE: 12.6146
+Average loss on the test data: 10146.5418, MAE: 14.7517
+Epoch [97/200], Time: 11.4202, Loss: 9800.5872, MAE: 12.0883
+Average loss on the test data: 12743.5355, MAE: 14.9184
+Epoch [98/200], Time: 11.4264, Loss: 8243.3404, MAE: 11.6258
+Average loss on the test data: 19829.0340, MAE: 14.9401
+Epoch [99/200], Time: 11.4213, Loss: 8933.0770, MAE: 11.6959
+Average loss on the test data: 19189.1055, MAE: 15.2026
+Epoch [100/200], Time: 11.4167, Loss: 10317.3783, MAE: 12.2502
+Average loss on the test data: 14722.6652, MAE: 15.0184
+Epoch [101/200], Time: 11.4178, Loss: 9051.6594, MAE: 11.5742
+Average loss on the test data: 12555.2924, MAE: 15.1738
+Epoch [102/200], Time: 11.4064, Loss: 9839.3564, MAE: 12.1855
+Average loss on the test data: 17720.4323, MAE: 15.2088
+Epoch [103/200], Time: 11.4279, Loss: 8878.2057, MAE: 11.8706
+Average loss on the test data: 13900.3164, MAE: 15.2610
+Epoch [104/200], Time: 11.4172, Loss: 8520.9201, MAE: 11.7040
+Average loss on the test data: 14281.8624, MAE: 15.0443
+Epoch [105/200], Time: 11.4210, Loss: 10537.2208, MAE: 12.0288
+Average loss on the test data: 14898.3300, MAE: 15.2597
+Epoch [106/200], Time: 11.4186, Loss: 8933.5304, MAE: 11.6356
+Average loss on the test data: 13378.7272, MAE: 15.2529
+Epoch [107/200], Time: 11.4176, Loss: 9432.8138, MAE: 11.9284
+Average loss on the test data: 13601.4318, MAE: 15.5223
+Epoch [108/200], Time: 11.4070, Loss: 9976.7429, MAE: 11.6333
+Average loss on the test data: 15735.8945, MAE: 15.3324
+Epoch [109/200], Time: 11.4128, Loss: 14387.1194, MAE: 12.5286
+Average loss on the test data: 15524.2690, MAE: 15.0484
+Epoch [110/200], Time: 11.3956, Loss: 9432.0524, MAE: 12.1359
+Average loss on the test data: 22879.3887, MAE: 15.0037
+Epoch [111/200], Time: 11.4049, Loss: 9485.7224, MAE: 12.2710
+Average loss on the test data: 16031.1487, MAE: 15.0706
+Epoch [112/200], Time: 11.4407, Loss: 9982.4757, MAE: 12.7325
+Average loss on the test data: 16733.2574, MAE: 14.8405
+Epoch [113/200], Time: 11.4271, Loss: 11081.5586, MAE: 12.6464
+Average loss on the test data: 18701.8096, MAE: 14.9564
+Epoch [114/200], Time: 11.4226, Loss: 9207.3242, MAE: 11.8659
+Average loss on the test data: 13418.1016, MAE: 15.1088
+Epoch [115/200], Time: 11.4184, Loss: 8143.1074, MAE: 11.9272
+Average loss on the test data: 11034.8623, MAE: 15.0702
+Epoch [116/200], Time: 11.4134, Loss: 9600.8009, MAE: 12.2442
+Average loss on the test data: 15145.5933, MAE: 15.1601
+Epoch [117/200], Time: 11.4130, Loss: 8345.8097, MAE: 11.8304
+Average loss on the test data: 14872.9464, MAE: 14.9409
+Epoch [118/200], Time: 11.4230, Loss: 10337.6351, MAE: 12.0736
+Average loss on the test data: 11328.4333, MAE: 16.2007
+Epoch [119/200], Time: 11.4234, Loss: 8692.2328, MAE: 12.0479
+Average loss on the test data: 11431.0356, MAE: 15.1027
+Epoch [120/200], Time: 11.4227, Loss: 9520.7054, MAE: 12.0422
+Average loss on the test data: 14698.8394, MAE: 15.6802
+Epoch [121/200], Time: 11.4101, Loss: 10679.1967, MAE: 12.0268
+Average loss on the test data: 12608.7162, MAE: 15.1898
+Epoch [122/200], Time: 11.4186, Loss: 9107.9833, MAE: 12.0735
+Average loss on the test data: 17653.8610, MAE: 14.9643
+Epoch [123/200], Time: 11.4082, Loss: 9070.0497, MAE: 11.8520
+Average loss on the test data: 11990.3302, MAE: 15.0810
+Epoch [124/200], Time: 11.4109, Loss: 9665.9869, MAE: 11.7435
+Average loss on the test data: 15245.6064, MAE: 14.9910
+Epoch [125/200], Time: 11.4475, Loss: 8755.6623, MAE: 11.7155
+Average loss on the test data: 22244.4126, MAE: 15.0967
+Epoch [126/200], Time: 11.4148, Loss: 9783.8487, MAE: 12.1034
+Average loss on the test data: 12030.0329, MAE: 14.8244
+Epoch [127/200], Time: 11.4175, Loss: 9179.7556, MAE: 12.1661
+Average loss on the test data: 18689.1331, MAE: 14.5266
+Epoch [128/200], Time: 11.4223, Loss: 9765.6114, MAE: 11.8616
+Average loss on the test data: 12191.9036, MAE: 14.4065
+Epoch [129/200], Time: 11.4232, Loss: 8435.1961, MAE: 11.3867
+Average loss on the test data: 22864.1903, MAE: 14.8195
+Epoch [130/200], Time: 11.4310, Loss: 15956.1880, MAE: 11.9798
+Average loss on the test data: 16166.2667, MAE: 15.2098
+Epoch [131/200], Time: 11.4113, Loss: 9964.0721, MAE: 11.8268
+Average loss on the test data: 14742.1107, MAE: 14.7123
+Epoch [132/200], Time: 11.4078, Loss: 8657.6486, MAE: 11.5171
+Average loss on the test data: 13986.0283, MAE: 14.1348
+Epoch [133/200], Time: 11.4148, Loss: 8519.2708, MAE: 11.6242
+Average loss on the test data: 16390.7426, MAE: 14.3664
+Epoch [134/200], Time: 11.4027, Loss: 11693.6397, MAE: 12.0473
+Average loss on the test data: 16499.0891, MAE: 14.4187
+Epoch [135/200], Time: 11.3981, Loss: 10761.5051, MAE: 11.7295
+Average loss on the test data: 13785.5224, MAE: 14.6605
+Epoch [136/200], Time: 11.4023, Loss: 8051.0896, MAE: 11.7616
+Average loss on the test data: 11828.2355, MAE: 14.4249
+Epoch [137/200], Time: 11.4082, Loss: 9426.1734, MAE: 11.9803
+Average loss on the test data: 19005.7322, MAE: 14.0732
+Epoch [138/200], Time: 11.4005, Loss: 8483.1564, MAE: 11.8208
+Average loss on the test data: 22367.8896, MAE: 14.1828
+Epoch [139/200], Time: 11.4045, Loss: 8827.8315, MAE: 11.3391
+Average loss on the test data: 13900.6016, MAE: 14.3817
+Epoch [140/200], Time: 11.3926, Loss: 9001.1754, MAE: 11.7512
+Average loss on the test data: 14686.2632, MAE: 13.8235
+Epoch [141/200], Time: 11.4002, Loss: 9035.7672, MAE: 11.6919
+Average loss on the test data: 14030.0986, MAE: 13.7872
+Epoch [142/200], Time: 11.3900, Loss: 9476.3865, MAE: 11.9869
+Average loss on the test data: 16693.6501, MAE: 14.3899
+Epoch [143/200], Time: 11.3913, Loss: 9081.4432, MAE: 11.8858
+Average loss on the test data: 13450.3530, MAE: 13.5892
+Epoch [144/200], Time: 11.4197, Loss: 10148.0957, MAE: 12.0182
+Average loss on the test data: 15612.6557, MAE: 14.1644
+Epoch [145/200], Time: 11.3994, Loss: 8431.7505, MAE: 11.6964
+Average loss on the test data: 14978.1958, MAE: 14.0131
+Epoch [146/200], Time: 11.3967, Loss: 10642.3197, MAE: 12.0631
+Average loss on the test data: 16170.4975, MAE: 13.9623
+Epoch [147/200], Time: 11.3926, Loss: 9849.3297, MAE: 11.9056
+Average loss on the test data: 11358.5863, MAE: 14.2494
+Epoch [148/200], Time: 11.4022, Loss: 8295.6321, MAE: 11.7693
+Average loss on the test data: 14015.5472, MAE: 13.6728
+Epoch [149/200], Time: 11.4010, Loss: 9971.2811, MAE: 12.0030
+Average loss on the test data: 12244.7464, MAE: 13.8235
+Epoch [150/200], Time: 11.4015, Loss: 17324.7599, MAE: 12.2218
+Average loss on the test data: 13935.3782, MAE: 14.6265
+Epoch [151/200], Time: 11.3872, Loss: 10170.7773, MAE: 12.0215
+Average loss on the test data: 11202.1590, MAE: 14.2698
+Epoch [152/200], Time: 11.3935, Loss: 9861.0250, MAE: 12.0341
+Average loss on the test data: 13862.2041, MAE: 13.6560
+Epoch [153/200], Time: 11.4036, Loss: 9159.2704, MAE: 11.5887
+Average loss on the test data: 12789.2209, MAE: 13.7339
+Epoch [154/200], Time: 12.0424, Loss: 9161.3852, MAE: 11.3579
+Average loss on the test data: 12022.0432, MAE: 13.8126
+Epoch [155/200], Time: 11.3956, Loss: 8472.9288, MAE: 11.5247
+Average loss on the test data: 18301.9087, MAE: 14.0429
+Epoch [156/200], Time: 11.3958, Loss: 7921.8220, MAE: 11.3742
+Average loss on the test data: 28655.7926, MAE: 15.2149
+Epoch [157/200], Time: 11.4116, Loss: 9487.9570, MAE: 11.9303
+Average loss on the test data: 14751.5117, MAE: 13.7279
+Epoch [158/200], Time: 11.3871, Loss: 11172.6606, MAE: 12.4372
+Average loss on the test data: 13439.9378, MAE: 14.3580
+Epoch [159/200], Time: 11.3986, Loss: 9061.5437, MAE: 12.0252
+Average loss on the test data: 16499.9328, MAE: 14.1096
+Epoch [160/200], Time: 11.4193, Loss: 10382.7907, MAE: 12.1799
+Average loss on the test data: 12639.9391, MAE: 14.7279
+Epoch [161/200], Time: 11.4129, Loss: 10868.5343, MAE: 12.0383
+Average loss on the test data: 13850.7451, MAE: 14.0944
+Epoch [162/200], Time: 11.4053, Loss: 7641.5167, MAE: 11.6431
+Average loss on the test data: 17405.9558, MAE: 13.8059
+Epoch [163/200], Time: 11.3910, Loss: 9499.9426, MAE: 12.1268
+Average loss on the test data: 14371.0668, MAE: 13.9772
+Epoch [164/200], Time: 11.4101, Loss: 8683.0902, MAE: 11.8778
+Average loss on the test data: 12539.5797, MAE: 13.9483
+Epoch [165/200], Time: 11.3949, Loss: 10749.3718, MAE: 12.4070
+Average loss on the test data: 16835.2106, MAE: 13.9391
+Epoch [166/200], Time: 11.4215, Loss: 12139.6137, MAE: 12.3864
+Average loss on the test data: 12118.7025, MAE: 14.2606
+Epoch [167/200], Time: 11.3995, Loss: 10274.4746, MAE: 12.4904
+Average loss on the test data: 12278.6612, MAE: 13.7344
+Epoch [168/200], Time: 11.4032, Loss: 9059.6809, MAE: 11.9419
+Average loss on the test data: 10518.4595, MAE: 14.7148
+Epoch [169/200], Time: 11.4172, Loss: 8974.6920, MAE: 12.6201
+Average loss on the test data: 12341.2370, MAE: 13.7029
+Epoch [170/200], Time: 11.4046, Loss: 9024.0386, MAE: 12.6806
+Average loss on the test data: 12893.8230, MAE: 13.8880
+Epoch [171/200], Time: 11.4065, Loss: 8414.1939, MAE: 12.2790
+Average loss on the test data: 12644.7335, MAE: 14.2143
+Epoch [172/200], Time: 11.3954, Loss: 9261.9295, MAE: 12.3042
+Average loss on the test data: 15582.2164, MAE: 14.0100
+Epoch [173/200], Time: 11.4265, Loss: 9228.3690, MAE: 12.2247
+Average loss on the test data: 11516.8860, MAE: 14.1900
+Epoch [174/200], Time: 11.4162, Loss: 9841.8488, MAE: 12.2732
+Average loss on the test data: 11456.4492, MAE: 15.0415
+Epoch [175/200], Time: 11.4076, Loss: 8548.9559, MAE: 12.0523
+Average loss on the test data: 11686.8617, MAE: 14.0360
+Epoch [176/200], Time: 11.3924, Loss: 8319.9055, MAE: 11.9984
+Average loss on the test data: 13942.5984, MAE: 15.4122
+Epoch [177/200], Time: 11.3926, Loss: 9596.2459, MAE: 13.0626
+Average loss on the test data: 14119.6493, MAE: 13.7594
+Epoch [178/200], Time: 11.4072, Loss: 7768.8162, MAE: 12.1031
+Average loss on the test data: 10581.6133, MAE: 14.4175
+Epoch [179/200], Time: 11.4178, Loss: 11177.3542, MAE: 12.5302
+Average loss on the test data: 16539.3484, MAE: 14.2988
+Epoch [180/200], Time: 11.3984, Loss: 8665.0632, MAE: 12.5911
+Average loss on the test data: 13641.2802, MAE: 14.4531
+Epoch [181/200], Time: 11.4240, Loss: 8439.9113, MAE: 12.5491
+Average loss on the test data: 10742.6591, MAE: 14.2961
+Epoch [182/200], Time: 11.4207, Loss: 11054.3612, MAE: 12.9785
+Average loss on the test data: 14874.8687, MAE: 14.9035
+Epoch [183/200], Time: 11.4207, Loss: 9013.2892, MAE: 12.7709
+Average loss on the test data: 13221.6241, MAE: 13.8656
+Epoch [184/200], Time: 11.4154, Loss: 21303.8820, MAE: 12.8956
+Average loss on the test data: 12450.6476, MAE: 13.6525
+Epoch [185/200], Time: 11.4353, Loss: 9374.5081, MAE: 12.5892
+Average loss on the test data: 14230.0445, MAE: 13.8696
+Epoch [186/200], Time: 11.4124, Loss: 8198.9682, MAE: 12.0581
+Average loss on the test data: 13318.8768, MAE: 13.8582
+Epoch [187/200], Time: 11.4182, Loss: 10625.1330, MAE: 12.3002
+Average loss on the test data: 10572.2455, MAE: 13.7054
+Epoch [188/200], Time: 11.4221, Loss: 8766.0284, MAE: 12.4499
+Average loss on the test data: 12469.8194, MAE: 13.8147
+Epoch [189/200], Time: 11.4400, Loss: 8766.4935, MAE: 12.2471
+Average loss on the test data: 14666.7698, MAE: 13.9977
+Epoch [190/200], Time: 11.4219, Loss: 8647.0759, MAE: 12.7075
+Average loss on the test data: 13280.6624, MAE: 14.1278
+Epoch [191/200], Time: 11.4294, Loss: 9149.4492, MAE: 12.4613
+Average loss on the test data: 10330.7155, MAE: 15.2234
+Epoch [192/200], Time: 11.4001, Loss: 9755.7501, MAE: 13.0893
+Average loss on the test data: 13766.2059, MAE: 14.4794
+Epoch [193/200], Time: 11.3873, Loss: 11367.3559, MAE: 13.0911
+Average loss on the test data: 15843.9397, MAE: 14.2471
+Epoch [194/200], Time: 11.4163, Loss: 16786.1339, MAE: 13.2830
+Average loss on the test data: 15292.6550, MAE: 14.8014
+Epoch [195/200], Time: 11.4135, Loss: 10616.9255, MAE: 12.7612
+Average loss on the test data: 14908.0599, MAE: 14.0813
+Epoch [196/200], Time: 11.4237, Loss: 9056.6921, MAE: 12.9179
+Average loss on the test data: 18580.1900, MAE: 14.2269
+Epoch [197/200], Time: 11.4239, Loss: 11301.2732, MAE: 13.4554
+Average loss on the test data: 14240.7012, MAE: 14.6061
+Epoch [198/200], Time: 11.4182, Loss: 9478.4644, MAE: 13.0628
+Average loss on the test data: 19746.0077, MAE: 14.5491
+Epoch [199/200], Time: 11.4198, Loss: 13350.6271, MAE: 13.5453
+Average loss on the test data: 16687.3707, MAE: 15.0700
+Epoch [200/200], Time: 11.4154, Loss: 11851.7280, MAE: 13.0491
+Average loss on the test data: 16008.3319, MAE: 14.8547
+MSE: 10172.158203125
+RMSE: 100.85711669921875
+MAE: 14.78218936920166
+R2 Score: 0.20569693265627376
