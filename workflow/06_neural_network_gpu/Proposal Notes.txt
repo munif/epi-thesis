@@ -1,0 +1,54 @@
+Title
+    Understanding how the epigenetics regulation affect the gene Expression
+
+Research Aim
+    1. histone modification pattern -> local
+        - 
+    2. gene specific for model for gene expression
+        - find the relationship between histone modification and the gene expression
+        - whole genome model (global)
+    
+    3. incorporating additional signal like dna methylation for building gene expression
+        -
+
+Local model -> global model -> dna methylation
+the relationship between histone modification, dna methylation,
+
+Epigenetics
+
+DNA methylation
+Histone modification
+    - different histone marker
+    - gene promotor and supressor
+    - 
+
+Challenges
+    - how different histone marker can affect the gene expression
+    - local problem -> same gene, same expression level
+        -> are they having the same pattern?
+    - generated data
+
+Deep Learning
+    - Fully Connected Layer
+    - Convolution 1 Dimension
+
+GAN Architecture
+    - denoise
+
+Autoencoder
+    - variation
+    - Generative model
+
+Generative model
+    - Restrictive Boltzman machine
+    - Binary encoding -> gene expressed or not
+    - Modified or not modified
+
+
+Advisory Panel Member
+- Michael A Weiss
+
+Proposal presentation schedule
+- the earliest one
+- prepare the abstract
+    -> 
