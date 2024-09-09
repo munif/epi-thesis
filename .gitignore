@@ -1,6 +1,7 @@
 # Ignored files and folders
 /dataset/
 workflow/**/*.csv
+workflow/07_deepchrome/dataset/
 /archive/
 *.err
 *.out
