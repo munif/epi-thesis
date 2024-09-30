@@ -2,6 +2,7 @@
 /dataset/
 workflow/**/*.csv
 workflow/07_deepchrome/dataset/
+.virtual_documents/
 /archive/
 *.err
 *.out
