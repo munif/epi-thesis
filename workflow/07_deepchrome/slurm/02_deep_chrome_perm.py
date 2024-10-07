@@ -261,7 +261,7 @@ for item in perm_lst[start:end]:
 
     # Saving the experiments into CSV files
     experiment_df = pl.DataFrame(experiment_results)
-    experiment_df.write_csv(os.path.join(DATASET_PATH, 'experiments', f'{item_name}.csv'))
+    experiment_df.write_csv(os.path.join(DATASET_PATH, 'experiments', "details",  f'{item_name}.csv'))
 
     # Find the min, avg, max for training and validation step
     train_loss_min, train_loss_avg, train_loss_max = min_avg_max(train_losses)

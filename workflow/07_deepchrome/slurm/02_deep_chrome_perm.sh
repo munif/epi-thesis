@@ -16,7 +16,7 @@ module load Anaconda3/2024.06
 start_time=$(date +%s.%N)
 
 # Run Python script
-conda run -p /group/pmc021/amunif/env/pytorch python /group/pmc021/amunif/epi-thesis/workflow/07_deepchrome/slurm/02_deep_chrome_perm.py 0 50
+conda run -p /group/pmc021/amunif/env/pytorch python /group/pmc021/amunif/epi-thesis/workflow/07_deepchrome/slurm/02_deep_chrome_perm.py 300 350
 
 # Record end time
 end_time=$(date +%s.%N)
