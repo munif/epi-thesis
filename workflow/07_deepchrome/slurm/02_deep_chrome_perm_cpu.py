@@ -145,7 +145,7 @@ for item in perm_lst[start:end]:
 
     # For saving the best model
     best_val_metric = float('-inf')
-    best_model_path = os.path.join(DATASET_PATH, "experiments", "gpu", "model", f'{item_name}.pth')
+    best_model_path = os.path.join(DATASET_PATH, "experiments", "cpu", "model", f'{item_name}.pth')
 
     for epoch in range(num_epochs):
         # Training phase
@@ -159,7 +159,7 @@ for item in perm_lst[start:end]:
         for inputs, labels in train_loader:
             optimizer.zero_grad()
             outputs = model(inputs)
-            loss = criterion(outputs.cuda(), labels.type(torch.LongTensor).cuda())
+            loss = criterion(outputs, labels.type(torch.LongTensor))
             loss.backward()
             optimizer.step()
             train_loss += loss.item()
@@ -192,7 +192,7 @@ for item in perm_lst[start:end]:
         with torch.no_grad():  # Disable gradient computation
             for inputs, labels in val_loader:
                 outputs = model(inputs)
-                loss = criterion(outputs.cuda(), labels.type(torch.LongTensor).cuda())
+                loss = criterion(outputs, labels.type(torch.LongTensor))
                 val_loss += loss.item()
                 _, predicted = torch.max(outputs.data, 1)
                 val_total += labels.size(0)
@@ -261,7 +261,7 @@ for item in perm_lst[start:end]:
 
     # Saving the experiments into CSV files
     experiment_df = pl.DataFrame(experiment_results)
-    experiment_df.write_csv(os.path.join(DATASET_PATH, "experiments", "gpu", "details",  f'{item_name}.csv'))
+    experiment_df.write_csv(os.path.join(DATASET_PATH, "experiments", "cpu", "details",  f'{item_name}.csv'))
 
     # Find the min, avg, max for training and validation step
     train_loss_min, train_loss_avg, train_loss_max = min_avg_max(train_losses)
@@ -299,7 +299,7 @@ output_rows_df = pd.DataFrame(output_rows,
 )
 
 print("Saving the final results")
-output_rows_df.to_csv(os.path.join(DATASET_PATH, "experiments", "gpu", "min-avg-max", 
+output_rows_df.to_csv(os.path.join(DATASET_PATH, "experiments", "cpu", "min-avg-max", 
                               f"{str(start + 1).rjust(3, '0')}-{str(end).rjust(3, '0')}.csv"), 
                  header=True, index=False)
 
