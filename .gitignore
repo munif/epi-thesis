@@ -9,6 +9,11 @@ workflow/07_deepchrome/dataset/
 *.pth
 *.pt
 *.bed
+*.parquet
+*.gtf
+*.gtf.gz
+*.sqlite
+*.sqilte3
 
 # Ignored files
 playground.ipynb

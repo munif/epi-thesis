@@ -32,3 +32,25 @@ SELECT 'bin', 'name', 'chrom', 'strand', 'txStart', 'txEnd', 'cdsStart', 'cdsEnd
 UNION
 SELECT bin, name, chrom, strand, txStart, txEnd, cdsStart, cdsEnd, exonCount, exonStarts, exonEnds, score, name2, cdsStartStat, cdsEndStat, exonFrames
 
+-- HepG2 exploded gene name
+
+CREATE TABLE `gsm3718064_hepg2_exp_exploded_gene_name` (
+  `test_id` varchar(50) DEFAULT NULL,
+  `gene_id` varchar(50) DEFAULT NULL,
+  `gene` varchar(50) DEFAULT NULL,
+  `locus` varchar(50) DEFAULT NULL,
+  `sample_1` varchar(50) DEFAULT NULL,
+  `sample_2` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `value_1` double DEFAULT NULL,
+  `value_2` double DEFAULT NULL,
+  `log2(fold_change)` double DEFAULT NULL,
+  `test_stat` double DEFAULT NULL,
+  `p_value` double DEFAULT NULL,
+  `q_value` double DEFAULT NULL,
+  `significant` varchar(50) DEFAULT NULL,
+  `chromosome` varchar(50) DEFAULT NULL,
+  `start` int(11) DEFAULT NULL,
+  `end` int(11) DEFAULT NULL,
+  `chr` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

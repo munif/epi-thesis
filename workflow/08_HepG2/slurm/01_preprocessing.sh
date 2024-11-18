@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=deepchrome
-#SBATCH --output=/group/pmc021/amunif/epi-thesis/workflow/07_deepchrome/slurm/output/%x-%j.out
-#SBATCH --error=/group/pmc021/amunif/epi-thesis/workflow/07_deepchrome/slurm/output/%x-%j.err
+#SBATCH --job-name=HepG2-preprocessing
+#SBATCH --output=/group/pmc021/amunif/epi-thesis/workflow/08_HepG2/slurm/output/%x-%j.out
+#SBATCH --error=/group/pmc021/amunif/epi-thesis/workflow/08_HepG2/slurm/output/%x-%j.err
 #SBATCH --nodes=1
 
-##SBATCH --partition=work
+#SBATCH --partition=work
 
-#SBATCH --partition=gpu
+##SBATCH --partition=gpu
 ##SBATCH --gres=gpu:p100:1  # Request 1 GPU V100 or P100
 
 #SBATCH --ntasks=16
@@ -20,7 +20,7 @@ module load Anaconda3/2024.06
 start_time=$(date +%s.%N)
 
 # Run Python script
-conda run -p /group/pmc021/amunif/env/pytorch python /group/pmc021/amunif/epi-thesis/workflow/07_deepchrome/slurm/02_deep_chrome_perm.py 300 350
+conda run -p /group/pmc021/amunif/env/pytorch python /group/pmc021/amunif/epi-thesis/workflow/08_HepG2/slurm/01_preprocessing.py
 
 # Record end time
 end_time=$(date +%s.%N)
