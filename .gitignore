@@ -1,6 +1,8 @@
 # Ignored files and folders
 /dataset/
 workflow/**/*.csv
+workflow/**/*.png
+workflow/**/*.txt
 workflow/07_deepchrome/dataset/
 .virtual_documents/
 /archive/

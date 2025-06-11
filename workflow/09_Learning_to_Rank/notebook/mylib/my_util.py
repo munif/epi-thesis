@@ -12,7 +12,7 @@ def get_device():
 
     return device
 
-def plot_metrics(train_losses, val_losses, train_accuracies, val_accuracies, num_items, file_name):
+def plot_metrics(train_losses, val_losses, train_accuracies, val_accuracies, item_name, num_items, file_name):
     epochs = range(1, len(train_losses) + 1)
     
     plt.figure(figsize=(14, 6))
@@ -21,7 +21,7 @@ def plot_metrics(train_losses, val_losses, train_accuracies, val_accuracies, num
     plt.subplot(1, 2, 1)
     plt.plot(epochs, train_losses, 'blue', label='Training Loss')
     plt.plot(epochs, val_losses, 'orange', label='Validation Loss')
-    plt.title(f'Training and Validation Loss')
+    plt.title(f'Training and Validation Loss\n{item_name}')
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.ylim(0.4, 0.8)
@@ -32,7 +32,7 @@ def plot_metrics(train_losses, val_losses, train_accuracies, val_accuracies, num
     plt.subplot(1, 2, 2)
     plt.plot(epochs, train_accuracies, 'blue', label='Training Accuracy')
     plt.plot(epochs, val_accuracies, 'orange', label='Validation Accuracy')
-    plt.title(f'Training and Validation Accuracy')
+    plt.title(f'Training and Validation Accuracy\n{item_name}')
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy (%)')
     plt.ylim(50, 90)
