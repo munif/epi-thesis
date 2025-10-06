@@ -35,7 +35,7 @@ def plot_metrics(train_losses, val_losses, train_accuracies, val_accuracies, ite
     plt.title(f'Training and Validation Accuracy\n{item_name}')
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy (%)')
-    plt.ylim(50, 90)
+    plt.ylim(20, 90)
     plt.legend()
     plt.grid(True)
     

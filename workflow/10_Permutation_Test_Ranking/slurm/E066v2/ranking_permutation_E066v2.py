@@ -25,7 +25,7 @@ import BinaryClassifier as BC
 import my_util
 
 WORKING_DIR = '/group/pmc021/amunif/epi-thesis/workflow/10_Permutation_Test_Ranking/'
-DATASET_DIR = "/group/pmc021/amunif/epi-thesis/workflow/07_deepchrome/dataset/E066"
+DATASET_DIR = "/group/pmc021/amunif/epi-thesis/workflow/10_Permutation_Test_Ranking/dataset/E066"
 
 # Get the device. It should be GPU
 device = my_util.get_device()
@@ -65,7 +65,7 @@ class E066Dataset(Dataset):
         return feature, y
 
 # Read the dataset
-data_df = pl.read_parquet(os.path.join(DATASET_DIR, 'E066_w_histone_pl.parquet'))
+data_df = pl.read_parquet(os.path.join(DATASET_DIR, 'E066_w_histone.parquet'))
 
 # Load train-val-test index dataset
 train_idx = pl.read_parquet(os.path.join(DATASET_DIR, 'train_idx.parquet'))["values"].to_list()
@@ -73,7 +73,7 @@ val_idx = pl.read_parquet(os.path.join(DATASET_DIR, 'val_idx.parquet'))["values"
 test_idx = pl.read_parquet(os.path.join(DATASET_DIR, 'test_idx.parquet'))["values"].to_list()
 
 # Load permutation list
-permutation_lst = pl.read_parquet(os.path.join(DATASET_DIR, 'permutation.parquet'))["markers_perm"].to_list()
+permutation_lst = pl.read_parquet(os.path.join(DATASET_DIR, 'histone_combinations.parquet'))["Combinations"].to_list()
 
 # Get the start and end batch
 START = int(sys.argv[1])
@@ -131,12 +131,12 @@ for number in range(START, END):
     val_f1_scores = []
 
     # Setup filename
-    IMAGE_FILE = os.path.join(WORKING_DIR, 'output', 'E066', 'img', 'train', f"{FILE_NUMBER}-{ITEM_NAME}-ranking.png")
-    TEST_FILE = os.path.join(WORKING_DIR, 'output', 'E066', 'test', f"{FILE_NUMBER}-{ITEM_NAME}-test-results.txt")
-    TRAINING_FILE = os.path.join(WORKING_DIR, 'output', 'E066', 'train', f"{FILE_NUMBER}-{ITEM_NAME}-train-validation-metrics.csv")
-    TEST_RESULT_FILE = os.path.join(WORKING_DIR, 'output', 'E066', 'test', f"{FILE_NUMBER}-{ITEM_NAME}-test-metrics.csv")
-    ROC_FILE = os.path.join(WORKING_DIR, 'output', 'E066', 'img', 'roc', f"{FILE_NUMBER}-{ITEM_NAME}-roc.png")
-    CM_FILE = os.path.join(WORKING_DIR, 'output', 'E066', 'img', 'confusion_matrix', f"{FILE_NUMBER}-{ITEM_NAME}-cm.png")
+    IMAGE_FILE = os.path.join(WORKING_DIR, 'output', 'E066v2', 'img', 'train', f"{FILE_NUMBER}-{ITEM_NAME}-ranking.png")
+    TEST_FILE = os.path.join(WORKING_DIR, 'output', 'E066v2', 'test', f"{FILE_NUMBER}-{ITEM_NAME}-test-results.txt")
+    TRAINING_FILE = os.path.join(WORKING_DIR, 'output', 'E066v2', 'train', f"{FILE_NUMBER}-{ITEM_NAME}-train-validation-metrics.csv")
+    TEST_RESULT_FILE = os.path.join(WORKING_DIR, 'output', 'E066v2', 'test', f"{FILE_NUMBER}-{ITEM_NAME}-test-metrics.csv")
+    ROC_FILE = os.path.join(WORKING_DIR, 'output', 'E066v2', 'img', 'roc', f"{FILE_NUMBER}-{ITEM_NAME}-roc.png")
+    CM_FILE = os.path.join(WORKING_DIR, 'output', 'E066v2', 'img', 'confusion_matrix', f"{FILE_NUMBER}-{ITEM_NAME}-cm.png")
     
     # Training Phase
     # Training loop

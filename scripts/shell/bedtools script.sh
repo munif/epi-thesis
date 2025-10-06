@@ -27,6 +27,8 @@ bedtools intersect -a E066.bed -b E066-H3K4me3.narrowPeak -wa -wb > E066_H3K4me3
 bedtools intersect -a E066.bed -b E066-H3K9me3.narrowPeak -wa -wb > E066_H3K9me3.bed
 bedtools intersect -a E066.bed -b E066-H3K27me3.narrowPeak -wa -wb > E066_H3K27me3.bed
 bedtools intersect -a E066.bed -b E066-H3K36me3.narrowPeak -wa -wb > E066_H3K36me3.bed
+bedtools intersect -a E066.bed -b E066-H3K9ac.narrowPeak -wa -wb > E066_H3K9ac.bed
+bedtools intersect -a E066.bed -b E066-H3K27ac.narrowPeak -wa -wb > E066_H3K27ac.bed
 
 ## With threshold F
 ### -F: with regards b files
@@ -39,3 +41,7 @@ bedtools intersect -a ensembl_top1.csv -b HepG2_Male.histone.H3K9ac.peak.bed -wa
 bedtools intersect -a ensembl_top1.csv -b HepG2_Male.histone.H3K9me3.peak.bed -wa -wb > ensembl_top1_H3K9me3.bed
 bedtools intersect -a ensembl_top1.csv -b HepG2_Male.histone.H3K27ac.peak.bed -wa -wb > ensembl_top1_H3K27ac.bed
 bedtools intersect -a ensembl_top1.csv -b HepG2_Male.histone.H3K27me3.peak.bed -wa -wb > ensembl_top1_H3K27me3.bed
+
+
+# HepG2 with gappedPeak (manually find the gappedPeak)
+bedtools intersect -a HepG2_Male.histone.H3K9ac.peak.bed -b H3K9ac_peaks.gappedPeak -wa -wb -F 0.80 > H3K9ac.bed

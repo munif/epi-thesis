@@ -15,7 +15,8 @@ workflow/07_deepchrome/dataset/
 *.gtf
 *.gtf.gz
 *.sqlite
-*.sqilte3
+*.sqlite3
+*.gappedPeak
 
 # Ignored files
 playground.ipynb
