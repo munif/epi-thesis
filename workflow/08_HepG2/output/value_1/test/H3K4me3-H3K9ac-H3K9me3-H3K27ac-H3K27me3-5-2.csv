@@ -1,0 +1,2 @@
+kernel_size,pool_size,test_acc,test_auc
+5,2,79.4389,0.7889

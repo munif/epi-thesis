@@ -1,0 +1,2 @@
+item_name,train_loss_min,train_loss_avg,train_loss_max,train_acc_min,train_acc_avg,train_acc_max,train_auc_min,train_auc_avg,train_auc_max,val_loss_min,val_loss_avg,val_loss_max,val_acc_min,val_acc_avg,val_acc_max,val_auc_min,val_auc_avg,val_auc_max,test_acc_score,test_auc_score
+H3K4me3-H3K9me3-H3K27me3,0.95,0.98,1.16,46.36,55.54,57.42,0.73,0.81,0.82,1.09,1.11,1.14,46.15,50.55,51.82,0.75,0.76,0.77,52.28,0.77

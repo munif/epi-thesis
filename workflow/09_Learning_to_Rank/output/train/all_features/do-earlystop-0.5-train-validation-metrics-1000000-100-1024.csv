@@ -1,0 +1,2 @@
+train_loss,train_accuracy,train_auc,val_loss,val_accuracy,val_auc
+0.5717,70.74,0.7,0.5659,70.61,0.7

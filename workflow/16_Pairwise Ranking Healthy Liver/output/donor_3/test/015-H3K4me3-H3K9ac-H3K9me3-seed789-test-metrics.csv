@@ -1,0 +1,2 @@
+seed,histone_marker,epochs_trained,train_loss_avg,train_accuracy_avg,train_auc_avg,val_loss_avg,val_accuracy_avg,val_auc_avg,test_accuracy,test_auc
+789,H3K4me3-H3K9ac-H3K9me3,57,0.5802,72.5881,0.7263,0.5594,63.8947,0.6398,83.0,0.83

@@ -108,34 +108,30 @@ class BinaryClassifierDropOutL1L2(nn.Module):
 def plot_metrics(train_losses, val_losses, train_accuracies, val_accuracies, ITEM_NAME, num_items, file_name):
     epochs = range(1, len(train_losses) + 1)
     
-    plt.figure(figsize=(14, 6))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
     
     # Plot for training and validation Loss
-    plt.subplot(1, 2, 1)
-    plt.plot(epochs, train_losses, 'blue', label='Training Loss')
-    plt.plot(epochs, val_losses, 'orange', label='Validation Loss')
-    plt.title(f'Training and Validation Loss {ITEM_NAME}')
-    plt.xlabel('Epochs')
-    plt.ylabel('Loss')
-    plt.ylim(0.4, 0.8)
-    plt.legend()
-    plt.grid(True)
+    ax1.plot(epochs, train_losses, 'blue', label='Training Loss')
+    ax1.plot(epochs, val_losses, 'orange', label='Validation Loss')
+    ax1.set_title(f'Training and Validation Loss\n{ITEM_NAME}', fontsize=10)
+    ax1.set_xlabel('Epochs')
+    ax1.set_ylabel('Loss')
+    ax1.set_ylim(0.4, 0.8)
+    ax1.legend()
+    ax1.grid(True)
     
     # Plot for training and validation Accuracy
-    plt.subplot(1, 2, 2)
-    plt.plot(epochs, train_accuracies, 'blue', label='Training Accuracy')
-    plt.plot(epochs, val_accuracies, 'orange', label='Validation Accuracy')
-    plt.title(f'Training and Validation Accuracy {ITEM_NAME}')
-    plt.xlabel('Epochs')
-    plt.ylabel('Accuracy (%)')
-    plt.ylim(50, 90)
-    plt.legend()
-    plt.grid(True)
+    ax2.plot(epochs, train_accuracies, 'blue', label='Training Accuracy')
+    ax2.plot(epochs, val_accuracies, 'orange', label='Validation Accuracy')
+    ax2.set_title(f'Training and Validation Accuracy\n{ITEM_NAME}', fontsize=10)
+    ax2.set_xlabel('Epochs')
+    ax2.set_ylabel('Accuracy (%)')
+    ax2.set_ylim(50, 90)
+    ax2.legend()
+    ax2.grid(True)
     
     plt.tight_layout()
-    plt.savefig(file_name)
-    
-    # plt.show()
+    plt.savefig(file_name, bbox_inches='tight')
 
 # Load histone data
 data_df = pl.read_parquet(os.path.join(DATASET_PATH, 'donor3_exp_histones.parquet'))

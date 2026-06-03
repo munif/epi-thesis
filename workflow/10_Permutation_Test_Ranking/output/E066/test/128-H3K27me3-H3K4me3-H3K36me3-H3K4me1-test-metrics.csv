@@ -1,0 +1,2 @@
+histone_marker,train_loss_avg,train_accuracy_avg,train_auc_avg,val_loss_avg,val_accuracy_avg,val_auc_avg,test_acc,test_auc
+H3K27me3-H3K4me3-H3K36me3-H3K4me1,0.5247,75.5763,0.7568,0.5168,75.9012,0.7581,76.52,0.7648

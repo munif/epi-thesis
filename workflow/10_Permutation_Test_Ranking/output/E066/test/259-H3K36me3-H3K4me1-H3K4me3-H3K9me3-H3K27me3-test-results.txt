@@ -1,0 +1,21 @@
+Accuracy Score on test set: 76.24 %
+    AUC Score on test set: 0.76
+    Precision: 0.7724
+    Recall: 0.7195
+    F1-Score: 0.7450
+
+    Detailed Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.75      0.80      0.78      5176
+           1       0.77      0.72      0.75      4824
+
+    accuracy                           0.76     10000
+   macro avg       0.76      0.76      0.76     10000
+weighted avg       0.76      0.76      0.76     10000
+
+
+    Confusion Matrix:
+    [[4153 1023]
+ [1353 3471]]
+    
