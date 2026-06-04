@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/group/pmc021/amunif/epi-thesis/scripts/shell/slurm/workflow/07_crossfold_xgboost.py", line 103, in <module>
+    y_pred.to_csv("y_pred.csv", index=False)
+    ^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'to_csv'
+
+ERROR conda.cli.main_run:execute(124): `conda run python /group/pmc021/amunif/epi-thesis/scripts/shell/slurm/workflow/07_crossfold_xgboost.py` failed. (See above for error)

@@ -1,0 +1,30 @@
+Using device: cuda
+Current CUDA device: 0
+CUDA device name: Tesla P100-SXM2-16GB
+Epoch [1/5] - [TRAIN] Loss: 0.5083, Accuracy: 71.94%, AUC: 0.69 [VAL] Loss: 0.4976, Accuracy: 77.80%, Precision: 0.85, Recall: 0.33, F1-Score: 0.48, AUC: 0.65
+Epoch [2/5] - [TRAIN] Loss: 0.4869, Accuracy: 77.86%, AUC: 0.65 [VAL] Loss: 0.4930, Accuracy: 77.66%, Precision: 0.84, Recall: 0.33, F1-Score: 0.48, AUC: 0.65
+Epoch [3/5] - [TRAIN] Loss: 0.4792, Accuracy: 77.99%, AUC: 0.66 [VAL] Loss: 0.4882, Accuracy: 77.59%, Precision: 0.83, Recall: 0.34, F1-Score: 0.48, AUC: 0.65
+Epoch [4/5] - [TRAIN] Loss: 0.4723, Accuracy: 78.00%, AUC: 0.66 [VAL] Loss: 0.4916, Accuracy: 77.52%, Precision: 0.82, Recall: 0.34, F1-Score: 0.48, AUC: 0.65
+Epoch [5/5] - [TRAIN] Loss: 0.4671, Accuracy: 78.10%, AUC: 0.66 [VAL] Loss: 0.4937, Accuracy: 77.48%, Precision: 0.82, Recall: 0.34, F1-Score: 0.48, AUC: 0.65
+Accuracy Score on test set: 77.31 %
+AUC Score on test set: 0.65
+Precision: 0.8115
+Recall: 0.3363
+F1-Score: 0.4756
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.97      0.86     23114
+           1       0.81      0.34      0.48     10186
+
+    accuracy                           0.77     33300
+   macro avg       0.79      0.65      0.67     33300
+weighted avg       0.78      0.77      0.74     33300
+
+
+Confusion Matrix:
+[[22318   796]
+ [ 6760  3426]]
+
+Real-time duration: 150.052122430 seconds

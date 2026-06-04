@@ -1,0 +1,616 @@
+Using device: cuda
+Current CUDA device: 0
+CUDA device name: Tesla V100-PCIE-16GB
+000-H3K4me3
+Epoch [1/100] - [TRAIN] Loss: 0.5720, Accuracy: 71.76%, AUC: 0.72 [VAL] Loss: 0.5199, Accuracy: 73.95%, Precision: 0.71, Recall: 0.80, F1-Score: 0.75, AUC: 0.74
+Epoch [2/100] - [TRAIN] Loss: 0.5487, Accuracy: 74.30%, AUC: 0.74 [VAL] Loss: 0.5098, Accuracy: 76.50%, Precision: 0.77, Recall: 0.73, F1-Score: 0.75, AUC: 0.76
+Epoch [3/100] - [TRAIN] Loss: 0.5408, Accuracy: 75.18%, AUC: 0.75 [VAL] Loss: 0.5217, Accuracy: 75.84%, Precision: 0.76, Recall: 0.74, F1-Score: 0.75, AUC: 0.76
+Epoch [4/100] - [TRAIN] Loss: 0.5387, Accuracy: 75.09%, AUC: 0.75 [VAL] Loss: 0.5106, Accuracy: 76.83%, Precision: 0.78, Recall: 0.72, F1-Score: 0.75, AUC: 0.77
+Epoch [5/100] - [TRAIN] Loss: 0.5373, Accuracy: 75.06%, AUC: 0.75 [VAL] Loss: 0.5082, Accuracy: 76.52%, Precision: 0.78, Recall: 0.71, F1-Score: 0.75, AUC: 0.76
+Epoch [6/100] - [TRAIN] Loss: 0.5360, Accuracy: 75.10%, AUC: 0.75 [VAL] Loss: 0.5005, Accuracy: 77.32%, Precision: 0.80, Recall: 0.72, F1-Score: 0.75, AUC: 0.77
+Epoch [7/100] - [TRAIN] Loss: 0.5298, Accuracy: 75.59%, AUC: 0.75 [VAL] Loss: 0.5059, Accuracy: 76.33%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [8/100] - [TRAIN] Loss: 0.5335, Accuracy: 75.46%, AUC: 0.75 [VAL] Loss: 0.5113, Accuracy: 75.89%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [9/100] - [TRAIN] Loss: 0.5322, Accuracy: 75.32%, AUC: 0.75 [VAL] Loss: 0.5055, Accuracy: 76.57%, Precision: 0.80, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [10/100] - [TRAIN] Loss: 0.5307, Accuracy: 75.28%, AUC: 0.75 [VAL] Loss: 0.5086, Accuracy: 76.29%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [11/100] - [TRAIN] Loss: 0.5307, Accuracy: 75.37%, AUC: 0.75 [VAL] Loss: 0.5086, Accuracy: 75.55%, Precision: 0.78, Recall: 0.69, F1-Score: 0.73, AUC: 0.75
+Epoch [12/100] - [TRAIN] Loss: 0.5302, Accuracy: 75.46%, AUC: 0.75 [VAL] Loss: 0.5051, Accuracy: 76.54%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [13/100] - [TRAIN] Loss: 0.5278, Accuracy: 75.52%, AUC: 0.75 [VAL] Loss: 0.4979, Accuracy: 76.83%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.77
+Epoch [14/100] - [TRAIN] Loss: 0.5274, Accuracy: 75.49%, AUC: 0.75 [VAL] Loss: 0.5020, Accuracy: 76.22%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [15/100] - [TRAIN] Loss: 0.5289, Accuracy: 75.46%, AUC: 0.75 [VAL] Loss: 0.4989, Accuracy: 77.42%, Precision: 0.79, Recall: 0.72, F1-Score: 0.75, AUC: 0.77
+Epoch [16/100] - [TRAIN] Loss: 0.5306, Accuracy: 75.09%, AUC: 0.75 [VAL] Loss: 0.5079, Accuracy: 76.23%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [17/100] - [TRAIN] Loss: 0.5329, Accuracy: 75.15%, AUC: 0.75 [VAL] Loss: 0.5084, Accuracy: 76.56%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [18/100] - [TRAIN] Loss: 0.5253, Accuracy: 75.62%, AUC: 0.75 [VAL] Loss: 0.5050, Accuracy: 76.72%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [19/100] - [TRAIN] Loss: 0.5308, Accuracy: 75.24%, AUC: 0.75 [VAL] Loss: 0.5059, Accuracy: 76.04%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [20/100] - [TRAIN] Loss: 0.5278, Accuracy: 75.48%, AUC: 0.75 [VAL] Loss: 0.5075, Accuracy: 75.81%, Precision: 0.78, Recall: 0.69, F1-Score: 0.73, AUC: 0.76
+Epoch [21/100] - [TRAIN] Loss: 0.5293, Accuracy: 75.18%, AUC: 0.75 [VAL] Loss: 0.5059, Accuracy: 76.71%, Precision: 0.79, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [22/100] - [TRAIN] Loss: 0.5314, Accuracy: 75.22%, AUC: 0.75 [VAL] Loss: 0.5013, Accuracy: 76.57%, Precision: 0.80, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [23/100] - [TRAIN] Loss: 0.5285, Accuracy: 75.57%, AUC: 0.75 [VAL] Loss: 0.5041, Accuracy: 76.53%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [24/100] - [TRAIN] Loss: 0.5280, Accuracy: 75.52%, AUC: 0.75 [VAL] Loss: 0.5113, Accuracy: 75.78%, Precision: 0.79, Recall: 0.69, F1-Score: 0.73, AUC: 0.76
+Epoch [25/100] - [TRAIN] Loss: 0.5303, Accuracy: 75.26%, AUC: 0.75 [VAL] Loss: 0.5065, Accuracy: 75.90%, Precision: 0.78, Recall: 0.69, F1-Score: 0.73, AUC: 0.76
+Epoch [26/100] - [TRAIN] Loss: 0.5293, Accuracy: 75.34%, AUC: 0.75 [VAL] Loss: 0.5030, Accuracy: 76.26%, Precision: 0.80, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [27/100] - [TRAIN] Loss: 0.5274, Accuracy: 75.52%, AUC: 0.75 [VAL] Loss: 0.5091, Accuracy: 76.26%, Precision: 0.78, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [28/100] - [TRAIN] Loss: 0.5305, Accuracy: 75.32%, AUC: 0.75 [VAL] Loss: 0.5020, Accuracy: 76.62%, Precision: 0.78, Recall: 0.71, F1-Score: 0.74, AUC: 0.76
+Epoch [29/100] - [TRAIN] Loss: 0.5298, Accuracy: 75.36%, AUC: 0.75 [VAL] Loss: 0.5028, Accuracy: 76.87%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.77
+Epoch [30/100] - [TRAIN] Loss: 0.5283, Accuracy: 75.42%, AUC: 0.75 [VAL] Loss: 0.4945, Accuracy: 77.20%, Precision: 0.81, Recall: 0.71, F1-Score: 0.76, AUC: 0.77
+Epoch [31/100] - [TRAIN] Loss: 0.5279, Accuracy: 75.27%, AUC: 0.75 [VAL] Loss: 0.4979, Accuracy: 76.79%, Precision: 0.80, Recall: 0.70, F1-Score: 0.74, AUC: 0.77
+Epoch [32/100] - [TRAIN] Loss: 0.5278, Accuracy: 75.37%, AUC: 0.75 [VAL] Loss: 0.5009, Accuracy: 76.18%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [33/100] - [TRAIN] Loss: 0.5268, Accuracy: 75.53%, AUC: 0.75 [VAL] Loss: 0.5069, Accuracy: 76.38%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [34/100] - [TRAIN] Loss: 0.5268, Accuracy: 75.33%, AUC: 0.75 [VAL] Loss: 0.5051, Accuracy: 76.38%, Precision: 0.80, Recall: 0.70, F1-Score: 0.75, AUC: 0.76
+Epoch [35/100] - [TRAIN] Loss: 0.5289, Accuracy: 75.23%, AUC: 0.75 [VAL] Loss: 0.5055, Accuracy: 76.62%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [36/100] - [TRAIN] Loss: 0.5280, Accuracy: 75.34%, AUC: 0.75 [VAL] Loss: 0.4990, Accuracy: 76.61%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [37/100] - [TRAIN] Loss: 0.5288, Accuracy: 75.25%, AUC: 0.75 [VAL] Loss: 0.5062, Accuracy: 76.16%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [38/100] - [TRAIN] Loss: 0.5295, Accuracy: 75.33%, AUC: 0.75 [VAL] Loss: 0.5055, Accuracy: 76.57%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [39/100] - [TRAIN] Loss: 0.5303, Accuracy: 75.17%, AUC: 0.75 [VAL] Loss: 0.5083, Accuracy: 76.04%, Precision: 0.78, Recall: 0.69, F1-Score: 0.73, AUC: 0.76
+Epoch [40/100] - [TRAIN] Loss: 0.5275, Accuracy: 75.47%, AUC: 0.75 [VAL] Loss: 0.5025, Accuracy: 76.43%, Precision: 0.79, Recall: 0.71, F1-Score: 0.75, AUC: 0.76
+Epoch [41/100] - [TRAIN] Loss: 0.5323, Accuracy: 75.19%, AUC: 0.75 [VAL] Loss: 0.5027, Accuracy: 75.91%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [42/100] - [TRAIN] Loss: 0.5312, Accuracy: 75.26%, AUC: 0.75 [VAL] Loss: 0.5047, Accuracy: 76.62%, Precision: 0.80, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [43/100] - [TRAIN] Loss: 0.5274, Accuracy: 75.39%, AUC: 0.75 [VAL] Loss: 0.5105, Accuracy: 76.12%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [44/100] - [TRAIN] Loss: 0.5260, Accuracy: 75.68%, AUC: 0.75 [VAL] Loss: 0.5055, Accuracy: 76.21%, Precision: 0.78, Recall: 0.69, F1-Score: 0.73, AUC: 0.76
+Epoch [45/100] - [TRAIN] Loss: 0.5284, Accuracy: 75.30%, AUC: 0.75 [VAL] Loss: 0.5081, Accuracy: 76.30%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [46/100] - [TRAIN] Loss: 0.5272, Accuracy: 75.57%, AUC: 0.75 [VAL] Loss: 0.5019, Accuracy: 76.49%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [47/100] - [TRAIN] Loss: 0.5307, Accuracy: 75.16%, AUC: 0.75 [VAL] Loss: 0.5033, Accuracy: 76.33%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [48/100] - [TRAIN] Loss: 0.5265, Accuracy: 75.64%, AUC: 0.75 [VAL] Loss: 0.4951, Accuracy: 76.94%, Precision: 0.80, Recall: 0.70, F1-Score: 0.75, AUC: 0.77
+Epoch [49/100] - [TRAIN] Loss: 0.5285, Accuracy: 75.38%, AUC: 0.75 [VAL] Loss: 0.4912, Accuracy: 77.32%, Precision: 0.80, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [50/100] - [TRAIN] Loss: 0.5292, Accuracy: 75.25%, AUC: 0.75 [VAL] Loss: 0.4979, Accuracy: 77.26%, Precision: 0.80, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [51/100] - [TRAIN] Loss: 0.5284, Accuracy: 75.44%, AUC: 0.75 [VAL] Loss: 0.5033, Accuracy: 76.45%, Precision: 0.79, Recall: 0.71, F1-Score: 0.75, AUC: 0.76
+Epoch [52/100] - [TRAIN] Loss: 0.5309, Accuracy: 75.15%, AUC: 0.75 [VAL] Loss: 0.5012, Accuracy: 76.19%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [53/100] - [TRAIN] Loss: 0.5284, Accuracy: 75.38%, AUC: 0.75 [VAL] Loss: 0.5012, Accuracy: 76.75%, Precision: 0.80, Recall: 0.70, F1-Score: 0.75, AUC: 0.77
+Epoch [54/100] - [TRAIN] Loss: 0.5269, Accuracy: 75.55%, AUC: 0.75 [VAL] Loss: 0.5102, Accuracy: 76.42%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [55/100] - [TRAIN] Loss: 0.5299, Accuracy: 75.27%, AUC: 0.75 [VAL] Loss: 0.5032, Accuracy: 76.81%, Precision: 0.79, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [56/100] - [TRAIN] Loss: 0.5286, Accuracy: 75.41%, AUC: 0.75 [VAL] Loss: 0.5091, Accuracy: 76.27%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [57/100] - [TRAIN] Loss: 0.5276, Accuracy: 75.29%, AUC: 0.75 [VAL] Loss: 0.5025, Accuracy: 76.36%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [58/100] - [TRAIN] Loss: 0.5279, Accuracy: 75.50%, AUC: 0.75 [VAL] Loss: 0.4967, Accuracy: 76.83%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.77
+Epoch [59/100] - [TRAIN] Loss: 0.5256, Accuracy: 75.58%, AUC: 0.75 [VAL] Loss: 0.5043, Accuracy: 76.64%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [60/100] - [TRAIN] Loss: 0.5300, Accuracy: 75.37%, AUC: 0.75 [VAL] Loss: 0.5022, Accuracy: 77.31%, Precision: 0.81, Recall: 0.70, F1-Score: 0.75, AUC: 0.77
+Epoch [61/100] - [TRAIN] Loss: 0.5301, Accuracy: 75.37%, AUC: 0.75 [VAL] Loss: 0.5070, Accuracy: 76.58%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [62/100] - [TRAIN] Loss: 0.5291, Accuracy: 75.29%, AUC: 0.75 [VAL] Loss: 0.5080, Accuracy: 76.31%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [63/100] - [TRAIN] Loss: 0.5296, Accuracy: 75.20%, AUC: 0.75 [VAL] Loss: 0.5014, Accuracy: 76.54%, Precision: 0.80, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [64/100] - [TRAIN] Loss: 0.5306, Accuracy: 75.37%, AUC: 0.75 [VAL] Loss: 0.5010, Accuracy: 77.14%, Precision: 0.81, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [65/100] - [TRAIN] Loss: 0.5277, Accuracy: 75.47%, AUC: 0.75 [VAL] Loss: 0.5018, Accuracy: 76.76%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.77
+Epoch [66/100] - [TRAIN] Loss: 0.5280, Accuracy: 75.19%, AUC: 0.75 [VAL] Loss: 0.5037, Accuracy: 76.39%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [67/100] - [TRAIN] Loss: 0.5267, Accuracy: 75.39%, AUC: 0.75 [VAL] Loss: 0.5061, Accuracy: 76.56%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [68/100] - [TRAIN] Loss: 0.5294, Accuracy: 75.40%, AUC: 0.75 [VAL] Loss: 0.5165, Accuracy: 76.17%, Precision: 0.80, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [69/100] - [TRAIN] Loss: 0.5294, Accuracy: 75.34%, AUC: 0.75 [VAL] Loss: 0.5117, Accuracy: 76.08%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [70/100] - [TRAIN] Loss: 0.5299, Accuracy: 75.13%, AUC: 0.75 [VAL] Loss: 0.5038, Accuracy: 76.57%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [71/100] - [TRAIN] Loss: 0.5265, Accuracy: 75.55%, AUC: 0.75 [VAL] Loss: 0.5021, Accuracy: 76.69%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [72/100] - [TRAIN] Loss: 0.5304, Accuracy: 75.25%, AUC: 0.75 [VAL] Loss: 0.5007, Accuracy: 76.91%, Precision: 0.80, Recall: 0.70, F1-Score: 0.75, AUC: 0.77
+Epoch [73/100] - [TRAIN] Loss: 0.5293, Accuracy: 75.27%, AUC: 0.75 [VAL] Loss: 0.5035, Accuracy: 76.16%, Precision: 0.78, Recall: 0.69, F1-Score: 0.73, AUC: 0.76
+Epoch [74/100] - [TRAIN] Loss: 0.5296, Accuracy: 75.25%, AUC: 0.75 [VAL] Loss: 0.4937, Accuracy: 77.14%, Precision: 0.80, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [75/100] - [TRAIN] Loss: 0.5306, Accuracy: 75.21%, AUC: 0.75 [VAL] Loss: 0.5004, Accuracy: 76.85%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.77
+Epoch [76/100] - [TRAIN] Loss: 0.5295, Accuracy: 75.42%, AUC: 0.75 [VAL] Loss: 0.5038, Accuracy: 76.63%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [77/100] - [TRAIN] Loss: 0.5284, Accuracy: 75.34%, AUC: 0.75 [VAL] Loss: 0.5054, Accuracy: 76.42%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [78/100] - [TRAIN] Loss: 0.5272, Accuracy: 75.47%, AUC: 0.75 [VAL] Loss: 0.4998, Accuracy: 76.87%, Precision: 0.79, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [79/100] - [TRAIN] Loss: 0.5269, Accuracy: 75.42%, AUC: 0.75 [VAL] Loss: 0.5075, Accuracy: 76.45%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [80/100] - [TRAIN] Loss: 0.5268, Accuracy: 75.61%, AUC: 0.75 [VAL] Loss: 0.4978, Accuracy: 76.63%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [81/100] - [TRAIN] Loss: 0.5321, Accuracy: 75.07%, AUC: 0.75 [VAL] Loss: 0.5068, Accuracy: 76.35%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [82/100] - [TRAIN] Loss: 0.5299, Accuracy: 75.51%, AUC: 0.75 [VAL] Loss: 0.5043, Accuracy: 76.12%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [83/100] - [TRAIN] Loss: 0.5307, Accuracy: 75.26%, AUC: 0.75 [VAL] Loss: 0.4910, Accuracy: 77.52%, Precision: 0.81, Recall: 0.71, F1-Score: 0.76, AUC: 0.77
+Epoch [84/100] - [TRAIN] Loss: 0.5275, Accuracy: 75.36%, AUC: 0.75 [VAL] Loss: 0.4933, Accuracy: 77.10%, Precision: 0.80, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [85/100] - [TRAIN] Loss: 0.5291, Accuracy: 75.30%, AUC: 0.75 [VAL] Loss: 0.5054, Accuracy: 76.20%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [86/100] - [TRAIN] Loss: 0.5258, Accuracy: 75.70%, AUC: 0.75 [VAL] Loss: 0.5039, Accuracy: 76.76%, Precision: 0.80, Recall: 0.70, F1-Score: 0.75, AUC: 0.77
+Epoch [87/100] - [TRAIN] Loss: 0.5282, Accuracy: 75.23%, AUC: 0.75 [VAL] Loss: 0.4984, Accuracy: 76.24%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [88/100] - [TRAIN] Loss: 0.5328, Accuracy: 74.92%, AUC: 0.75 [VAL] Loss: 0.5002, Accuracy: 76.75%, Precision: 0.80, Recall: 0.70, F1-Score: 0.75, AUC: 0.77
+Epoch [89/100] - [TRAIN] Loss: 0.5270, Accuracy: 75.49%, AUC: 0.75 [VAL] Loss: 0.4943, Accuracy: 77.25%, Precision: 0.79, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [90/100] - [TRAIN] Loss: 0.5294, Accuracy: 75.35%, AUC: 0.75 [VAL] Loss: 0.5019, Accuracy: 76.82%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.77
+Epoch [91/100] - [TRAIN] Loss: 0.5282, Accuracy: 75.39%, AUC: 0.75 [VAL] Loss: 0.5029, Accuracy: 76.61%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [92/100] - [TRAIN] Loss: 0.5277, Accuracy: 75.33%, AUC: 0.75 [VAL] Loss: 0.5003, Accuracy: 76.46%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [93/100] - [TRAIN] Loss: 0.5291, Accuracy: 75.26%, AUC: 0.75 [VAL] Loss: 0.5054, Accuracy: 76.46%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [94/100] - [TRAIN] Loss: 0.5345, Accuracy: 75.08%, AUC: 0.75 [VAL] Loss: 0.5112, Accuracy: 76.17%, Precision: 0.78, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [95/100] - [TRAIN] Loss: 0.5286, Accuracy: 75.29%, AUC: 0.75 [VAL] Loss: 0.4980, Accuracy: 76.79%, Precision: 0.79, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Epoch [96/100] - [TRAIN] Loss: 0.5270, Accuracy: 75.56%, AUC: 0.75 [VAL] Loss: 0.5017, Accuracy: 76.58%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [97/100] - [TRAIN] Loss: 0.5292, Accuracy: 75.39%, AUC: 0.75 [VAL] Loss: 0.5064, Accuracy: 75.84%, Precision: 0.79, Recall: 0.69, F1-Score: 0.74, AUC: 0.76
+Epoch [98/100] - [TRAIN] Loss: 0.5256, Accuracy: 75.67%, AUC: 0.75 [VAL] Loss: 0.5089, Accuracy: 76.25%, Precision: 0.79, Recall: 0.70, F1-Score: 0.74, AUC: 0.76
+Epoch [99/100] - [TRAIN] Loss: 0.5279, Accuracy: 75.22%, AUC: 0.75 [VAL] Loss: 0.5005, Accuracy: 76.78%, Precision: 0.79, Recall: 0.70, F1-Score: 0.75, AUC: 0.77
+Epoch [100/100] - [TRAIN] Loss: 0.5315, Accuracy: 75.15%, AUC: 0.75 [VAL] Loss: 0.4985, Accuracy: 77.15%, Precision: 0.80, Recall: 0.71, F1-Score: 0.75, AUC: 0.77
+Accuracy Score on test set: 76.88 %
+    AUC Score on test set: 0.77
+    Precision: 0.7825
+    Recall: 0.7092
+    F1-Score: 0.7441
+
+    Detailed Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.76      0.82      0.79      5261
+           1       0.78      0.71      0.74      4739
+
+    accuracy                           0.77     10000
+   macro avg       0.77      0.77      0.77     10000
+weighted avg       0.77      0.77      0.77     10000
+
+
+    Confusion Matrix:
+    [[4327  934]
+ [1378 3361]]
+    
+001-H3K9ac
+Epoch [1/100] - [TRAIN] Loss: 0.5625, Accuracy: 74.69%, AUC: 0.74 [VAL] Loss: 0.5066, Accuracy: 77.34%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [2/100] - [TRAIN] Loss: 0.5256, Accuracy: 76.67%, AUC: 0.76 [VAL] Loss: 0.4922, Accuracy: 78.23%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [3/100] - [TRAIN] Loss: 0.5134, Accuracy: 77.16%, AUC: 0.77 [VAL] Loss: 0.4862, Accuracy: 77.76%, Precision: 0.85, Recall: 0.66, F1-Score: 0.75, AUC: 0.78
+Epoch [4/100] - [TRAIN] Loss: 0.5113, Accuracy: 77.07%, AUC: 0.77 [VAL] Loss: 0.4925, Accuracy: 77.58%, Precision: 0.85, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [5/100] - [TRAIN] Loss: 0.5097, Accuracy: 77.15%, AUC: 0.77 [VAL] Loss: 0.4870, Accuracy: 77.49%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [6/100] - [TRAIN] Loss: 0.5025, Accuracy: 77.63%, AUC: 0.77 [VAL] Loss: 0.4847, Accuracy: 77.79%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [7/100] - [TRAIN] Loss: 0.5030, Accuracy: 77.25%, AUC: 0.77 [VAL] Loss: 0.4797, Accuracy: 77.61%, Precision: 0.85, Recall: 0.65, F1-Score: 0.74, AUC: 0.77
+Epoch [8/100] - [TRAIN] Loss: 0.5030, Accuracy: 77.19%, AUC: 0.77 [VAL] Loss: 0.4717, Accuracy: 78.12%, Precision: 0.85, Recall: 0.66, F1-Score: 0.74, AUC: 0.78
+Epoch [9/100] - [TRAIN] Loss: 0.4974, Accuracy: 77.73%, AUC: 0.77 [VAL] Loss: 0.4787, Accuracy: 78.12%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [10/100] - [TRAIN] Loss: 0.4957, Accuracy: 77.71%, AUC: 0.77 [VAL] Loss: 0.4811, Accuracy: 77.81%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [11/100] - [TRAIN] Loss: 0.4972, Accuracy: 77.80%, AUC: 0.77 [VAL] Loss: 0.4837, Accuracy: 77.57%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [12/100] - [TRAIN] Loss: 0.4968, Accuracy: 77.69%, AUC: 0.77 [VAL] Loss: 0.4842, Accuracy: 77.49%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [13/100] - [TRAIN] Loss: 0.4963, Accuracy: 77.48%, AUC: 0.77 [VAL] Loss: 0.4843, Accuracy: 77.25%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [14/100] - [TRAIN] Loss: 0.4993, Accuracy: 77.45%, AUC: 0.77 [VAL] Loss: 0.4792, Accuracy: 77.88%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [15/100] - [TRAIN] Loss: 0.5005, Accuracy: 77.34%, AUC: 0.77 [VAL] Loss: 0.4812, Accuracy: 77.67%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [16/100] - [TRAIN] Loss: 0.4964, Accuracy: 77.53%, AUC: 0.77 [VAL] Loss: 0.4748, Accuracy: 77.96%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.78
+Epoch [17/100] - [TRAIN] Loss: 0.4957, Accuracy: 77.74%, AUC: 0.77 [VAL] Loss: 0.4790, Accuracy: 77.86%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [18/100] - [TRAIN] Loss: 0.4964, Accuracy: 77.60%, AUC: 0.77 [VAL] Loss: 0.4746, Accuracy: 78.60%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [19/100] - [TRAIN] Loss: 0.4917, Accuracy: 77.74%, AUC: 0.77 [VAL] Loss: 0.4798, Accuracy: 78.07%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [20/100] - [TRAIN] Loss: 0.4956, Accuracy: 77.81%, AUC: 0.78 [VAL] Loss: 0.4746, Accuracy: 78.32%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [21/100] - [TRAIN] Loss: 0.4935, Accuracy: 77.58%, AUC: 0.77 [VAL] Loss: 0.4765, Accuracy: 78.23%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [22/100] - [TRAIN] Loss: 0.4966, Accuracy: 77.47%, AUC: 0.77 [VAL] Loss: 0.4834, Accuracy: 77.82%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [23/100] - [TRAIN] Loss: 0.4952, Accuracy: 77.82%, AUC: 0.77 [VAL] Loss: 0.4839, Accuracy: 77.66%, Precision: 0.83, Recall: 0.67, F1-Score: 0.75, AUC: 0.77
+Epoch [24/100] - [TRAIN] Loss: 0.4934, Accuracy: 77.64%, AUC: 0.77 [VAL] Loss: 0.4847, Accuracy: 77.19%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [25/100] - [TRAIN] Loss: 0.4976, Accuracy: 77.52%, AUC: 0.77 [VAL] Loss: 0.4905, Accuracy: 76.90%, Precision: 0.83, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [26/100] - [TRAIN] Loss: 0.4978, Accuracy: 77.34%, AUC: 0.77 [VAL] Loss: 0.4812, Accuracy: 77.49%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [27/100] - [TRAIN] Loss: 0.4962, Accuracy: 77.54%, AUC: 0.77 [VAL] Loss: 0.4863, Accuracy: 77.49%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [28/100] - [TRAIN] Loss: 0.4944, Accuracy: 77.63%, AUC: 0.77 [VAL] Loss: 0.4639, Accuracy: 79.28%, Precision: 0.85, Recall: 0.69, F1-Score: 0.76, AUC: 0.79
+Epoch [29/100] - [TRAIN] Loss: 0.4943, Accuracy: 77.66%, AUC: 0.77 [VAL] Loss: 0.4700, Accuracy: 78.24%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [30/100] - [TRAIN] Loss: 0.4988, Accuracy: 77.54%, AUC: 0.77 [VAL] Loss: 0.4811, Accuracy: 78.18%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.78
+Epoch [31/100] - [TRAIN] Loss: 0.4921, Accuracy: 77.72%, AUC: 0.77 [VAL] Loss: 0.4752, Accuracy: 78.43%, Precision: 0.85, Recall: 0.68, F1-Score: 0.76, AUC: 0.78
+Epoch [32/100] - [TRAIN] Loss: 0.4949, Accuracy: 77.56%, AUC: 0.77 [VAL] Loss: 0.4795, Accuracy: 78.10%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [33/100] - [TRAIN] Loss: 0.4929, Accuracy: 77.70%, AUC: 0.77 [VAL] Loss: 0.4709, Accuracy: 78.39%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [34/100] - [TRAIN] Loss: 0.4907, Accuracy: 77.84%, AUC: 0.78 [VAL] Loss: 0.4783, Accuracy: 78.01%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [35/100] - [TRAIN] Loss: 0.4996, Accuracy: 77.42%, AUC: 0.77 [VAL] Loss: 0.4907, Accuracy: 76.85%, Precision: 0.83, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [36/100] - [TRAIN] Loss: 0.4940, Accuracy: 77.59%, AUC: 0.77 [VAL] Loss: 0.4725, Accuracy: 78.11%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [37/100] - [TRAIN] Loss: 0.4930, Accuracy: 77.87%, AUC: 0.78 [VAL] Loss: 0.4791, Accuracy: 77.78%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [38/100] - [TRAIN] Loss: 0.4937, Accuracy: 77.68%, AUC: 0.77 [VAL] Loss: 0.4698, Accuracy: 79.23%, Precision: 0.86, Recall: 0.68, F1-Score: 0.76, AUC: 0.79
+Epoch [39/100] - [TRAIN] Loss: 0.4975, Accuracy: 77.62%, AUC: 0.77 [VAL] Loss: 0.4758, Accuracy: 78.47%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [40/100] - [TRAIN] Loss: 0.4932, Accuracy: 77.89%, AUC: 0.78 [VAL] Loss: 0.4790, Accuracy: 77.74%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [41/100] - [TRAIN] Loss: 0.4991, Accuracy: 77.36%, AUC: 0.77 [VAL] Loss: 0.4758, Accuracy: 78.38%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [42/100] - [TRAIN] Loss: 0.4928, Accuracy: 77.93%, AUC: 0.78 [VAL] Loss: 0.4710, Accuracy: 78.57%, Precision: 0.84, Recall: 0.69, F1-Score: 0.75, AUC: 0.78
+Epoch [43/100] - [TRAIN] Loss: 0.4923, Accuracy: 77.68%, AUC: 0.77 [VAL] Loss: 0.4845, Accuracy: 77.53%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [44/100] - [TRAIN] Loss: 0.4921, Accuracy: 77.65%, AUC: 0.77 [VAL] Loss: 0.4767, Accuracy: 78.26%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [45/100] - [TRAIN] Loss: 0.4961, Accuracy: 77.48%, AUC: 0.77 [VAL] Loss: 0.4800, Accuracy: 77.94%, Precision: 0.85, Recall: 0.66, F1-Score: 0.74, AUC: 0.78
+Epoch [46/100] - [TRAIN] Loss: 0.4984, Accuracy: 77.38%, AUC: 0.77 [VAL] Loss: 0.4835, Accuracy: 77.03%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [47/100] - [TRAIN] Loss: 0.4967, Accuracy: 77.76%, AUC: 0.77 [VAL] Loss: 0.4817, Accuracy: 78.27%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [48/100] - [TRAIN] Loss: 0.4932, Accuracy: 77.69%, AUC: 0.77 [VAL] Loss: 0.4754, Accuracy: 78.33%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [49/100] - [TRAIN] Loss: 0.4967, Accuracy: 77.31%, AUC: 0.77 [VAL] Loss: 0.4775, Accuracy: 77.68%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.77
+Epoch [50/100] - [TRAIN] Loss: 0.4966, Accuracy: 77.45%, AUC: 0.77 [VAL] Loss: 0.4784, Accuracy: 78.20%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [51/100] - [TRAIN] Loss: 0.4984, Accuracy: 77.47%, AUC: 0.77 [VAL] Loss: 0.4835, Accuracy: 77.85%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [52/100] - [TRAIN] Loss: 0.4930, Accuracy: 77.78%, AUC: 0.77 [VAL] Loss: 0.4810, Accuracy: 78.13%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [53/100] - [TRAIN] Loss: 0.4933, Accuracy: 78.02%, AUC: 0.78 [VAL] Loss: 0.4804, Accuracy: 77.65%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.77
+Epoch [54/100] - [TRAIN] Loss: 0.4926, Accuracy: 77.76%, AUC: 0.77 [VAL] Loss: 0.4806, Accuracy: 77.81%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.77
+Epoch [55/100] - [TRAIN] Loss: 0.4990, Accuracy: 77.36%, AUC: 0.77 [VAL] Loss: 0.4692, Accuracy: 78.86%, Precision: 0.84, Recall: 0.69, F1-Score: 0.76, AUC: 0.78
+Epoch [56/100] - [TRAIN] Loss: 0.4970, Accuracy: 77.54%, AUC: 0.77 [VAL] Loss: 0.4826, Accuracy: 78.02%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [57/100] - [TRAIN] Loss: 0.4949, Accuracy: 77.57%, AUC: 0.77 [VAL] Loss: 0.4780, Accuracy: 78.33%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [58/100] - [TRAIN] Loss: 0.4931, Accuracy: 77.75%, AUC: 0.77 [VAL] Loss: 0.4734, Accuracy: 78.61%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [59/100] - [TRAIN] Loss: 0.4924, Accuracy: 77.70%, AUC: 0.77 [VAL] Loss: 0.4796, Accuracy: 77.85%, Precision: 0.86, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [60/100] - [TRAIN] Loss: 0.4973, Accuracy: 77.52%, AUC: 0.77 [VAL] Loss: 0.4699, Accuracy: 78.61%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [61/100] - [TRAIN] Loss: 0.4955, Accuracy: 77.56%, AUC: 0.77 [VAL] Loss: 0.4839, Accuracy: 77.73%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [62/100] - [TRAIN] Loss: 0.4963, Accuracy: 77.46%, AUC: 0.77 [VAL] Loss: 0.4728, Accuracy: 78.99%, Precision: 0.85, Recall: 0.69, F1-Score: 0.76, AUC: 0.79
+Epoch [63/100] - [TRAIN] Loss: 0.4942, Accuracy: 77.67%, AUC: 0.77 [VAL] Loss: 0.4766, Accuracy: 78.40%, Precision: 0.83, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [64/100] - [TRAIN] Loss: 0.4942, Accuracy: 77.54%, AUC: 0.77 [VAL] Loss: 0.4767, Accuracy: 77.76%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [65/100] - [TRAIN] Loss: 0.4970, Accuracy: 77.33%, AUC: 0.77 [VAL] Loss: 0.4866, Accuracy: 77.20%, Precision: 0.83, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [66/100] - [TRAIN] Loss: 0.4955, Accuracy: 77.92%, AUC: 0.78 [VAL] Loss: 0.4834, Accuracy: 77.43%, Precision: 0.83, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [67/100] - [TRAIN] Loss: 0.4979, Accuracy: 77.56%, AUC: 0.77 [VAL] Loss: 0.4797, Accuracy: 78.00%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [68/100] - [TRAIN] Loss: 0.4950, Accuracy: 77.53%, AUC: 0.77 [VAL] Loss: 0.4741, Accuracy: 78.30%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [69/100] - [TRAIN] Loss: 0.4973, Accuracy: 77.47%, AUC: 0.77 [VAL] Loss: 0.4835, Accuracy: 77.29%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [70/100] - [TRAIN] Loss: 0.4961, Accuracy: 77.65%, AUC: 0.77 [VAL] Loss: 0.4701, Accuracy: 78.32%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [71/100] - [TRAIN] Loss: 0.4950, Accuracy: 77.53%, AUC: 0.77 [VAL] Loss: 0.4899, Accuracy: 76.79%, Precision: 0.84, Recall: 0.65, F1-Score: 0.74, AUC: 0.77
+Epoch [72/100] - [TRAIN] Loss: 0.4958, Accuracy: 77.61%, AUC: 0.77 [VAL] Loss: 0.4657, Accuracy: 78.67%, Precision: 0.85, Recall: 0.68, F1-Score: 0.76, AUC: 0.78
+Epoch [73/100] - [TRAIN] Loss: 0.4954, Accuracy: 77.40%, AUC: 0.77 [VAL] Loss: 0.4816, Accuracy: 77.33%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [74/100] - [TRAIN] Loss: 0.4954, Accuracy: 77.66%, AUC: 0.77 [VAL] Loss: 0.4732, Accuracy: 78.00%, Precision: 0.86, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [75/100] - [TRAIN] Loss: 0.4957, Accuracy: 77.58%, AUC: 0.77 [VAL] Loss: 0.4858, Accuracy: 77.51%, Precision: 0.83, Recall: 0.66, F1-Score: 0.74, AUC: 0.77
+Epoch [76/100] - [TRAIN] Loss: 0.4956, Accuracy: 77.69%, AUC: 0.77 [VAL] Loss: 0.4670, Accuracy: 78.77%, Precision: 0.85, Recall: 0.68, F1-Score: 0.76, AUC: 0.78
+Epoch [77/100] - [TRAIN] Loss: 0.4980, Accuracy: 77.34%, AUC: 0.77 [VAL] Loss: 0.4804, Accuracy: 77.81%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [78/100] - [TRAIN] Loss: 0.4918, Accuracy: 77.81%, AUC: 0.78 [VAL] Loss: 0.4849, Accuracy: 77.72%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [79/100] - [TRAIN] Loss: 0.4934, Accuracy: 77.75%, AUC: 0.77 [VAL] Loss: 0.4832, Accuracy: 77.85%, Precision: 0.83, Recall: 0.68, F1-Score: 0.75, AUC: 0.77
+Epoch [80/100] - [TRAIN] Loss: 0.4991, Accuracy: 77.38%, AUC: 0.77 [VAL] Loss: 0.4716, Accuracy: 78.27%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [81/100] - [TRAIN] Loss: 0.5001, Accuracy: 77.29%, AUC: 0.77 [VAL] Loss: 0.4811, Accuracy: 78.08%, Precision: 0.84, Recall: 0.66, F1-Score: 0.74, AUC: 0.78
+Epoch [82/100] - [TRAIN] Loss: 0.4957, Accuracy: 77.72%, AUC: 0.77 [VAL] Loss: 0.4697, Accuracy: 78.59%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [83/100] - [TRAIN] Loss: 0.4927, Accuracy: 77.91%, AUC: 0.78 [VAL] Loss: 0.4815, Accuracy: 78.41%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [84/100] - [TRAIN] Loss: 0.4961, Accuracy: 77.42%, AUC: 0.77 [VAL] Loss: 0.4874, Accuracy: 77.74%, Precision: 0.83, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [85/100] - [TRAIN] Loss: 0.4931, Accuracy: 77.83%, AUC: 0.78 [VAL] Loss: 0.4762, Accuracy: 77.86%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [86/100] - [TRAIN] Loss: 0.4948, Accuracy: 77.76%, AUC: 0.77 [VAL] Loss: 0.4817, Accuracy: 77.66%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [87/100] - [TRAIN] Loss: 0.4943, Accuracy: 77.83%, AUC: 0.78 [VAL] Loss: 0.4839, Accuracy: 77.68%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [88/100] - [TRAIN] Loss: 0.4957, Accuracy: 77.64%, AUC: 0.77 [VAL] Loss: 0.4804, Accuracy: 77.90%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [89/100] - [TRAIN] Loss: 0.4949, Accuracy: 77.56%, AUC: 0.77 [VAL] Loss: 0.4752, Accuracy: 78.17%, Precision: 0.86, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [90/100] - [TRAIN] Loss: 0.4959, Accuracy: 77.68%, AUC: 0.77 [VAL] Loss: 0.4828, Accuracy: 77.56%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [91/100] - [TRAIN] Loss: 0.4951, Accuracy: 77.65%, AUC: 0.77 [VAL] Loss: 0.4718, Accuracy: 78.75%, Precision: 0.85, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [92/100] - [TRAIN] Loss: 0.4921, Accuracy: 77.86%, AUC: 0.78 [VAL] Loss: 0.4679, Accuracy: 78.66%, Precision: 0.86, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [93/100] - [TRAIN] Loss: 0.4966, Accuracy: 77.61%, AUC: 0.77 [VAL] Loss: 0.4771, Accuracy: 77.67%, Precision: 0.83, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [94/100] - [TRAIN] Loss: 0.4926, Accuracy: 77.73%, AUC: 0.77 [VAL] Loss: 0.4832, Accuracy: 77.82%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [95/100] - [TRAIN] Loss: 0.4963, Accuracy: 77.67%, AUC: 0.77 [VAL] Loss: 0.4759, Accuracy: 77.61%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [96/100] - [TRAIN] Loss: 0.4945, Accuracy: 77.67%, AUC: 0.77 [VAL] Loss: 0.4674, Accuracy: 78.43%, Precision: 0.84, Recall: 0.68, F1-Score: 0.75, AUC: 0.78
+Epoch [97/100] - [TRAIN] Loss: 0.4951, Accuracy: 77.55%, AUC: 0.77 [VAL] Loss: 0.4783, Accuracy: 77.76%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Epoch [98/100] - [TRAIN] Loss: 0.4977, Accuracy: 77.48%, AUC: 0.77 [VAL] Loss: 0.4763, Accuracy: 78.11%, Precision: 0.84, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [99/100] - [TRAIN] Loss: 0.4966, Accuracy: 77.60%, AUC: 0.77 [VAL] Loss: 0.4806, Accuracy: 78.12%, Precision: 0.85, Recall: 0.67, F1-Score: 0.75, AUC: 0.78
+Epoch [100/100] - [TRAIN] Loss: 0.4947, Accuracy: 77.71%, AUC: 0.77 [VAL] Loss: 0.4794, Accuracy: 77.57%, Precision: 0.84, Recall: 0.67, F1-Score: 0.74, AUC: 0.77
+Accuracy Score on test set: 78.35 %
+    AUC Score on test set: 0.78
+    Precision: 0.8521
+    Recall: 0.6766
+    F1-Score: 0.7543
+
+    Detailed Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.74      0.89      0.81      5089
+           1       0.85      0.68      0.75      4911
+
+    accuracy                           0.78     10000
+   macro avg       0.80      0.78      0.78     10000
+weighted avg       0.79      0.78      0.78     10000
+
+
+    Confusion Matrix:
+    [[4512  577]
+ [1588 3323]]
+    
+002-H3K9me3
+Epoch [1/100] - [TRAIN] Loss: 0.7226, Accuracy: 49.10%, AUC: 0.50 [VAL] Loss: 0.7194, Accuracy: 50.64%, Precision: 0.47, Recall: 0.06, F1-Score: 0.11, AUC: 0.50
+Epoch [2/100] - [TRAIN] Loss: 0.7186, Accuracy: 51.84%, AUC: 0.50 [VAL] Loss: 0.7166, Accuracy: 51.29%, Precision: 0.59, Recall: 0.03, F1-Score: 0.07, AUC: 0.51
+Epoch [3/100] - [TRAIN] Loss: 0.7167, Accuracy: 52.14%, AUC: 0.51 [VAL] Loss: 0.7145, Accuracy: 52.90%, Precision: 0.63, Recall: 0.04, F1-Score: 0.08, AUC: 0.51
+Epoch [4/100] - [TRAIN] Loss: 0.7160, Accuracy: 52.27%, AUC: 0.51 [VAL] Loss: 0.7143, Accuracy: 53.41%, Precision: 0.62, Recall: 0.04, F1-Score: 0.08, AUC: 0.51
+Epoch [5/100] - [TRAIN] Loss: 0.7150, Accuracy: 52.28%, AUC: 0.51 [VAL] Loss: 0.7113, Accuracy: 52.80%, Precision: 0.62, Recall: 0.05, F1-Score: 0.10, AUC: 0.51
+Epoch [6/100] - [TRAIN] Loss: 0.7141, Accuracy: 52.49%, AUC: 0.51 [VAL] Loss: 0.7131, Accuracy: 52.03%, Precision: 0.65, Recall: 0.05, F1-Score: 0.10, AUC: 0.51
+Epoch [7/100] - [TRAIN] Loss: 0.7141, Accuracy: 52.21%, AUC: 0.51 [VAL] Loss: 0.7120, Accuracy: 52.59%, Precision: 0.59, Recall: 0.05, F1-Score: 0.09, AUC: 0.51
+Epoch [8/100] - [TRAIN] Loss: 0.7136, Accuracy: 52.57%, AUC: 0.51 [VAL] Loss: 0.7114, Accuracy: 52.87%, Precision: 0.58, Recall: 0.05, F1-Score: 0.09, AUC: 0.51
+Epoch [9/100] - [TRAIN] Loss: 0.7128, Accuracy: 52.67%, AUC: 0.51 [VAL] Loss: 0.7108, Accuracy: 52.43%, Precision: 0.63, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [10/100] - [TRAIN] Loss: 0.7126, Accuracy: 52.54%, AUC: 0.51 [VAL] Loss: 0.7099, Accuracy: 52.85%, Precision: 0.61, Recall: 0.05, F1-Score: 0.10, AUC: 0.51
+Epoch [11/100] - [TRAIN] Loss: 0.7118, Accuracy: 52.93%, AUC: 0.51 [VAL] Loss: 0.7112, Accuracy: 52.35%, Precision: 0.60, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [12/100] - [TRAIN] Loss: 0.7124, Accuracy: 52.55%, AUC: 0.51 [VAL] Loss: 0.7119, Accuracy: 52.21%, Precision: 0.59, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [13/100] - [TRAIN] Loss: 0.7121, Accuracy: 52.71%, AUC: 0.51 [VAL] Loss: 0.7088, Accuracy: 52.44%, Precision: 0.59, Recall: 0.05, F1-Score: 0.09, AUC: 0.51
+Epoch [14/100] - [TRAIN] Loss: 0.7114, Accuracy: 52.54%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 52.11%, Precision: 0.65, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [15/100] - [TRAIN] Loss: 0.7114, Accuracy: 52.82%, AUC: 0.51 [VAL] Loss: 0.7106, Accuracy: 52.48%, Precision: 0.57, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [16/100] - [TRAIN] Loss: 0.7117, Accuracy: 52.96%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 52.20%, Precision: 0.57, Recall: 0.05, F1-Score: 0.09, AUC: 0.51
+Epoch [17/100] - [TRAIN] Loss: 0.7113, Accuracy: 52.47%, AUC: 0.51 [VAL] Loss: 0.7099, Accuracy: 51.87%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [18/100] - [TRAIN] Loss: 0.7112, Accuracy: 52.82%, AUC: 0.51 [VAL] Loss: 0.7101, Accuracy: 51.96%, Precision: 0.58, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [19/100] - [TRAIN] Loss: 0.7119, Accuracy: 52.55%, AUC: 0.51 [VAL] Loss: 0.7101, Accuracy: 52.91%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [20/100] - [TRAIN] Loss: 0.7107, Accuracy: 53.03%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 51.97%, Precision: 0.57, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [21/100] - [TRAIN] Loss: 0.7115, Accuracy: 52.50%, AUC: 0.51 [VAL] Loss: 0.7091, Accuracy: 51.67%, Precision: 0.62, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [22/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.76%, AUC: 0.51 [VAL] Loss: 0.7091, Accuracy: 51.38%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [23/100] - [TRAIN] Loss: 0.7105, Accuracy: 52.84%, AUC: 0.51 [VAL] Loss: 0.7113, Accuracy: 52.51%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [24/100] - [TRAIN] Loss: 0.7104, Accuracy: 52.98%, AUC: 0.51 [VAL] Loss: 0.7076, Accuracy: 52.54%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [25/100] - [TRAIN] Loss: 0.7114, Accuracy: 52.67%, AUC: 0.51 [VAL] Loss: 0.7092, Accuracy: 51.94%, Precision: 0.64, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [26/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.53%, AUC: 0.51 [VAL] Loss: 0.7089, Accuracy: 53.16%, Precision: 0.62, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [27/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.60%, AUC: 0.51 [VAL] Loss: 0.7112, Accuracy: 51.93%, Precision: 0.58, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [28/100] - [TRAIN] Loss: 0.7105, Accuracy: 53.01%, AUC: 0.51 [VAL] Loss: 0.7100, Accuracy: 52.50%, Precision: 0.62, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [29/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.47%, AUC: 0.51 [VAL] Loss: 0.7086, Accuracy: 53.47%, Precision: 0.62, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [30/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.58%, AUC: 0.51 [VAL] Loss: 0.7089, Accuracy: 52.55%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [31/100] - [TRAIN] Loss: 0.7113, Accuracy: 52.62%, AUC: 0.51 [VAL] Loss: 0.7070, Accuracy: 52.82%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [32/100] - [TRAIN] Loss: 0.7106, Accuracy: 52.96%, AUC: 0.51 [VAL] Loss: 0.7092, Accuracy: 53.18%, Precision: 0.62, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [33/100] - [TRAIN] Loss: 0.7102, Accuracy: 52.87%, AUC: 0.51 [VAL] Loss: 0.7093, Accuracy: 53.07%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [34/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.70%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 52.49%, Precision: 0.60, Recall: 0.05, F1-Score: 0.10, AUC: 0.51
+Epoch [35/100] - [TRAIN] Loss: 0.7105, Accuracy: 52.71%, AUC: 0.51 [VAL] Loss: 0.7097, Accuracy: 52.17%, Precision: 0.64, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [36/100] - [TRAIN] Loss: 0.7117, Accuracy: 52.56%, AUC: 0.51 [VAL] Loss: 0.7098, Accuracy: 53.40%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [37/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.64%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 53.01%, Precision: 0.63, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [38/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.83%, AUC: 0.51 [VAL] Loss: 0.7101, Accuracy: 53.09%, Precision: 0.63, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [39/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.42%, AUC: 0.51 [VAL] Loss: 0.7080, Accuracy: 52.17%, Precision: 0.65, Recall: 0.07, F1-Score: 0.12, AUC: 0.52
+Epoch [40/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.97%, AUC: 0.51 [VAL] Loss: 0.7103, Accuracy: 51.79%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [41/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.47%, AUC: 0.51 [VAL] Loss: 0.7114, Accuracy: 52.50%, Precision: 0.62, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [42/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.84%, AUC: 0.51 [VAL] Loss: 0.7086, Accuracy: 51.98%, Precision: 0.58, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [43/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.75%, AUC: 0.51 [VAL] Loss: 0.7103, Accuracy: 52.55%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [44/100] - [TRAIN] Loss: 0.7114, Accuracy: 52.62%, AUC: 0.51 [VAL] Loss: 0.7093, Accuracy: 52.30%, Precision: 0.59, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [45/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.55%, AUC: 0.51 [VAL] Loss: 0.7081, Accuracy: 52.85%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [46/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.73%, AUC: 0.51 [VAL] Loss: 0.7101, Accuracy: 52.03%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [47/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.66%, AUC: 0.51 [VAL] Loss: 0.7089, Accuracy: 52.90%, Precision: 0.60, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [48/100] - [TRAIN] Loss: 0.7114, Accuracy: 52.22%, AUC: 0.51 [VAL] Loss: 0.7098, Accuracy: 52.01%, Precision: 0.60, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [49/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.95%, AUC: 0.51 [VAL] Loss: 0.7085, Accuracy: 53.09%, Precision: 0.62, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [50/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.91%, AUC: 0.51 [VAL] Loss: 0.7116, Accuracy: 52.30%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [51/100] - [TRAIN] Loss: 0.7104, Accuracy: 52.86%, AUC: 0.51 [VAL] Loss: 0.7094, Accuracy: 52.41%, Precision: 0.56, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [52/100] - [TRAIN] Loss: 0.7112, Accuracy: 52.62%, AUC: 0.51 [VAL] Loss: 0.7087, Accuracy: 52.42%, Precision: 0.62, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [53/100] - [TRAIN] Loss: 0.7114, Accuracy: 52.74%, AUC: 0.51 [VAL] Loss: 0.7100, Accuracy: 51.79%, Precision: 0.62, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [54/100] - [TRAIN] Loss: 0.7112, Accuracy: 52.77%, AUC: 0.51 [VAL] Loss: 0.7115, Accuracy: 52.86%, Precision: 0.62, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [55/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.87%, AUC: 0.51 [VAL] Loss: 0.7079, Accuracy: 53.02%, Precision: 0.63, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [56/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.51%, AUC: 0.51 [VAL] Loss: 0.7115, Accuracy: 52.18%, Precision: 0.57, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [57/100] - [TRAIN] Loss: 0.7106, Accuracy: 52.63%, AUC: 0.51 [VAL] Loss: 0.7112, Accuracy: 51.86%, Precision: 0.57, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [58/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.55%, AUC: 0.51 [VAL] Loss: 0.7073, Accuracy: 52.86%, Precision: 0.65, Recall: 0.07, F1-Score: 0.13, AUC: 0.52
+Epoch [59/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.99%, AUC: 0.51 [VAL] Loss: 0.7097, Accuracy: 52.67%, Precision: 0.63, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [60/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.73%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 53.27%, Precision: 0.55, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [61/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.39%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 52.27%, Precision: 0.57, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [62/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.85%, AUC: 0.51 [VAL] Loss: 0.7102, Accuracy: 53.02%, Precision: 0.57, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [63/100] - [TRAIN] Loss: 0.7115, Accuracy: 52.75%, AUC: 0.51 [VAL] Loss: 0.7079, Accuracy: 52.69%, Precision: 0.59, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [64/100] - [TRAIN] Loss: 0.7104, Accuracy: 52.55%, AUC: 0.51 [VAL] Loss: 0.7090, Accuracy: 52.74%, Precision: 0.61, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [65/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.95%, AUC: 0.51 [VAL] Loss: 0.7109, Accuracy: 51.73%, Precision: 0.57, Recall: 0.05, F1-Score: 0.10, AUC: 0.51
+Epoch [66/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.87%, AUC: 0.51 [VAL] Loss: 0.7097, Accuracy: 52.58%, Precision: 0.53, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [67/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.84%, AUC: 0.51 [VAL] Loss: 0.7083, Accuracy: 53.41%, Precision: 0.60, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [68/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.58%, AUC: 0.51 [VAL] Loss: 0.7071, Accuracy: 52.80%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [69/100] - [TRAIN] Loss: 0.7100, Accuracy: 52.92%, AUC: 0.51 [VAL] Loss: 0.7081, Accuracy: 53.49%, Precision: 0.61, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [70/100] - [TRAIN] Loss: 0.7106, Accuracy: 53.00%, AUC: 0.51 [VAL] Loss: 0.7093, Accuracy: 52.17%, Precision: 0.58, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [71/100] - [TRAIN] Loss: 0.7106, Accuracy: 53.06%, AUC: 0.51 [VAL] Loss: 0.7101, Accuracy: 52.55%, Precision: 0.62, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [72/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.87%, AUC: 0.51 [VAL] Loss: 0.7105, Accuracy: 52.85%, Precision: 0.60, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [73/100] - [TRAIN] Loss: 0.7112, Accuracy: 52.94%, AUC: 0.51 [VAL] Loss: 0.7114, Accuracy: 51.83%, Precision: 0.59, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [74/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.83%, AUC: 0.51 [VAL] Loss: 0.7071, Accuracy: 52.95%, Precision: 0.57, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [75/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.87%, AUC: 0.51 [VAL] Loss: 0.7090, Accuracy: 52.23%, Precision: 0.57, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [76/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.88%, AUC: 0.51 [VAL] Loss: 0.7099, Accuracy: 53.28%, Precision: 0.63, Recall: 0.07, F1-Score: 0.13, AUC: 0.52
+Epoch [77/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.81%, AUC: 0.51 [VAL] Loss: 0.7095, Accuracy: 52.08%, Precision: 0.58, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [78/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.67%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 53.30%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [79/100] - [TRAIN] Loss: 0.7113, Accuracy: 52.61%, AUC: 0.51 [VAL] Loss: 0.7076, Accuracy: 52.65%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [80/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.84%, AUC: 0.51 [VAL] Loss: 0.7097, Accuracy: 52.10%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [81/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.67%, AUC: 0.51 [VAL] Loss: 0.7083, Accuracy: 52.95%, Precision: 0.63, Recall: 0.07, F1-Score: 0.12, AUC: 0.52
+Epoch [82/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.77%, AUC: 0.51 [VAL] Loss: 0.7116, Accuracy: 51.53%, Precision: 0.60, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [83/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.52%, AUC: 0.51 [VAL] Loss: 0.7105, Accuracy: 52.65%, Precision: 0.62, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [84/100] - [TRAIN] Loss: 0.7112, Accuracy: 52.49%, AUC: 0.51 [VAL] Loss: 0.7086, Accuracy: 52.98%, Precision: 0.58, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [85/100] - [TRAIN] Loss: 0.7116, Accuracy: 52.71%, AUC: 0.51 [VAL] Loss: 0.7099, Accuracy: 52.57%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [86/100] - [TRAIN] Loss: 0.7105, Accuracy: 52.97%, AUC: 0.51 [VAL] Loss: 0.7091, Accuracy: 52.92%, Precision: 0.64, Recall: 0.07, F1-Score: 0.12, AUC: 0.52
+Epoch [87/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.87%, AUC: 0.51 [VAL] Loss: 0.7092, Accuracy: 51.84%, Precision: 0.60, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [88/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.82%, AUC: 0.51 [VAL] Loss: 0.7103, Accuracy: 52.77%, Precision: 0.57, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [89/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.71%, AUC: 0.51 [VAL] Loss: 0.7080, Accuracy: 53.13%, Precision: 0.62, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [90/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.60%, AUC: 0.51 [VAL] Loss: 0.7079, Accuracy: 52.67%, Precision: 0.60, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [91/100] - [TRAIN] Loss: 0.7101, Accuracy: 52.83%, AUC: 0.51 [VAL] Loss: 0.7073, Accuracy: 53.06%, Precision: 0.62, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [92/100] - [TRAIN] Loss: 0.7106, Accuracy: 52.85%, AUC: 0.51 [VAL] Loss: 0.7088, Accuracy: 52.84%, Precision: 0.62, Recall: 0.06, F1-Score: 0.12, AUC: 0.51
+Epoch [93/100] - [TRAIN] Loss: 0.7111, Accuracy: 52.71%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 52.68%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [94/100] - [TRAIN] Loss: 0.7108, Accuracy: 52.61%, AUC: 0.51 [VAL] Loss: 0.7086, Accuracy: 53.04%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [95/100] - [TRAIN] Loss: 0.7110, Accuracy: 52.88%, AUC: 0.51 [VAL] Loss: 0.7082, Accuracy: 52.73%, Precision: 0.57, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [96/100] - [TRAIN] Loss: 0.7106, Accuracy: 52.72%, AUC: 0.51 [VAL] Loss: 0.7100, Accuracy: 53.54%, Precision: 0.56, Recall: 0.06, F1-Score: 0.10, AUC: 0.51
+Epoch [97/100] - [TRAIN] Loss: 0.7109, Accuracy: 52.73%, AUC: 0.51 [VAL] Loss: 0.7100, Accuracy: 51.95%, Precision: 0.59, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [98/100] - [TRAIN] Loss: 0.7107, Accuracy: 52.84%, AUC: 0.51 [VAL] Loss: 0.7084, Accuracy: 53.68%, Precision: 0.63, Recall: 0.07, F1-Score: 0.12, AUC: 0.51
+Epoch [99/100] - [TRAIN] Loss: 0.7103, Accuracy: 52.91%, AUC: 0.51 [VAL] Loss: 0.7080, Accuracy: 53.12%, Precision: 0.61, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Epoch [100/100] - [TRAIN] Loss: 0.7105, Accuracy: 52.88%, AUC: 0.51 [VAL] Loss: 0.7096, Accuracy: 52.50%, Precision: 0.60, Recall: 0.06, F1-Score: 0.11, AUC: 0.51
+Accuracy Score on test set: 52.67 %
+    AUC Score on test set: 0.51
+    Precision: 0.5969
+    Recall: 0.0631
+    F1-Score: 0.1142
+
+    Detailed Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.52      0.96      0.68      5168
+           1       0.60      0.06      0.11      4832
+
+    accuracy                           0.53     10000
+   macro avg       0.56      0.51      0.40     10000
+weighted avg       0.56      0.53      0.41     10000
+
+
+    Confusion Matrix:
+    [[4962  206]
+ [4527  305]]
+    
+003-H3K27ac
+Epoch [1/100] - [TRAIN] Loss: 0.6245, Accuracy: 71.54%, AUC: 0.71 [VAL] Loss: 0.5900, Accuracy: 74.54%, Precision: 0.82, Recall: 0.61, F1-Score: 0.70, AUC: 0.74
+Epoch [2/100] - [TRAIN] Loss: 0.5892, Accuracy: 74.67%, AUC: 0.74 [VAL] Loss: 0.5790, Accuracy: 74.71%, Precision: 0.82, Recall: 0.60, F1-Score: 0.69, AUC: 0.74
+Epoch [3/100] - [TRAIN] Loss: 0.5790, Accuracy: 74.58%, AUC: 0.74 [VAL] Loss: 0.5642, Accuracy: 75.01%, Precision: 0.83, Recall: 0.61, F1-Score: 0.70, AUC: 0.75
+Epoch [4/100] - [TRAIN] Loss: 0.5699, Accuracy: 74.89%, AUC: 0.75 [VAL] Loss: 0.5535, Accuracy: 75.38%, Precision: 0.83, Recall: 0.62, F1-Score: 0.71, AUC: 0.75
+Epoch [5/100] - [TRAIN] Loss: 0.5637, Accuracy: 75.10%, AUC: 0.75 [VAL] Loss: 0.5530, Accuracy: 75.24%, Precision: 0.84, Recall: 0.61, F1-Score: 0.71, AUC: 0.75
+Epoch [6/100] - [TRAIN] Loss: 0.5609, Accuracy: 74.88%, AUC: 0.75 [VAL] Loss: 0.5474, Accuracy: 76.30%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [7/100] - [TRAIN] Loss: 0.5519, Accuracy: 75.17%, AUC: 0.75 [VAL] Loss: 0.5423, Accuracy: 75.94%, Precision: 0.83, Recall: 0.62, F1-Score: 0.71, AUC: 0.75
+Epoch [8/100] - [TRAIN] Loss: 0.5516, Accuracy: 75.36%, AUC: 0.75 [VAL] Loss: 0.5405, Accuracy: 75.87%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [9/100] - [TRAIN] Loss: 0.5517, Accuracy: 75.27%, AUC: 0.75 [VAL] Loss: 0.5399, Accuracy: 75.75%, Precision: 0.83, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [10/100] - [TRAIN] Loss: 0.5474, Accuracy: 75.10%, AUC: 0.75 [VAL] Loss: 0.5242, Accuracy: 76.24%, Precision: 0.85, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [11/100] - [TRAIN] Loss: 0.5455, Accuracy: 75.35%, AUC: 0.75 [VAL] Loss: 0.5244, Accuracy: 75.73%, Precision: 0.84, Recall: 0.62, F1-Score: 0.71, AUC: 0.75
+Epoch [12/100] - [TRAIN] Loss: 0.5387, Accuracy: 75.43%, AUC: 0.75 [VAL] Loss: 0.5363, Accuracy: 74.96%, Precision: 0.82, Recall: 0.62, F1-Score: 0.71, AUC: 0.75
+Epoch [13/100] - [TRAIN] Loss: 0.5413, Accuracy: 75.23%, AUC: 0.75 [VAL] Loss: 0.5266, Accuracy: 76.15%, Precision: 0.83, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [14/100] - [TRAIN] Loss: 0.5372, Accuracy: 75.41%, AUC: 0.75 [VAL] Loss: 0.5168, Accuracy: 76.82%, Precision: 0.84, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [15/100] - [TRAIN] Loss: 0.5372, Accuracy: 75.46%, AUC: 0.75 [VAL] Loss: 0.5127, Accuracy: 76.78%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [16/100] - [TRAIN] Loss: 0.5340, Accuracy: 75.61%, AUC: 0.75 [VAL] Loss: 0.5216, Accuracy: 76.21%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [17/100] - [TRAIN] Loss: 0.5329, Accuracy: 75.54%, AUC: 0.75 [VAL] Loss: 0.5166, Accuracy: 75.94%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [18/100] - [TRAIN] Loss: 0.5314, Accuracy: 75.61%, AUC: 0.75 [VAL] Loss: 0.5126, Accuracy: 76.24%, Precision: 0.85, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [19/100] - [TRAIN] Loss: 0.5294, Accuracy: 75.41%, AUC: 0.75 [VAL] Loss: 0.5230, Accuracy: 75.41%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [20/100] - [TRAIN] Loss: 0.5290, Accuracy: 75.77%, AUC: 0.75 [VAL] Loss: 0.5178, Accuracy: 75.81%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.75
+Epoch [21/100] - [TRAIN] Loss: 0.5281, Accuracy: 75.20%, AUC: 0.75 [VAL] Loss: 0.5067, Accuracy: 76.70%, Precision: 0.84, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [22/100] - [TRAIN] Loss: 0.5311, Accuracy: 75.11%, AUC: 0.75 [VAL] Loss: 0.5181, Accuracy: 75.72%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.75
+Epoch [23/100] - [TRAIN] Loss: 0.5275, Accuracy: 75.52%, AUC: 0.75 [VAL] Loss: 0.5172, Accuracy: 75.90%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [24/100] - [TRAIN] Loss: 0.5315, Accuracy: 75.22%, AUC: 0.75 [VAL] Loss: 0.5102, Accuracy: 76.34%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [25/100] - [TRAIN] Loss: 0.5281, Accuracy: 75.43%, AUC: 0.75 [VAL] Loss: 0.5202, Accuracy: 75.35%, Precision: 0.82, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [26/100] - [TRAIN] Loss: 0.5256, Accuracy: 75.35%, AUC: 0.75 [VAL] Loss: 0.5120, Accuracy: 75.87%, Precision: 0.82, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [27/100] - [TRAIN] Loss: 0.5228, Accuracy: 75.56%, AUC: 0.75 [VAL] Loss: 0.5216, Accuracy: 75.35%, Precision: 0.82, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [28/100] - [TRAIN] Loss: 0.5268, Accuracy: 75.25%, AUC: 0.75 [VAL] Loss: 0.5065, Accuracy: 76.08%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [29/100] - [TRAIN] Loss: 0.5249, Accuracy: 75.35%, AUC: 0.75 [VAL] Loss: 0.5068, Accuracy: 76.16%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [30/100] - [TRAIN] Loss: 0.5249, Accuracy: 75.34%, AUC: 0.75 [VAL] Loss: 0.5107, Accuracy: 76.05%, Precision: 0.83, Recall: 0.64, F1-Score: 0.73, AUC: 0.76
+Epoch [31/100] - [TRAIN] Loss: 0.5232, Accuracy: 75.47%, AUC: 0.75 [VAL] Loss: 0.5047, Accuracy: 76.15%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [32/100] - [TRAIN] Loss: 0.5244, Accuracy: 75.27%, AUC: 0.75 [VAL] Loss: 0.5096, Accuracy: 76.43%, Precision: 0.84, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [33/100] - [TRAIN] Loss: 0.5228, Accuracy: 75.50%, AUC: 0.75 [VAL] Loss: 0.5075, Accuracy: 76.20%, Precision: 0.82, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [34/100] - [TRAIN] Loss: 0.5250, Accuracy: 75.68%, AUC: 0.75 [VAL] Loss: 0.5074, Accuracy: 76.46%, Precision: 0.84, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [35/100] - [TRAIN] Loss: 0.5217, Accuracy: 75.83%, AUC: 0.76 [VAL] Loss: 0.5056, Accuracy: 76.30%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [36/100] - [TRAIN] Loss: 0.5235, Accuracy: 75.44%, AUC: 0.75 [VAL] Loss: 0.5107, Accuracy: 75.85%, Precision: 0.81, Recall: 0.64, F1-Score: 0.71, AUC: 0.75
+Epoch [37/100] - [TRAIN] Loss: 0.5234, Accuracy: 75.31%, AUC: 0.75 [VAL] Loss: 0.5157, Accuracy: 75.76%, Precision: 0.82, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [38/100] - [TRAIN] Loss: 0.5200, Accuracy: 75.87%, AUC: 0.76 [VAL] Loss: 0.5146, Accuracy: 76.26%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [39/100] - [TRAIN] Loss: 0.5238, Accuracy: 75.41%, AUC: 0.75 [VAL] Loss: 0.5150, Accuracy: 75.29%, Precision: 0.81, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [40/100] - [TRAIN] Loss: 0.5258, Accuracy: 75.47%, AUC: 0.75 [VAL] Loss: 0.5055, Accuracy: 77.10%, Precision: 0.84, Recall: 0.65, F1-Score: 0.73, AUC: 0.77
+Epoch [41/100] - [TRAIN] Loss: 0.5212, Accuracy: 75.50%, AUC: 0.75 [VAL] Loss: 0.5020, Accuracy: 76.43%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [42/100] - [TRAIN] Loss: 0.5245, Accuracy: 75.53%, AUC: 0.75 [VAL] Loss: 0.5123, Accuracy: 75.81%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [43/100] - [TRAIN] Loss: 0.5224, Accuracy: 75.44%, AUC: 0.75 [VAL] Loss: 0.5026, Accuracy: 75.77%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [44/100] - [TRAIN] Loss: 0.5234, Accuracy: 75.39%, AUC: 0.75 [VAL] Loss: 0.5106, Accuracy: 76.18%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [45/100] - [TRAIN] Loss: 0.5215, Accuracy: 75.44%, AUC: 0.75 [VAL] Loss: 0.5099, Accuracy: 75.99%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [46/100] - [TRAIN] Loss: 0.5231, Accuracy: 75.38%, AUC: 0.75 [VAL] Loss: 0.5123, Accuracy: 75.81%, Precision: 0.83, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [47/100] - [TRAIN] Loss: 0.5252, Accuracy: 75.53%, AUC: 0.75 [VAL] Loss: 0.5131, Accuracy: 75.85%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [48/100] - [TRAIN] Loss: 0.5240, Accuracy: 75.33%, AUC: 0.75 [VAL] Loss: 0.5033, Accuracy: 76.95%, Precision: 0.85, Recall: 0.64, F1-Score: 0.73, AUC: 0.77
+Epoch [49/100] - [TRAIN] Loss: 0.5256, Accuracy: 75.30%, AUC: 0.75 [VAL] Loss: 0.5026, Accuracy: 76.08%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [50/100] - [TRAIN] Loss: 0.5253, Accuracy: 75.41%, AUC: 0.75 [VAL] Loss: 0.5061, Accuracy: 76.36%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [51/100] - [TRAIN] Loss: 0.5230, Accuracy: 75.52%, AUC: 0.75 [VAL] Loss: 0.5032, Accuracy: 76.54%, Precision: 0.83, Recall: 0.64, F1-Score: 0.73, AUC: 0.76
+Epoch [52/100] - [TRAIN] Loss: 0.5209, Accuracy: 75.52%, AUC: 0.75 [VAL] Loss: 0.5089, Accuracy: 75.51%, Precision: 0.83, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [53/100] - [TRAIN] Loss: 0.5286, Accuracy: 75.13%, AUC: 0.75 [VAL] Loss: 0.4952, Accuracy: 76.79%, Precision: 0.84, Recall: 0.65, F1-Score: 0.73, AUC: 0.77
+Epoch [54/100] - [TRAIN] Loss: 0.5230, Accuracy: 75.42%, AUC: 0.75 [VAL] Loss: 0.5086, Accuracy: 76.09%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [55/100] - [TRAIN] Loss: 0.5253, Accuracy: 75.34%, AUC: 0.75 [VAL] Loss: 0.5060, Accuracy: 76.43%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [56/100] - [TRAIN] Loss: 0.5269, Accuracy: 75.29%, AUC: 0.75 [VAL] Loss: 0.5162, Accuracy: 75.64%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.75
+Epoch [57/100] - [TRAIN] Loss: 0.5237, Accuracy: 75.56%, AUC: 0.75 [VAL] Loss: 0.5037, Accuracy: 76.55%, Precision: 0.83, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [58/100] - [TRAIN] Loss: 0.5235, Accuracy: 75.64%, AUC: 0.75 [VAL] Loss: 0.5028, Accuracy: 76.80%, Precision: 0.84, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [59/100] - [TRAIN] Loss: 0.5221, Accuracy: 75.57%, AUC: 0.75 [VAL] Loss: 0.5048, Accuracy: 76.11%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [60/100] - [TRAIN] Loss: 0.5237, Accuracy: 75.50%, AUC: 0.75 [VAL] Loss: 0.5016, Accuracy: 76.42%, Precision: 0.84, Recall: 0.64, F1-Score: 0.73, AUC: 0.76
+Epoch [61/100] - [TRAIN] Loss: 0.5237, Accuracy: 75.56%, AUC: 0.75 [VAL] Loss: 0.5065, Accuracy: 76.28%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [62/100] - [TRAIN] Loss: 0.5231, Accuracy: 75.56%, AUC: 0.75 [VAL] Loss: 0.5048, Accuracy: 76.55%, Precision: 0.83, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [63/100] - [TRAIN] Loss: 0.5247, Accuracy: 75.43%, AUC: 0.75 [VAL] Loss: 0.5047, Accuracy: 76.10%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [64/100] - [TRAIN] Loss: 0.5218, Accuracy: 75.58%, AUC: 0.75 [VAL] Loss: 0.5056, Accuracy: 76.16%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [65/100] - [TRAIN] Loss: 0.5230, Accuracy: 75.43%, AUC: 0.75 [VAL] Loss: 0.5041, Accuracy: 76.25%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [66/100] - [TRAIN] Loss: 0.5261, Accuracy: 75.53%, AUC: 0.75 [VAL] Loss: 0.5073, Accuracy: 75.51%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.75
+Epoch [67/100] - [TRAIN] Loss: 0.5246, Accuracy: 75.30%, AUC: 0.75 [VAL] Loss: 0.5110, Accuracy: 75.87%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.75
+Epoch [68/100] - [TRAIN] Loss: 0.5270, Accuracy: 75.24%, AUC: 0.75 [VAL] Loss: 0.5029, Accuracy: 76.24%, Precision: 0.84, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [69/100] - [TRAIN] Loss: 0.5226, Accuracy: 75.63%, AUC: 0.75 [VAL] Loss: 0.5168, Accuracy: 76.05%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [70/100] - [TRAIN] Loss: 0.5230, Accuracy: 75.49%, AUC: 0.75 [VAL] Loss: 0.5020, Accuracy: 76.12%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [71/100] - [TRAIN] Loss: 0.5235, Accuracy: 75.33%, AUC: 0.75 [VAL] Loss: 0.5046, Accuracy: 76.24%, Precision: 0.82, Recall: 0.65, F1-Score: 0.72, AUC: 0.76
+Epoch [72/100] - [TRAIN] Loss: 0.5229, Accuracy: 75.44%, AUC: 0.75 [VAL] Loss: 0.5076, Accuracy: 75.89%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [73/100] - [TRAIN] Loss: 0.5224, Accuracy: 75.54%, AUC: 0.75 [VAL] Loss: 0.4998, Accuracy: 76.76%, Precision: 0.83, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [74/100] - [TRAIN] Loss: 0.5243, Accuracy: 75.34%, AUC: 0.75 [VAL] Loss: 0.5084, Accuracy: 76.01%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [75/100] - [TRAIN] Loss: 0.5224, Accuracy: 75.41%, AUC: 0.75 [VAL] Loss: 0.5098, Accuracy: 76.20%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [76/100] - [TRAIN] Loss: 0.5251, Accuracy: 75.56%, AUC: 0.75 [VAL] Loss: 0.5119, Accuracy: 75.86%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [77/100] - [TRAIN] Loss: 0.5263, Accuracy: 75.28%, AUC: 0.75 [VAL] Loss: 0.5080, Accuracy: 76.27%, Precision: 0.83, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [78/100] - [TRAIN] Loss: 0.5199, Accuracy: 75.73%, AUC: 0.75 [VAL] Loss: 0.5125, Accuracy: 75.73%, Precision: 0.83, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [79/100] - [TRAIN] Loss: 0.5214, Accuracy: 75.54%, AUC: 0.75 [VAL] Loss: 0.5053, Accuracy: 76.17%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [80/100] - [TRAIN] Loss: 0.5255, Accuracy: 75.27%, AUC: 0.75 [VAL] Loss: 0.5093, Accuracy: 75.69%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [81/100] - [TRAIN] Loss: 0.5252, Accuracy: 75.29%, AUC: 0.75 [VAL] Loss: 0.5068, Accuracy: 76.66%, Precision: 0.84, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [82/100] - [TRAIN] Loss: 0.5237, Accuracy: 75.56%, AUC: 0.75 [VAL] Loss: 0.5109, Accuracy: 75.77%, Precision: 0.82, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [83/100] - [TRAIN] Loss: 0.5239, Accuracy: 75.40%, AUC: 0.75 [VAL] Loss: 0.5135, Accuracy: 75.19%, Precision: 0.82, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [84/100] - [TRAIN] Loss: 0.5260, Accuracy: 75.15%, AUC: 0.75 [VAL] Loss: 0.5038, Accuracy: 76.72%, Precision: 0.83, Recall: 0.64, F1-Score: 0.73, AUC: 0.76
+Epoch [85/100] - [TRAIN] Loss: 0.5238, Accuracy: 75.19%, AUC: 0.75 [VAL] Loss: 0.5083, Accuracy: 75.97%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [86/100] - [TRAIN] Loss: 0.5269, Accuracy: 75.32%, AUC: 0.75 [VAL] Loss: 0.5097, Accuracy: 76.40%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [87/100] - [TRAIN] Loss: 0.5257, Accuracy: 75.12%, AUC: 0.75 [VAL] Loss: 0.5046, Accuracy: 76.46%, Precision: 0.83, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [88/100] - [TRAIN] Loss: 0.5241, Accuracy: 75.57%, AUC: 0.75 [VAL] Loss: 0.5116, Accuracy: 76.00%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [89/100] - [TRAIN] Loss: 0.5223, Accuracy: 75.62%, AUC: 0.75 [VAL] Loss: 0.5159, Accuracy: 75.48%, Precision: 0.82, Recall: 0.63, F1-Score: 0.71, AUC: 0.75
+Epoch [90/100] - [TRAIN] Loss: 0.5260, Accuracy: 75.25%, AUC: 0.75 [VAL] Loss: 0.5098, Accuracy: 75.95%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.76
+Epoch [91/100] - [TRAIN] Loss: 0.5240, Accuracy: 75.35%, AUC: 0.75 [VAL] Loss: 0.5083, Accuracy: 76.30%, Precision: 0.82, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [92/100] - [TRAIN] Loss: 0.5204, Accuracy: 75.54%, AUC: 0.75 [VAL] Loss: 0.5161, Accuracy: 75.60%, Precision: 0.82, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [93/100] - [TRAIN] Loss: 0.5230, Accuracy: 75.52%, AUC: 0.75 [VAL] Loss: 0.5055, Accuracy: 75.65%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [94/100] - [TRAIN] Loss: 0.5249, Accuracy: 75.27%, AUC: 0.75 [VAL] Loss: 0.5038, Accuracy: 75.89%, Precision: 0.83, Recall: 0.63, F1-Score: 0.72, AUC: 0.75
+Epoch [95/100] - [TRAIN] Loss: 0.5232, Accuracy: 75.53%, AUC: 0.75 [VAL] Loss: 0.5055, Accuracy: 76.12%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [96/100] - [TRAIN] Loss: 0.5270, Accuracy: 75.38%, AUC: 0.75 [VAL] Loss: 0.5010, Accuracy: 76.74%, Precision: 0.82, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [97/100] - [TRAIN] Loss: 0.5238, Accuracy: 75.50%, AUC: 0.75 [VAL] Loss: 0.5129, Accuracy: 76.28%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [98/100] - [TRAIN] Loss: 0.5219, Accuracy: 75.49%, AUC: 0.75 [VAL] Loss: 0.5015, Accuracy: 76.16%, Precision: 0.83, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Epoch [99/100] - [TRAIN] Loss: 0.5242, Accuracy: 75.55%, AUC: 0.75 [VAL] Loss: 0.5112, Accuracy: 75.94%, Precision: 0.83, Recall: 0.64, F1-Score: 0.72, AUC: 0.76
+Epoch [100/100] - [TRAIN] Loss: 0.5228, Accuracy: 75.47%, AUC: 0.75 [VAL] Loss: 0.5070, Accuracy: 76.79%, Precision: 0.82, Recall: 0.65, F1-Score: 0.73, AUC: 0.76
+Accuracy Score on test set: 76.04 %
+    AUC Score on test set: 0.76
+    Precision: 0.8252
+    Recall: 0.6382
+    F1-Score: 0.7198
+
+    Detailed Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.72      0.87      0.79      5179
+           1       0.83      0.64      0.72      4821
+
+    accuracy                           0.76     10000
+   macro avg       0.77      0.76      0.76     10000
+weighted avg       0.77      0.76      0.76     10000
+
+
+    Confusion Matrix:
+    [[4527  652]
+ [1744 3077]]
+    
+004-H3K27me3
+Epoch [1/100] - [TRAIN] Loss: 0.7136, Accuracy: 53.66%, AUC: 0.53 [VAL] Loss: 0.7030, Accuracy: 59.16%, Precision: 0.61, Recall: 0.43, F1-Score: 0.50, AUC: 0.59
+Epoch [2/100] - [TRAIN] Loss: 0.6987, Accuracy: 58.68%, AUC: 0.58 [VAL] Loss: 0.6949, Accuracy: 60.99%, Precision: 0.62, Recall: 0.52, F1-Score: 0.56, AUC: 0.61
+Epoch [3/100] - [TRAIN] Loss: 0.6878, Accuracy: 61.32%, AUC: 0.61 [VAL] Loss: 0.6861, Accuracy: 61.29%, Precision: 0.61, Recall: 0.55, F1-Score: 0.58, AUC: 0.61
+Epoch [4/100] - [TRAIN] Loss: 0.6836, Accuracy: 62.06%, AUC: 0.62 [VAL] Loss: 0.6834, Accuracy: 61.80%, Precision: 0.61, Recall: 0.55, F1-Score: 0.58, AUC: 0.62
+Epoch [5/100] - [TRAIN] Loss: 0.6787, Accuracy: 62.66%, AUC: 0.62 [VAL] Loss: 0.6751, Accuracy: 62.77%, Precision: 0.64, Recall: 0.56, F1-Score: 0.60, AUC: 0.63
+Epoch [6/100] - [TRAIN] Loss: 0.6789, Accuracy: 62.47%, AUC: 0.62 [VAL] Loss: 0.6767, Accuracy: 62.42%, Precision: 0.63, Recall: 0.55, F1-Score: 0.59, AUC: 0.62
+Epoch [7/100] - [TRAIN] Loss: 0.6776, Accuracy: 62.53%, AUC: 0.62 [VAL] Loss: 0.6774, Accuracy: 62.46%, Precision: 0.63, Recall: 0.55, F1-Score: 0.59, AUC: 0.62
+Epoch [8/100] - [TRAIN] Loss: 0.6749, Accuracy: 63.05%, AUC: 0.63 [VAL] Loss: 0.6724, Accuracy: 62.47%, Precision: 0.63, Recall: 0.57, F1-Score: 0.60, AUC: 0.62
+Epoch [9/100] - [TRAIN] Loss: 0.6712, Accuracy: 63.18%, AUC: 0.63 [VAL] Loss: 0.6707, Accuracy: 63.26%, Precision: 0.65, Recall: 0.55, F1-Score: 0.59, AUC: 0.63
+Epoch [10/100] - [TRAIN] Loss: 0.6707, Accuracy: 63.41%, AUC: 0.63 [VAL] Loss: 0.6693, Accuracy: 63.54%, Precision: 0.64, Recall: 0.56, F1-Score: 0.59, AUC: 0.63
+Epoch [11/100] - [TRAIN] Loss: 0.6695, Accuracy: 63.66%, AUC: 0.63 [VAL] Loss: 0.6739, Accuracy: 62.80%, Precision: 0.64, Recall: 0.55, F1-Score: 0.59, AUC: 0.63
+Epoch [12/100] - [TRAIN] Loss: 0.6686, Accuracy: 63.59%, AUC: 0.63 [VAL] Loss: 0.6680, Accuracy: 63.73%, Precision: 0.63, Recall: 0.57, F1-Score: 0.60, AUC: 0.63
+Epoch [13/100] - [TRAIN] Loss: 0.6666, Accuracy: 63.75%, AUC: 0.63 [VAL] Loss: 0.6725, Accuracy: 62.97%, Precision: 0.63, Recall: 0.55, F1-Score: 0.59, AUC: 0.63
+Epoch [14/100] - [TRAIN] Loss: 0.6664, Accuracy: 63.70%, AUC: 0.63 [VAL] Loss: 0.6677, Accuracy: 63.29%, Precision: 0.64, Recall: 0.57, F1-Score: 0.60, AUC: 0.63
+Epoch [15/100] - [TRAIN] Loss: 0.6664, Accuracy: 63.74%, AUC: 0.64 [VAL] Loss: 0.6674, Accuracy: 62.76%, Precision: 0.63, Recall: 0.56, F1-Score: 0.59, AUC: 0.63
+Epoch [16/100] - [TRAIN] Loss: 0.6655, Accuracy: 63.85%, AUC: 0.64 [VAL] Loss: 0.6697, Accuracy: 62.83%, Precision: 0.63, Recall: 0.55, F1-Score: 0.59, AUC: 0.63
+Epoch [17/100] - [TRAIN] Loss: 0.6629, Accuracy: 64.28%, AUC: 0.64 [VAL] Loss: 0.6709, Accuracy: 62.32%, Precision: 0.63, Recall: 0.55, F1-Score: 0.58, AUC: 0.62
+Epoch [18/100] - [TRAIN] Loss: 0.6636, Accuracy: 64.07%, AUC: 0.64 [VAL] Loss: 0.6683, Accuracy: 62.53%, Precision: 0.63, Recall: 0.55, F1-Score: 0.59, AUC: 0.62
+Epoch [19/100] - [TRAIN] Loss: 0.6641, Accuracy: 64.20%, AUC: 0.64 [VAL] Loss: 0.6669, Accuracy: 62.97%, Precision: 0.62, Recall: 0.55, F1-Score: 0.58, AUC: 0.63
+Epoch [20/100] - [TRAIN] Loss: 0.6621, Accuracy: 64.11%, AUC: 0.64 [VAL] Loss: 0.6606, Accuracy: 63.28%, Precision: 0.63, Recall: 0.56, F1-Score: 0.60, AUC: 0.63
+Epoch [21/100] - [TRAIN] Loss: 0.6606, Accuracy: 64.31%, AUC: 0.64 [VAL] Loss: 0.6637, Accuracy: 63.59%, Precision: 0.64, Recall: 0.56, F1-Score: 0.60, AUC: 0.63
+Epoch [22/100] - [TRAIN] Loss: 0.6598, Accuracy: 64.35%, AUC: 0.64 [VAL] Loss: 0.6617, Accuracy: 63.37%, Precision: 0.63, Recall: 0.56, F1-Score: 0.59, AUC: 0.63
+Epoch [23/100] - [TRAIN] Loss: 0.6600, Accuracy: 64.30%, AUC: 0.64 [VAL] Loss: 0.6631, Accuracy: 63.49%, Precision: 0.63, Recall: 0.56, F1-Score: 0.59, AUC: 0.63
+Epoch [24/100] - [TRAIN] Loss: 0.6566, Accuracy: 64.84%, AUC: 0.65 [VAL] Loss: 0.6616, Accuracy: 63.83%, Precision: 0.64, Recall: 0.57, F1-Score: 0.60, AUC: 0.64
+Epoch [25/100] - [TRAIN] Loss: 0.6568, Accuracy: 64.78%, AUC: 0.65 [VAL] Loss: 0.6588, Accuracy: 63.98%, Precision: 0.65, Recall: 0.56, F1-Score: 0.60, AUC: 0.64
+Epoch [26/100] - [TRAIN] Loss: 0.6601, Accuracy: 64.29%, AUC: 0.64 [VAL] Loss: 0.6550, Accuracy: 64.21%, Precision: 0.65, Recall: 0.58, F1-Score: 0.61, AUC: 0.64
+Epoch [27/100] - [TRAIN] Loss: 0.6568, Accuracy: 64.66%, AUC: 0.64 [VAL] Loss: 0.6574, Accuracy: 64.60%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.64
+Epoch [28/100] - [TRAIN] Loss: 0.6554, Accuracy: 64.86%, AUC: 0.65 [VAL] Loss: 0.6605, Accuracy: 64.07%, Precision: 0.65, Recall: 0.58, F1-Score: 0.61, AUC: 0.64
+Epoch [29/100] - [TRAIN] Loss: 0.6556, Accuracy: 64.67%, AUC: 0.64 [VAL] Loss: 0.6625, Accuracy: 63.86%, Precision: 0.64, Recall: 0.57, F1-Score: 0.60, AUC: 0.64
+Epoch [30/100] - [TRAIN] Loss: 0.6568, Accuracy: 64.72%, AUC: 0.65 [VAL] Loss: 0.6579, Accuracy: 64.11%, Precision: 0.64, Recall: 0.59, F1-Score: 0.61, AUC: 0.64
+Epoch [31/100] - [TRAIN] Loss: 0.6554, Accuracy: 64.76%, AUC: 0.65 [VAL] Loss: 0.6584, Accuracy: 63.85%, Precision: 0.66, Recall: 0.57, F1-Score: 0.61, AUC: 0.64
+Epoch [32/100] - [TRAIN] Loss: 0.6556, Accuracy: 64.59%, AUC: 0.64 [VAL] Loss: 0.6529, Accuracy: 64.64%, Precision: 0.64, Recall: 0.59, F1-Score: 0.61, AUC: 0.64
+Epoch [33/100] - [TRAIN] Loss: 0.6535, Accuracy: 64.96%, AUC: 0.65 [VAL] Loss: 0.6528, Accuracy: 64.65%, Precision: 0.66, Recall: 0.58, F1-Score: 0.61, AUC: 0.64
+Epoch [34/100] - [TRAIN] Loss: 0.6522, Accuracy: 65.12%, AUC: 0.65 [VAL] Loss: 0.6539, Accuracy: 64.86%, Precision: 0.65, Recall: 0.57, F1-Score: 0.61, AUC: 0.65
+Epoch [35/100] - [TRAIN] Loss: 0.6535, Accuracy: 65.05%, AUC: 0.65 [VAL] Loss: 0.6533, Accuracy: 64.17%, Precision: 0.65, Recall: 0.57, F1-Score: 0.61, AUC: 0.64
+Epoch [36/100] - [TRAIN] Loss: 0.6525, Accuracy: 65.11%, AUC: 0.65 [VAL] Loss: 0.6550, Accuracy: 64.60%, Precision: 0.65, Recall: 0.58, F1-Score: 0.61, AUC: 0.64
+Epoch [37/100] - [TRAIN] Loss: 0.6520, Accuracy: 64.98%, AUC: 0.65 [VAL] Loss: 0.6514, Accuracy: 65.32%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [38/100] - [TRAIN] Loss: 0.6513, Accuracy: 65.22%, AUC: 0.65 [VAL] Loss: 0.6498, Accuracy: 65.09%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [39/100] - [TRAIN] Loss: 0.6504, Accuracy: 65.14%, AUC: 0.65 [VAL] Loss: 0.6540, Accuracy: 64.16%, Precision: 0.64, Recall: 0.59, F1-Score: 0.62, AUC: 0.64
+Epoch [40/100] - [TRAIN] Loss: 0.6507, Accuracy: 65.33%, AUC: 0.65 [VAL] Loss: 0.6458, Accuracy: 65.83%, Precision: 0.67, Recall: 0.59, F1-Score: 0.63, AUC: 0.66
+Epoch [41/100] - [TRAIN] Loss: 0.6487, Accuracy: 65.46%, AUC: 0.65 [VAL] Loss: 0.6551, Accuracy: 64.08%, Precision: 0.65, Recall: 0.56, F1-Score: 0.60, AUC: 0.64
+Epoch [42/100] - [TRAIN] Loss: 0.6513, Accuracy: 65.04%, AUC: 0.65 [VAL] Loss: 0.6473, Accuracy: 65.22%, Precision: 0.65, Recall: 0.60, F1-Score: 0.62, AUC: 0.65
+Epoch [43/100] - [TRAIN] Loss: 0.6508, Accuracy: 65.31%, AUC: 0.65 [VAL] Loss: 0.6544, Accuracy: 64.19%, Precision: 0.64, Recall: 0.57, F1-Score: 0.60, AUC: 0.64
+Epoch [44/100] - [TRAIN] Loss: 0.6510, Accuracy: 65.21%, AUC: 0.65 [VAL] Loss: 0.6467, Accuracy: 65.35%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [45/100] - [TRAIN] Loss: 0.6475, Accuracy: 65.51%, AUC: 0.65 [VAL] Loss: 0.6426, Accuracy: 65.41%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [46/100] - [TRAIN] Loss: 0.6486, Accuracy: 65.51%, AUC: 0.65 [VAL] Loss: 0.6433, Accuracy: 65.73%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [47/100] - [TRAIN] Loss: 0.6472, Accuracy: 65.48%, AUC: 0.65 [VAL] Loss: 0.6492, Accuracy: 64.72%, Precision: 0.65, Recall: 0.58, F1-Score: 0.61, AUC: 0.65
+Epoch [48/100] - [TRAIN] Loss: 0.6464, Accuracy: 65.73%, AUC: 0.66 [VAL] Loss: 0.6486, Accuracy: 64.63%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [49/100] - [TRAIN] Loss: 0.6466, Accuracy: 65.68%, AUC: 0.65 [VAL] Loss: 0.6432, Accuracy: 65.69%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [50/100] - [TRAIN] Loss: 0.6485, Accuracy: 65.30%, AUC: 0.65 [VAL] Loss: 0.6504, Accuracy: 64.65%, Precision: 0.65, Recall: 0.58, F1-Score: 0.61, AUC: 0.64
+Epoch [51/100] - [TRAIN] Loss: 0.6469, Accuracy: 65.69%, AUC: 0.66 [VAL] Loss: 0.6464, Accuracy: 64.99%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [52/100] - [TRAIN] Loss: 0.6472, Accuracy: 65.38%, AUC: 0.65 [VAL] Loss: 0.6477, Accuracy: 64.93%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [53/100] - [TRAIN] Loss: 0.6462, Accuracy: 65.65%, AUC: 0.65 [VAL] Loss: 0.6460, Accuracy: 65.59%, Precision: 0.66, Recall: 0.60, F1-Score: 0.63, AUC: 0.65
+Epoch [54/100] - [TRAIN] Loss: 0.6471, Accuracy: 65.76%, AUC: 0.66 [VAL] Loss: 0.6522, Accuracy: 64.44%, Precision: 0.65, Recall: 0.58, F1-Score: 0.61, AUC: 0.64
+Epoch [55/100] - [TRAIN] Loss: 0.6453, Accuracy: 65.74%, AUC: 0.66 [VAL] Loss: 0.6457, Accuracy: 66.11%, Precision: 0.68, Recall: 0.59, F1-Score: 0.63, AUC: 0.66
+Epoch [56/100] - [TRAIN] Loss: 0.6478, Accuracy: 65.56%, AUC: 0.65 [VAL] Loss: 0.6417, Accuracy: 65.84%, Precision: 0.68, Recall: 0.59, F1-Score: 0.63, AUC: 0.66
+Epoch [57/100] - [TRAIN] Loss: 0.6448, Accuracy: 65.81%, AUC: 0.66 [VAL] Loss: 0.6466, Accuracy: 64.96%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [58/100] - [TRAIN] Loss: 0.6455, Accuracy: 65.63%, AUC: 0.65 [VAL] Loss: 0.6499, Accuracy: 64.80%, Precision: 0.65, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [59/100] - [TRAIN] Loss: 0.6474, Accuracy: 65.65%, AUC: 0.65 [VAL] Loss: 0.6505, Accuracy: 65.20%, Precision: 0.66, Recall: 0.59, F1-Score: 0.63, AUC: 0.65
+Epoch [60/100] - [TRAIN] Loss: 0.6453, Accuracy: 65.78%, AUC: 0.66 [VAL] Loss: 0.6408, Accuracy: 65.53%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [61/100] - [TRAIN] Loss: 0.6484, Accuracy: 65.38%, AUC: 0.65 [VAL] Loss: 0.6500, Accuracy: 64.52%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.64
+Epoch [62/100] - [TRAIN] Loss: 0.6443, Accuracy: 65.88%, AUC: 0.66 [VAL] Loss: 0.6490, Accuracy: 64.87%, Precision: 0.65, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [63/100] - [TRAIN] Loss: 0.6450, Accuracy: 65.99%, AUC: 0.66 [VAL] Loss: 0.6412, Accuracy: 65.91%, Precision: 0.66, Recall: 0.59, F1-Score: 0.63, AUC: 0.66
+Epoch [64/100] - [TRAIN] Loss: 0.6472, Accuracy: 65.72%, AUC: 0.66 [VAL] Loss: 0.6445, Accuracy: 65.24%, Precision: 0.66, Recall: 0.60, F1-Score: 0.63, AUC: 0.65
+Epoch [65/100] - [TRAIN] Loss: 0.6456, Accuracy: 65.71%, AUC: 0.66 [VAL] Loss: 0.6450, Accuracy: 65.21%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [66/100] - [TRAIN] Loss: 0.6449, Accuracy: 65.57%, AUC: 0.65 [VAL] Loss: 0.6447, Accuracy: 65.41%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [67/100] - [TRAIN] Loss: 0.6439, Accuracy: 65.92%, AUC: 0.66 [VAL] Loss: 0.6470, Accuracy: 65.51%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [68/100] - [TRAIN] Loss: 0.6443, Accuracy: 65.90%, AUC: 0.66 [VAL] Loss: 0.6491, Accuracy: 65.14%, Precision: 0.65, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [69/100] - [TRAIN] Loss: 0.6458, Accuracy: 65.80%, AUC: 0.66 [VAL] Loss: 0.6481, Accuracy: 65.18%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [70/100] - [TRAIN] Loss: 0.6471, Accuracy: 65.59%, AUC: 0.65 [VAL] Loss: 0.6401, Accuracy: 66.01%, Precision: 0.66, Recall: 0.60, F1-Score: 0.63, AUC: 0.66
+Epoch [71/100] - [TRAIN] Loss: 0.6451, Accuracy: 65.65%, AUC: 0.65 [VAL] Loss: 0.6455, Accuracy: 65.47%, Precision: 0.66, Recall: 0.59, F1-Score: 0.63, AUC: 0.65
+Epoch [72/100] - [TRAIN] Loss: 0.6475, Accuracy: 65.45%, AUC: 0.65 [VAL] Loss: 0.6454, Accuracy: 65.40%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [73/100] - [TRAIN] Loss: 0.6448, Accuracy: 65.61%, AUC: 0.65 [VAL] Loss: 0.6431, Accuracy: 65.58%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [74/100] - [TRAIN] Loss: 0.6472, Accuracy: 65.43%, AUC: 0.65 [VAL] Loss: 0.6442, Accuracy: 66.03%, Precision: 0.67, Recall: 0.59, F1-Score: 0.63, AUC: 0.66
+Epoch [75/100] - [TRAIN] Loss: 0.6463, Accuracy: 65.65%, AUC: 0.65 [VAL] Loss: 0.6482, Accuracy: 65.41%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [76/100] - [TRAIN] Loss: 0.6448, Accuracy: 65.87%, AUC: 0.66 [VAL] Loss: 0.6378, Accuracy: 66.13%, Precision: 0.67, Recall: 0.60, F1-Score: 0.63, AUC: 0.66
+Epoch [77/100] - [TRAIN] Loss: 0.6460, Accuracy: 65.60%, AUC: 0.65 [VAL] Loss: 0.6395, Accuracy: 65.83%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.66
+Epoch [78/100] - [TRAIN] Loss: 0.6456, Accuracy: 65.75%, AUC: 0.66 [VAL] Loss: 0.6462, Accuracy: 65.19%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [79/100] - [TRAIN] Loss: 0.6456, Accuracy: 65.72%, AUC: 0.66 [VAL] Loss: 0.6485, Accuracy: 64.94%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [80/100] - [TRAIN] Loss: 0.6462, Accuracy: 65.59%, AUC: 0.65 [VAL] Loss: 0.6442, Accuracy: 65.34%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [81/100] - [TRAIN] Loss: 0.6454, Accuracy: 65.66%, AUC: 0.65 [VAL] Loss: 0.6439, Accuracy: 65.67%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [82/100] - [TRAIN] Loss: 0.6459, Accuracy: 65.69%, AUC: 0.66 [VAL] Loss: 0.6439, Accuracy: 65.86%, Precision: 0.66, Recall: 0.60, F1-Score: 0.63, AUC: 0.66
+Epoch [83/100] - [TRAIN] Loss: 0.6466, Accuracy: 65.65%, AUC: 0.65 [VAL] Loss: 0.6472, Accuracy: 64.92%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [84/100] - [TRAIN] Loss: 0.6448, Accuracy: 65.73%, AUC: 0.66 [VAL] Loss: 0.6431, Accuracy: 66.02%, Precision: 0.68, Recall: 0.58, F1-Score: 0.63, AUC: 0.66
+Epoch [85/100] - [TRAIN] Loss: 0.6433, Accuracy: 65.90%, AUC: 0.66 [VAL] Loss: 0.6454, Accuracy: 65.28%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [86/100] - [TRAIN] Loss: 0.6452, Accuracy: 65.99%, AUC: 0.66 [VAL] Loss: 0.6494, Accuracy: 64.85%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [87/100] - [TRAIN] Loss: 0.6434, Accuracy: 66.17%, AUC: 0.66 [VAL] Loss: 0.6460, Accuracy: 65.08%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [88/100] - [TRAIN] Loss: 0.6442, Accuracy: 65.95%, AUC: 0.66 [VAL] Loss: 0.6498, Accuracy: 65.17%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [89/100] - [TRAIN] Loss: 0.6460, Accuracy: 65.70%, AUC: 0.65 [VAL] Loss: 0.6439, Accuracy: 65.77%, Precision: 0.66, Recall: 0.60, F1-Score: 0.62, AUC: 0.66
+Epoch [90/100] - [TRAIN] Loss: 0.6475, Accuracy: 65.43%, AUC: 0.65 [VAL] Loss: 0.6540, Accuracy: 64.83%, Precision: 0.65, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [91/100] - [TRAIN] Loss: 0.6443, Accuracy: 65.77%, AUC: 0.66 [VAL] Loss: 0.6439, Accuracy: 65.67%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [92/100] - [TRAIN] Loss: 0.6457, Accuracy: 65.53%, AUC: 0.65 [VAL] Loss: 0.6430, Accuracy: 65.45%, Precision: 0.66, Recall: 0.59, F1-Score: 0.62, AUC: 0.65
+Epoch [93/100] - [TRAIN] Loss: 0.6452, Accuracy: 66.06%, AUC: 0.66 [VAL] Loss: 0.6488, Accuracy: 65.22%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [94/100] - [TRAIN] Loss: 0.6461, Accuracy: 65.71%, AUC: 0.66 [VAL] Loss: 0.6526, Accuracy: 64.53%, Precision: 0.66, Recall: 0.58, F1-Score: 0.62, AUC: 0.64
+Epoch [95/100] - [TRAIN] Loss: 0.6458, Accuracy: 65.69%, AUC: 0.66 [VAL] Loss: 0.6507, Accuracy: 64.43%, Precision: 0.65, Recall: 0.58, F1-Score: 0.62, AUC: 0.64
+Epoch [96/100] - [TRAIN] Loss: 0.6442, Accuracy: 65.97%, AUC: 0.66 [VAL] Loss: 0.6403, Accuracy: 65.77%, Precision: 0.66, Recall: 0.60, F1-Score: 0.63, AUC: 0.66
+Epoch [97/100] - [TRAIN] Loss: 0.6472, Accuracy: 65.62%, AUC: 0.65 [VAL] Loss: 0.6457, Accuracy: 65.11%, Precision: 0.67, Recall: 0.58, F1-Score: 0.62, AUC: 0.65
+Epoch [98/100] - [TRAIN] Loss: 0.6454, Accuracy: 65.65%, AUC: 0.65 [VAL] Loss: 0.6422, Accuracy: 65.80%, Precision: 0.66, Recall: 0.60, F1-Score: 0.63, AUC: 0.66
+Epoch [99/100] - [TRAIN] Loss: 0.6450, Accuracy: 65.74%, AUC: 0.65 [VAL] Loss: 0.6434, Accuracy: 65.85%, Precision: 0.67, Recall: 0.59, F1-Score: 0.63, AUC: 0.66
+Epoch [100/100] - [TRAIN] Loss: 0.6442, Accuracy: 66.03%, AUC: 0.66 [VAL] Loss: 0.6430, Accuracy: 65.84%, Precision: 0.66, Recall: 0.60, F1-Score: 0.63, AUC: 0.66
+Accuracy Score on test set: 64.95 %
+    AUC Score on test set: 0.65
+    Precision: 0.6566
+    Recall: 0.5798
+    F1-Score: 0.6158
+
+    Detailed Classification Report:
+                  precision    recall  f1-score   support
+
+           0       0.64      0.72      0.68      5155
+           1       0.66      0.58      0.62      4845
+
+    accuracy                           0.65     10000
+   macro avg       0.65      0.65      0.65     10000
+weighted avg       0.65      0.65      0.65     10000
+
+
+    Confusion Matrix:
+    [[3686 1469]
+ [2036 2809]]
+    
+Batch FINISHED!!!
+
+Real-time duration: 8006.315730475 seconds

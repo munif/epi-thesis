@@ -1,0 +1,4 @@
+INFO: Pandarallel will run on 32 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+
+Real-time duration: 1588.881871325 seconds

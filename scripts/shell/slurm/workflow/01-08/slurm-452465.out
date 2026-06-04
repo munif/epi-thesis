@@ -1,0 +1,37 @@
+   h3k4me3_0  h3k4me3_1  h3k4me3_2  ...  h3k27me3_3997  h3k27me3_3998  h3k27me3_3999
+0        0.0        0.0        0.0  ...            0.0            0.0            0.0
+1        0.0        0.0        0.0  ...            0.0            0.0            0.0
+2        0.0        0.0        0.0  ...            0.0            0.0            0.0
+3        0.0        0.0        0.0  ...            0.0            0.0            0.0
+4        0.0        0.0        0.0  ...            0.0            0.0            0.0
+
+[5 rows x 20000 columns]
+(59366, 20000)
+   h_value_1
+0   0.000000
+1   0.047392
+2   0.000000
+3   2.468570
+4   2.468570
+(59366, 1)
+Fitting 3 folds for each of 4 candidates, totalling 12 fits
+Best parameters found: {'colsample_bytree': 0.8, 'learning_rate': 0.01, 'max_depth': 7, 'subsample': 0.8}
+Best R2 score from GridSearchCV: 0.04256620009740194
+MSE: 21009.112534086147
+RMSE: 144.9452052814654
+MAE: 25.668192512844765
+R2 Score: 0.1562366485595703
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.8; total time=  35.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.8; total time=  34.7s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.8; total time=  36.0s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.8; total time=  35.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.8; total time=  34.3s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.8; total time=  35.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.8; total time=  36.0s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.8; total time=  36.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.8; total time=  35.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.8; total time=  35.8s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.8; total time=  36.0s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.8; total time=  35.3s
+
+Real-time duration: 857.175936438 seconds

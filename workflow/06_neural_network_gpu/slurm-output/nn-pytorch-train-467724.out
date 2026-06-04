@@ -1,0 +1,11 @@
+Pytorch NN
+Loading data ...
+Finished loading data!
+Loaded the best model from nn_best_model.pth
+MSE: 8809.4794921875
+RMSE: 93.85882568359375
+MAE: 12.04415225982666
+R2 Score: 0.5049654926932533
+Predictions and true values saved to 'nn_train_predictions_20240805220133.csv'.
+
+Real-time duration: 51.565327447 seconds

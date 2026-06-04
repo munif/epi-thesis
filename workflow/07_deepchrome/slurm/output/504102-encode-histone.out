@@ -1,0 +1,13 @@
+Encode histone
+Loading the gene expression file
+E066 file: (19645, 11)
+Loading the histone file
+(62141, 23)
+(34303, 23)
+(9301, 23)
+(15620, 23)
+(25044, 23)
+Generate histone column
+Saving to parquet file
+
+Real-time duration: 31421.315469537 seconds

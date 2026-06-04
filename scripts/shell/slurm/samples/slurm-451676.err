@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/group/pmc021/amunif/epi-thesis/scripts/shell/slurm/samples/read_file.py", line 5, in <module>
+    gene_df = pd.read_csv(f"{dataset_path}histone_count_overlap80.csv", sep="\t")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/group/pmc021/amunif/project/dataset/histone_count_overlap80.csv'
+
+ERROR conda.cli.main_run:execute(124): `conda run python /group/pmc021/amunif/epi-thesis/scripts/shell/slurm/samples/read_file.py` failed. (See above for error)

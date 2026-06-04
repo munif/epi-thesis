@@ -1,0 +1,8 @@
+Pytorch Conv1D
+MSE: 12049.4423828125
+RMSE: 109.76995086669922
+MAE: 15.302399635314941
+R2 Score: 0.3229009659408216
+Predictions and true values saved to predictions_conv1d_train_20240805220922.csv.
+
+Real-time duration: 71.429255276 seconds

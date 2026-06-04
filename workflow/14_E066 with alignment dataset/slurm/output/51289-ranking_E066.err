@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/group/pmc021/amunif/epi-thesis/workflow/14_E066 with alignment dataset/slurm/ranking_E066.py", line 159, in <module>
+    item = permutation_lst[number]
+           ~~~~~~~~~~~~~~~^^^^^^^^
+IndexError: list index out of range
+
+ERROR conda.cli.main_run:execute(125): `conda run python /group/pmc021/amunif/epi-thesis/workflow/14_E066 with alignment dataset/slurm/ranking_E066.py 30 35` failed. (See above for error)

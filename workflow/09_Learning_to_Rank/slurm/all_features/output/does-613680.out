@@ -1,0 +1,55 @@
+/group/pmc021/amunif/epi-thesis/workflow/09_Learning_to_Rank/output/model/all_features/do-earlystop-0.5-checkpoint-1000000-100-1024.pt
+Using device: cuda
+Current CUDA device: 0
+CUDA device name: Tesla P100-SXM2-16GB
+[    0     1     2 ... 22151 22152 22153]
+Train indices: 17723
+Test indices: 2216
+Validation indices: 2215
+Epoch [1/100] - [TRAIN] Loss: 0.5717, Accuracy: 70.74%, AUC: 0.70 [VAL] Loss: 0.5659, Accuracy: 70.61%, Precision: 0.70, Recall: 0.65, F1-Score: 0.67, AUC: 0.70
+Saved best model at epoch 1.
+Epoch [2/100] - [TRAIN] Loss: 0.5586, Accuracy: 71.34%, AUC: 0.71 [VAL] Loss: 0.5708, Accuracy: 70.74%, Precision: 0.73, Recall: 0.60, F1-Score: 0.66, AUC: 0.70
+EarlyStopping counter: 1 out of 10
+Epoch [3/100] - [TRAIN] Loss: 0.5520, Accuracy: 71.63%, AUC: 0.71 [VAL] Loss: 0.5675, Accuracy: 70.70%, Precision: 0.72, Recall: 0.62, F1-Score: 0.66, AUC: 0.70
+EarlyStopping counter: 2 out of 10
+Epoch [4/100] - [TRAIN] Loss: 0.5474, Accuracy: 71.88%, AUC: 0.71 [VAL] Loss: 0.5756, Accuracy: 70.35%, Precision: 0.71, Recall: 0.62, F1-Score: 0.66, AUC: 0.70
+EarlyStopping counter: 3 out of 10
+Epoch [5/100] - [TRAIN] Loss: 0.5438, Accuracy: 72.11%, AUC: 0.72 [VAL] Loss: 0.5714, Accuracy: 70.62%, Precision: 0.72, Recall: 0.62, F1-Score: 0.67, AUC: 0.70
+EarlyStopping counter: 4 out of 10
+Epoch [6/100] - [TRAIN] Loss: 0.5406, Accuracy: 72.32%, AUC: 0.72 [VAL] Loss: 0.5759, Accuracy: 70.37%, Precision: 0.72, Recall: 0.60, F1-Score: 0.66, AUC: 0.70
+EarlyStopping counter: 5 out of 10
+Epoch [7/100] - [TRAIN] Loss: 0.5377, Accuracy: 72.47%, AUC: 0.72 [VAL] Loss: 0.5727, Accuracy: 70.76%, Precision: 0.72, Recall: 0.63, F1-Score: 0.67, AUC: 0.70
+EarlyStopping counter: 6 out of 10
+Epoch [8/100] - [TRAIN] Loss: 0.5360, Accuracy: 72.70%, AUC: 0.72 [VAL] Loss: 0.5757, Accuracy: 70.39%, Precision: 0.71, Recall: 0.62, F1-Score: 0.66, AUC: 0.70
+EarlyStopping counter: 7 out of 10
+Epoch [9/100] - [TRAIN] Loss: 0.5327, Accuracy: 72.89%, AUC: 0.72 [VAL] Loss: 0.5736, Accuracy: 70.53%, Precision: 0.72, Recall: 0.61, F1-Score: 0.66, AUC: 0.70
+EarlyStopping counter: 8 out of 10
+Epoch [10/100] - [TRAIN] Loss: 0.5313, Accuracy: 72.95%, AUC: 0.73 [VAL] Loss: 0.5747, Accuracy: 70.91%, Precision: 0.72, Recall: 0.62, F1-Score: 0.67, AUC: 0.70
+EarlyStopping counter: 9 out of 10
+Epoch [11/100] - [TRAIN] Loss: 0.5292, Accuracy: 73.12%, AUC: 0.73 [VAL] Loss: 0.5817, Accuracy: 70.66%, Precision: 0.72, Recall: 0.63, F1-Score: 0.67, AUC: 0.70
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 11
+Loaded the best model from checkpoint.
+Accuracy Score on test set: 70.56 %
+AUC Score on test set: 0.70
+Precision: 0.7095
+Recall: 0.6434
+F1-Score: 0.6748
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.70      0.76      0.73     52517
+           1       0.71      0.64      0.67     47483
+
+    accuracy                           0.71    100000
+   macro avg       0.71      0.70      0.70    100000
+weighted avg       0.71      0.71      0.70    100000
+
+
+Confusion Matrix:
+[[40010 12507]
+ [16934 30549]]
+
+
+Real-time duration: 3219.195241843 seconds

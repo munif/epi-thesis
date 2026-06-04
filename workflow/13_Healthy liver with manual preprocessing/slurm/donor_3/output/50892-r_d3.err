@@ -1,0 +1,4 @@
+XIO:  fatal IO error 22 (Invalid argument) on X server ":1.0"
+      after 10654 requests (10654 known processed) with 39 events remaining.
+
+ERROR conda.cli.main_run:execute(125): `conda run python /group/pmc021/amunif/epi-thesis/workflow/13_Healthy liver with manual preprocessing/slurm/ranking_donor3.py 10 15` failed. (See above for error)

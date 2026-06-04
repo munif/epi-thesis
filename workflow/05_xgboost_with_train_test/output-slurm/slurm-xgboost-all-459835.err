@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 939, in _finalize_columns_and_data
+    columns = _validate_or_indexify_columns(contents, columns)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 986, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 5 columns passed, passed data had 3 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/group/pmc021/amunif/epi-thesis/workflow/05_xgboost_with_train_test/xgboost_all.py", line 83, in <module>
+    pd.DataFrame([train_eval_metric], columns=['n_estimators', 'mse', 'rmse', 'mae', 'r2_score']).to_csv(f"output-csv/train_eval_metric.csv", index=False)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/core/frame.py", line 851, in __init__
+    arrays, columns, index = nested_data_to_arrays(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 520, in nested_data_to_arrays
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 845, in to_arrays
+    content, columns = _finalize_columns_and_data(arr, columns, dtype)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 942, in _finalize_columns_and_data
+    raise ValueError(err) from err
+ValueError: 5 columns passed, passed data had 3 columns
+
+ERROR conda.cli.main_run:execute(124): `conda run python /group/pmc021/amunif/epi-thesis/workflow/05_xgboost_with_train_test/xgboost_all.py` failed. (See above for error)

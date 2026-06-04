@@ -6,8 +6,6 @@
 workflow/07_deepchrome/dataset/
 .virtual_documents/
 /archive/
-*.err
-*.out
 *.pth
 *.pt
 *.bed

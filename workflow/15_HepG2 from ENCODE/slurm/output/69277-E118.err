@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/group/pmc021/amunif/epi-thesis/workflow/15_HepG2 from ENCODE/slurm/ranking_E118.py", line 159, in <module>
+    item = permutation_lst[number]
+           ~~~~~~~~~~~~~~~^^^^^^^^
+IndexError: list index out of range
+
+ERROR conda.cli.main_run:execute(125): `conda run python /group/pmc021/amunif/epi-thesis/workflow/15_HepG2 from ENCODE/slurm/ranking_E118.py 30 35` failed. (See above for error)

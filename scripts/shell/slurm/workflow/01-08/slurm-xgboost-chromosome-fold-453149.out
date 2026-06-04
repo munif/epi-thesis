@@ -1,0 +1,171 @@
+XGBoost with chromosome-fold validation
+
+  h_chrom
+0    chr1
+1    chr1
+2    chr1
+3    chr1
+4    chr1
+(59366, 1)
+   h_value_1
+0   0.000000
+1   0.047392
+2   0.000000
+3   2.468570
+4   2.468570
+(59366, 1)
+   h3k4me3_0  h3k4me3_1  h3k4me3_2  ...  h3k27me3_3997  h3k27me3_3998  h3k27me3_3999
+0        0.0        0.0        0.0  ...            0.0            0.0            0.0
+1        0.0        0.0        0.0  ...            0.0            0.0            0.0
+2        0.0        0.0        0.0  ...            0.0            0.0            0.0
+3        0.0        0.0        0.0  ...            0.0            0.0            0.0
+4        0.0        0.0        0.0  ...            0.0            0.0            0.0
+
+[5 rows x 20000 columns]
+(59366, 20000)
+chr1 as the test. The rest are for training.
+MSE: 54061.80560888967
+RMSE: 232.51194723903902
+MAE: 29.158295143550987
+R2 Score: -0.037672996520996094
+
+chr2 as the test. The rest are for training.
+MSE: 8838.805567223573
+RMSE: 94.01492204551134
+MAE: 29.864391130331246
+R2 Score: -0.20944452285766602
+
+chr3 as the test. The rest are for training.
+MSE: 1954.925031005784
+RMSE: 44.21453416022591
+MAE: 16.89746390960791
+R2 Score: -0.2046600580215454
+
+chr4 as the test. The rest are for training.
+MSE: 77189.69986051039
+RMSE: 277.83034366409726
+MAE: 41.00667397966748
+R2 Score: -0.31651556491851807
+
+chr5 as the test. The rest are for training.
+MSE: 12048.324383289384
+RMSE: 109.76485951017924
+MAE: 32.141209157737876
+R2 Score: -0.26636338233947754
+
+chr6 as the test. The rest are for training.
+MSE: 13656.76570086414
+RMSE: 116.86216539523876
+MAE: 27.59007006468801
+R2 Score: -0.12852299213409424
+
+chr7 as the test. The rest are for training.
+MSE: 1819.5580499188716
+RMSE: 42.65627796607284
+MAE: 18.75534636036722
+R2 Score: -0.6635251045227051
+
+chr8 as the test. The rest are for training.
+MSE: 3498.6648281570992
+RMSE: 59.14951249297917
+MAE: 19.775464322296028
+R2 Score: -0.06498599052429199
+
+chr9 as the test. The rest are for training.
+MSE: 43539.95191471111
+RMSE: 208.66229154955408
+MAE: 43.329171837960125
+R2 Score: -0.05875372886657715
+
+chr10 as the test. The rest are for training.
+MSE: 1944.3927111066653
+RMSE: 44.09526857959553
+MAE: 16.952864759447326
+R2 Score: -0.1851816177368164
+
+chr11 as the test. The rest are for training.
+MSE: 34746.353527416075
+RMSE: 186.40373796524594
+MAE: 25.4770349450232
+R2 Score: -7.022104263305664
+
+chr12 as the test. The rest are for training.
+MSE: 12837.347067049112
+RMSE: 113.3020170475756
+MAE: 27.500052766709903
+R2 Score: -0.164389967918396
+
+chr13 as the test. The rest are for training.
+MSE: 15510.407935716796
+RMSE: 124.54078824110917
+MAE: 20.752703914686997
+R2 Score: 0.0028758645057678223
+
+chr14 as the test. The rest are for training.
+MSE: 13428.239638463123
+RMSE: 115.88028149112826
+MAE: 28.05525356841769
+R2 Score: -0.020216822624206543
+
+chr15 as the test. The rest are for training.
+MSE: 6193.157522376245
+RMSE: 78.69661696906827
+MAE: 20.29296895012251
+R2 Score: -0.09820377826690674
+
+chr16 as the test. The rest are for training.
+MSE: 1663.7953990341232
+RMSE: 40.78964818473093
+MAE: 18.8950353704173
+R2 Score: -0.18001389503479004
+
+chr17 as the test. The rest are for training.
+MSE: 8278.997119746058
+RMSE: 90.98899449793946
+MAE: 23.47287825987764
+R2 Score: -0.021027445793151855
+
+chr18 as the test. The rest are for training.
+MSE: 304773.8391185988
+RMSE: 552.0632564467579
+MAE: 54.127790570693826
+R2 Score: -122.86458587646484
+
+chr19 as the test. The rest are for training.
+MSE: 68902.73957058277
+RMSE: 262.49331338261317
+MAE: 32.06793277245394
+R2 Score: -0.004268169403076172
+
+chr20 as the test. The rest are for training.
+MSE: 5067.878280865212
+RMSE: 71.18903202646607
+MAE: 27.21277835484469
+R2 Score: -0.04527711868286133
+
+chr21 as the test. The rest are for training.
+MSE: 1125.9886124753639
+RMSE: 33.555753790897974
+MAE: 17.223305770611844
+R2 Score: -0.3721802234649658
+
+chr22 as the test. The rest are for training.
+MSE: 15984.943036898238
+RMSE: 126.43157452510918
+MAE: 21.13650069631789
+R2 Score: -15.786752700805664
+
+chrX as the test. The rest are for training.
+MSE: 4055.4700066459673
+RMSE: 63.68257223641306
+MAE: 17.06363820054741
+R2 Score: -0.00782787799835205
+
+chrY as the test. The rest are for training.
+MSE: 233.43869990780664
+RMSE: 15.278700857985493
+MAE: 14.284207041877005
+R2 Score: -2.853703022003174
+
+
+Real-time duration: 1478.372416263 seconds

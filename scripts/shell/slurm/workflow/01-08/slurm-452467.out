@@ -1,0 +1,79 @@
+   h3k4me3_0  h3k4me3_1  h3k4me3_2  ...  h3k27me3_3997  h3k27me3_3998  h3k27me3_3999
+0        0.0        0.0        0.0  ...            0.0            0.0            0.0
+1        0.0        0.0        0.0  ...            0.0            0.0            0.0
+2        0.0        0.0        0.0  ...            0.0            0.0            0.0
+3        0.0        0.0        0.0  ...            0.0            0.0            0.0
+4        0.0        0.0        0.0  ...            0.0            0.0            0.0
+
+[5 rows x 20000 columns]
+(59366, 20000)
+   h_value_1
+0   0.000000
+1   0.047392
+2   0.000000
+3   2.468570
+4   2.468570
+(59366, 1)
+Fitting 3 folds for each of 18 candidates, totalling 54 fits
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.5; total time=  53.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.8; total time=  54.8s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.5; total time=  52.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.5; total time=  54.4s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.8; total time=  56.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.8; total time=  53.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.8; total time=  54.6s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.5; total time=  54.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.8; total time=  55.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=10, subsample=0.5; total time=  54.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=10, subsample=0.8; total time=  51.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.5; total time=  53.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=10, subsample=0.5; total time=  56.7s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.5; total time=  56.3s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.8; total time=  54.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=5, subsample=0.5; total time=  55.0s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.5; total time=  56.7s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=7, subsample=0.8; total time=  54.0s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=10, subsample=0.8; total time=  53.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=10, subsample=0.8; total time=  52.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.8; total time=  52.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.5; total time=  52.8s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.8; total time=  52.6s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.5; total time=  53.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.8; total time=  50.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.01, max_depth=10, subsample=0.5; total time=  56.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.5; total time=  55.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=5, subsample=0.8; total time=  54.6s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.5; total time=  55.3s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=10, subsample=0.5; total time=  56.3s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=10, subsample=0.5; total time=  55.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=5, subsample=0.5; total time=  57.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=7, subsample=0.8; total time=  56.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=10, subsample=0.5; total time=  55.3s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=10, subsample=0.8; total time=  54.0s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=5, subsample=0.8; total time=  55.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=10, subsample=0.8; total time=  55.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=5, subsample=0.5; total time=  52.3s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=7, subsample=0.5; total time=  52.0s
+[CV] END colsample_bytree=0.8, learning_rate=0.05, max_depth=10, subsample=0.8; total time=  53.4s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=5, subsample=0.5; total time=  52.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=5, subsample=0.8; total time=  53.6s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=7, subsample=0.5; total time=  55.5s
+Best parameters found: {'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 10, 'subsample': 0.8}
+Best R2 score from GridSearchCV: 0.06629914045333862
+MSE: 17147.69904357396
+RMSE: 130.9492231499445
+MAE: 22.954358972529175
+R2 Score: 0.31131798028945923
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=7, subsample=0.8; total time=  54.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=10, subsample=0.5; total time=  51.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=7, subsample=0.5; total time=  52.8s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=7, subsample=0.8; total time=  54.5s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=10, subsample=0.8; total time=  56.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=5, subsample=0.8; total time=  54.8s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=7, subsample=0.8; total time=  52.9s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=10, subsample=0.5; total time=  53.6s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=10, subsample=0.8; total time=  51.2s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=10, subsample=0.5; total time=  57.1s
+[CV] END colsample_bytree=0.8, learning_rate=0.1, max_depth=10, subsample=0.8; total time=  55.9s
+
+Real-time duration: 1420.723877498 seconds

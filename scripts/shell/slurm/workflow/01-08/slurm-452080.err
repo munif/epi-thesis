@@ -1,0 +1,2 @@
+slurmstepd: error: *** JOB 452080 ON n010 CANCELLED AT 2024-06-14T10:44:13 DUE TO TIME LIMIT ***
+slurmstepd: error: Detected 9 oom_kill events in StepId=452080.batch. Some of the step tasks have been OOM Killed.

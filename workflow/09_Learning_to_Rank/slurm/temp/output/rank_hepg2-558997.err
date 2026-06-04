@@ -1,0 +1,16 @@
+thread 'python' panicked at crates/polars-core/src/chunked_array/ops/chunkops.rs:133:9:
+polars' maximum length reached. Consider installing 'polars-u64-idx'.
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Traceback (most recent call last):
+  File "/group/pmc021/amunif/epi-thesis/workflow/09_Learning_to_Rank/slurm/rank_hepg2.py", line 286, in <module>
+    permuted_df = permuted_df.with_columns(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/group/pmc021/amunif/env/pytorch/lib/python3.11/site-packages/polars/dataframe/frame.py", line 8845, in with_columns
+    return self.lazy().with_columns(*exprs, **named_exprs).collect(_eager=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/group/pmc021/amunif/env/pytorch/lib/python3.11/site-packages/polars/lazyframe/frame.py", line 1942, in collect
+    return wrap_df(ldf.collect(callback))
+                   ^^^^^^^^^^^^^^^^^^^^^
+pyo3_runtime.PanicException: polars' maximum length reached. Consider installing 'polars-u64-idx'.
+
+ERROR conda.cli.main_run:execute(125): `conda run python /group/pmc021/amunif/epi-thesis/workflow/09_Learning_to_Rank/slurm/rank_hepg2.py` failed. (See above for error)

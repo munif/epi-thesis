@@ -1,0 +1,21 @@
+Using cpu device
+Loading the data ...
+Item: H3K4me3
+Epoch [10/100] - [TRAIN] Loss: 0.5455, Accuracy: 78.31%, AUC: 0.78 - [VAL] Loss: 0.5463, Accuracy: 77.97%, AUC: 0.78
+Epoch [20/100] - [TRAIN] Loss: 0.5145, Accuracy: 78.78%, AUC: 0.79 - [VAL] Loss: 0.5188, Accuracy: 77.90%, AUC: 0.78
+Epoch [30/100] - [TRAIN] Loss: 0.5035, Accuracy: 78.56%, AUC: 0.79 - [VAL] Loss: 0.5101, Accuracy: 77.70%, AUC: 0.78
+Epoch [40/100] - [TRAIN] Loss: 0.4923, Accuracy: 78.84%, AUC: 0.79 - [VAL] Loss: 0.5112, Accuracy: 77.21%, AUC: 0.77
+Epoch [50/100] - [TRAIN] Loss: 0.4995, Accuracy: 78.56%, AUC: 0.79 - [VAL] Loss: 0.5102, Accuracy: 76.99%, AUC: 0.77
+Epoch [60/100] - [TRAIN] Loss: 0.4891, Accuracy: 79.24%, AUC: 0.79 - [VAL] Loss: 0.5062, Accuracy: 77.58%, AUC: 0.78
+Epoch [70/100] - [TRAIN] Loss: 0.4898, Accuracy: 79.30%, AUC: 0.79 - [VAL] Loss: 0.5074, Accuracy: 77.38%, AUC: 0.77
+Epoch [80/100] - [TRAIN] Loss: 0.4877, Accuracy: 78.98%, AUC: 0.79 - [VAL] Loss: 0.5112, Accuracy: 77.01%, AUC: 0.77
+Epoch [90/100] - [TRAIN] Loss: 0.4906, Accuracy: 79.32%, AUC: 0.79 - [VAL] Loss: 0.5074, Accuracy: 77.32%, AUC: 0.77
+Epoch [100/100] - [TRAIN] Loss: 0.4836, Accuracy: 79.68%, AUC: 0.80 - [VAL] Loss: 0.5085, Accuracy: 77.18%, AUC: 0.77
+Training finished!
+Accuracy Score on test set: 78.68 %
+AUC Score on test set: 0.79
+
+Saving the final results
+Batch FINISHED!!!
+
+Real-time duration: 120.745735619 seconds

@@ -1,0 +1,25 @@
+   h3k4me3_0  h3k4me3_1  h3k4me3_2  ...  h3k27me3_3997  h3k27me3_3998  h3k27me3_3999
+0        0.0        0.0        0.0  ...            0.0            0.0            0.0
+1        0.0        0.0        0.0  ...            0.0            0.0            0.0
+2        0.0        0.0        0.0  ...            0.0            0.0            0.0
+3        0.0        0.0        0.0  ...            0.0            0.0            0.0
+4        0.0        0.0        0.0  ...            0.0            0.0            0.0
+
+[5 rows x 20000 columns]
+(59366, 20000)
+   h_value_1
+0   0.000000
+1   0.047392
+2   0.000000
+3   2.468570
+4   2.468570
+(59366, 1)
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+Best parameters found: {'colsample_bytree': 0.8, 'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 100, 'subsample': 0.8}
+Best R2 score from GridSearchCV: 0.04256620009740194
+MSE: 21009.112534086147
+RMSE: 144.9452052814654
+MAE: 25.668192512844765
+R2 Score: 0.1562366485595703
+
+Real-time duration: 659.272151117 seconds

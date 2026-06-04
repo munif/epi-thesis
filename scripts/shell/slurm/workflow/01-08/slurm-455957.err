@@ -1,0 +1,7 @@
+/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+/home/amunif/.conda/envs/epi-thesis/lib/python3.11/site-packages/xgboost/core.py:160: UserWarning: [15:41:08] WARNING: /workspace/src/learner.cc:742: 
+Parameters: { "n_estimators" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+
