@@ -23,7 +23,7 @@ START       = int(sys.argv[1])
 END         = int(sys.argv[2])
 RANDOM_SEED = int(sys.argv[3])
 
-NUM_ITEMS = 1_000
+NUM_ITEMS = 10000
 BATCH_SIZE = 32
 NUM_EPOCHS = 100
 DROPOUT_RATE = 0.3
@@ -33,7 +33,7 @@ EARLY_STOPPING_PATIENCE = 10
 
 
 DATASET_PATH = Path('/group/pmc021/amunif/epi-thesis/workflow/16_Pairwise Ranking Healthy Liver/dataset/donor_3')
-OUTPUT_PATH  = Path('/group/pmc021/amunif/epi-thesis/workflow/16_Pairwise Ranking Healthy Liver/output/donor_3')
+OUTPUT_PATH  = Path(f'/group/pmc021/amunif/epi-thesis/workflow/16_Pairwise Ranking Healthy Liver/output/{NUM_ITEMS}/donor_3')
 
 print(f"Seed: {RANDOM_SEED}  |  Range: {START}-{END}")
 print(f"Dataset : {DATASET_PATH}")

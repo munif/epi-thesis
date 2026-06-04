@@ -1,0 +1,21 @@
+Seed: 42
+Accuracy:  62.00 %
+AUC:       0.5128
+Precision: 0.6162
+Recall:    1.0000
+F1-Score:  0.7625
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.03      0.05        39
+           1       0.62      1.00      0.76        61
+
+    accuracy                           0.62       100
+   macro avg       0.81      0.51      0.41       100
+weighted avg       0.77      0.62      0.48       100
+
+
+Confusion Matrix:
+[[ 1 38]
+ [ 0 61]]
