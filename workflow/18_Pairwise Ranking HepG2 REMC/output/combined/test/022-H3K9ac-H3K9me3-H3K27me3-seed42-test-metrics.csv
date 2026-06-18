@@ -1,0 +1,5 @@
+model,seed,histone_marker,epochs_trained,val_accuracy,val_auc,test_accuracy,test_auc,test_precision,test_recall,test_f1,antisymmetry
+DirectRanker,42,H3K9ac-H3K9me3-H3K27me3,52,75.6,0.85,77.2,0.8646,0.7524,0.7984,0.7747,0.983
+LogisticRegression,42,H3K9ac-H3K9me3-H3K27me3,,74.1,0.8058,76.7,0.8442,0.759,0.7699,0.7644,0.819
+RandomForest,42,H3K9ac-H3K9me3-H3K27me3,,78.6,0.8673,78.3,0.8734,0.7903,0.7597,0.7747,0.846
+SVM_Linear,42,H3K9ac-H3K9me3-H3K27me3,,73.8,0.7966,76.7,0.8395,0.7665,0.7556,0.761,0.798

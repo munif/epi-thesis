@@ -1,0 +1,56 @@
+Seed: 42
+=== DirectRanker ===
+Accuracy:  73.40 %
+AUC:       0.8189
+Precision: 0.7135
+Recall:    0.7658
+F1-Score:  0.7387
+Antisymmetry score:  0.9240  (1.0 = perfect, ~0.5 = random)
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.76      0.70      0.73       509
+           1       0.71      0.77      0.74       491
+
+    accuracy                           0.73      1000
+   macro avg       0.74      0.73      0.73      1000
+weighted avg       0.74      0.73      0.73      1000
+
+
+Confusion Matrix:
+[[358 151]
+ [115 376]]
+
+=== LogisticRegression ===
+Accuracy:  75.30 %
+AUC:       0.8110
+Precision: 0.7711
+Recall:    0.7067
+F1-Score:  0.7375
+Antisymmetry score:  0.8180
+Confusion Matrix:
+[[406 103]
+ [144 347]]
+
+=== RandomForest ===
+Accuracy:  74.90 %
+AUC:       0.8330
+Precision: 0.7691
+Recall:    0.6986
+F1-Score:  0.7321
+Antisymmetry score:  0.8180
+Confusion Matrix:
+[[406 103]
+ [148 343]]
+
+=== SVM_Linear ===
+Accuracy:  75.30 %
+AUC:       0.8125
+Precision: 0.7723
+Recall:    0.7047
+F1-Score:  0.7370
+Antisymmetry score:  0.8130
+Confusion Matrix:
+[[407 102]
+ [145 346]]

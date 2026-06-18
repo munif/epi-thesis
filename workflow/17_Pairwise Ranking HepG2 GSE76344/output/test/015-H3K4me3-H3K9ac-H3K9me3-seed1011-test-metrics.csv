@@ -1,0 +1,2 @@
+seed,histone_marker,epochs_trained,train_loss_avg,train_accuracy_avg,train_auc_avg,val_loss_avg,val_accuracy_avg,val_auc_avg,test_accuracy,test_auc,antisymmetry
+1011,H3K4me3-H3K9ac-H3K9me3,35,0.6319,68.7129,0.6874,0.6096,67.7486,0.6797,68.2,0.6827,0.963

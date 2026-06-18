@@ -1,0 +1,23 @@
+Seed: 123
+Accuracy:  51.00 %
+AUC:       0.5173
+Precision: 0.5010
+Recall:    0.9715
+F1-Score:  0.6611
+
+Antisymmetry score:  0.0910  (1.0 = perfect, ~0.5 = random)
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.70      0.06      0.12       508
+           1       0.50      0.97      0.66       492
+
+    accuracy                           0.51      1000
+   macro avg       0.60      0.52      0.39      1000
+weighted avg       0.60      0.51      0.38      1000
+
+
+Confusion Matrix:
+[[ 32 476]
+ [ 14 478]]

@@ -1,0 +1,7 @@
+seed,histone_marker,split,label,count,total,percentage
+123,H3K9ac-H3K27me3,Train,0,4091,8000,51.14
+123,H3K9ac-H3K27me3,Train,1,3909,8000,48.86
+123,H3K9ac-H3K27me3,Val,0,494,1000,49.4
+123,H3K9ac-H3K27me3,Val,1,506,1000,50.6
+123,H3K9ac-H3K27me3,Test,0,508,1000,50.8
+123,H3K9ac-H3K27me3,Test,1,492,1000,49.2

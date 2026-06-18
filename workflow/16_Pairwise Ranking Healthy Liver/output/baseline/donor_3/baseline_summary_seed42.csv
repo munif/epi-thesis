@@ -1,0 +1,4 @@
+model,seed,histone_marker,val_accuracy,val_auc,val_precision,val_recall,val_f1,test_accuracy,test_auc,test_precision,test_recall,test_f1,antisymmetry
+LogisticRegression,42,H3K4me3,71.9,0.7778,0.7692,0.6551,0.7076,71.9,0.7958,0.7344,0.6701,0.7007,0.776
+RandomForest,42,H3K4me3,73.4,0.8194,0.7843,0.6724,0.7241,73.7,0.8146,0.7579,0.6823,0.7181,0.806
+SVM_Linear,42,H3K4me3,72.2,0.7794,0.7732,0.657,0.7104,71.7,0.7161,0.7321,0.668,0.6986,0.771
