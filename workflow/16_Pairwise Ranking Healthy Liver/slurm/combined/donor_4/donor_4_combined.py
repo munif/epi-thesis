@@ -25,6 +25,7 @@ from sklearn.metrics import (
     roc_auc_score, accuracy_score, roc_curve, auc,
     precision_recall_fscore_support, confusion_matrix,
     classification_report, ConfusionMatrixDisplay,
+    precision_recall_curve, average_precision_score,
 )
 
 # %%
@@ -54,7 +55,7 @@ DATASET_PATH = Path('/group/pmc021/amunif/epi-thesis/workflow/16_Pairwise Rankin
 OUTPUT_PATH  = Path('/group/pmc021/amunif/epi-thesis/workflow/16_Pairwise Ranking Healthy Liver/output/combined/donor_4')
 
 # Ensure output subfolders exist
-for sub in ['img/train', 'img/roc', 'img/cm', 'test', 'train']:
+for sub in ['img/train', 'img/roc', 'img/prc', 'img/cm', 'test', 'train']:
     (OUTPUT_PATH / sub).mkdir(parents=True, exist_ok=True)
 
 print(f"Seed: {RANDOM_SEED}  |  Range: {START}-{END}")
@@ -300,11 +301,12 @@ def evaluate_baseline(clf, X_test, y_test, clf_name, item_name):
 
     acc  = accuracy_score(y_test, y_pred) * 100
     auc_ = roc_auc_score(y_test, y_score)
+    aucprc = average_precision_score(y_test, y_score)
     prec, rec, f1, _ = precision_recall_fscore_support(y_test, y_pred, average="binary")
     antisym = antisymmetry_score_sklearn(clf, X_test)
     cm = confusion_matrix(y_test, y_pred)
 
-    print(f"\n  [{clf_name}]  Accuracy: {acc:.2f}%  AUC: {auc_:.4f}  "
+    print(f"\n  [{clf_name}]  Accuracy: {acc:.2f}%  AUC: {auc_:.4f}  AUCPRC: {aucprc:.4f}  "
           f"Precision: {prec:.4f}  Recall: {rec:.4f}  F1: {f1:.4f}  "
           f"Antisym: {antisym:.4f}")
 
@@ -314,6 +316,7 @@ def evaluate_baseline(clf, X_test, y_test, clf_name, item_name):
         "histone_marker": item_name,
         "test_accuracy":  round(acc, 4),
         "test_auc":       round(auc_, 4),
+        "test_aucprc":    round(aucprc, 4),
         "test_precision":      round(prec, 4),
         "test_recall":         round(rec, 4),
         "test_f1":             round(f1, 4),
@@ -353,6 +356,7 @@ for number in range(START, END):
     TRAINING_FILE    = OUTPUT_PATH / 'train'         / f"{prefix}-train-validation-metrics.csv"
     TEST_RESULT_FILE = OUTPUT_PATH / 'test'          / f"{prefix}-test-metrics.csv"
     ROC_FILE         = OUTPUT_PATH / 'img' / 'roc'   / f"{prefix}-roc-combined.png"
+    PRC_FILE         = OUTPUT_PATH / 'img' / 'prc'   / f"{prefix}-prc-combined.png"
     CM_DIR           = OUTPUT_PATH / 'img' / 'cm'
     LABEL_DIST_FILE  = OUTPUT_PATH / 'test'          / f"{prefix}-label-distribution.csv"
 
@@ -521,6 +525,7 @@ for number in range(START, END):
     )
     dr_acc     = accuracy_score(dr_test_true_labels, dr_test_predictions) * 100
     dr_auc     = roc_auc_score(dr_test_true_labels, dr_test_scores)
+    dr_aucprc  = average_precision_score(dr_test_true_labels, dr_test_scores)
     dr_cr      = classification_report(dr_test_true_labels, dr_test_predictions)
     dr_cm      = confusion_matrix(dr_test_true_labels, dr_test_predictions)
     dr_antisym = antisymmetry_score_torch(model, X_test_all, device)
@@ -530,6 +535,7 @@ for number in range(START, END):
         f"=== DirectRanker ===\n"
         f"Accuracy:  {dr_acc:.2f} %\n"
         f"AUC:       {dr_auc:.4f}\n"
+        f"AUCPRC:    {dr_aucprc:.4f}\n"
         f"Precision: {dr_precision:.4f}\n"
         f"Recall:    {dr_recall:.4f}\n"
         f"F1-Score:  {dr_f1:.4f}\n"
@@ -588,6 +594,7 @@ for number in range(START, END):
             f"\n=== {clf_name} ===\n"
             f"Accuracy:  {result['test_accuracy']:.2f} %\n"
             f"AUC:       {result['test_auc']:.4f}\n"
+            f"AUCPRC:    {result['test_aucprc']:.4f}\n"
             f"Precision: {result['test_precision']:.4f}\n"
             f"Recall:    {result['test_recall']:.4f}\n"
             f"F1-Score:  {result['test_f1']:.4f}\n"
@@ -613,6 +620,7 @@ for number in range(START, END):
         'val_auc':        round(val_aucs[best_epoch_idx], 4),
         'test_accuracy':  round(dr_acc, 4),
         'test_auc':       round(dr_auc, 4),
+        'test_aucprc':    round(dr_aucprc, 4),
         'test_precision':      round(dr_precision, 4),
         'test_recall':         round(dr_recall, 4),
         'test_f1':             round(dr_f1, 4),
@@ -653,7 +661,36 @@ for number in range(START, END):
     print(f"Saved combined ROC plot: {ROC_FILE}")
 
     # ════════════════════════════════════════════════════════════════════════
-    # PART 5 — Confusion matrices (one PNG per model, same prefix)
+    # PART 5 — Combined Precision-Recall (PRC) plot
+    # ════════════════════════════════════════════════════════════════════════
+    plt.figure(figsize=(7, 6))
+
+    prec_dr, rec_dr, _ = precision_recall_curve(dr_test_true_labels, dr_test_scores)
+    plt.plot(rec_dr, prec_dr, lw=2.5, color='black',
+             label=f"DirectRanker (AUCPRC = {dr_aucprc:.3f})")
+
+    for clf_name in fitted_baselines:
+        aucprc_val = average_precision_score(y_test_bl, baseline_scores[clf_name])
+        prec_bl, rec_bl, _ = precision_recall_curve(y_test_bl, baseline_scores[clf_name])
+        plt.plot(rec_bl, prec_bl, lw=2, label=f"{clf_name} (AUCPRC = {aucprc_val:.3f})")
+
+    # Baseline = fraction of positives (random classifier)
+    pos_fraction = np.mean(dr_test_true_labels)
+    plt.axhline(y=pos_fraction, linestyle='--', color='gray', lw=1,
+                label=f"Random (AUCPRC ≈ {pos_fraction:.3f})")
+
+    plt.xlim([0.0, 1.0]); plt.ylim([0.0, 1.05])
+    plt.xlabel('Recall'); plt.ylabel('Precision')
+    plt.title(f'Precision-Recall Curve — DirectRanker vs Baselines\n{ITEM_NAME} (seed {RANDOM_SEED})')
+    plt.legend(loc="lower left")
+    plt.grid(alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(PRC_FILE, dpi=300, bbox_inches='tight')
+    plt.close()
+    print(f"Saved combined PRC plot: {PRC_FILE}")
+
+    # ════════════════════════════════════════════════════════════════════════
+    # PART 6 — Confusion matrices (one PNG per model, same prefix)
     # ════════════════════════════════════════════════════════════════════════
     all_cms = {'DirectRanker': dr_cm, **baseline_cms}
     for model_name, cm in all_cms.items():

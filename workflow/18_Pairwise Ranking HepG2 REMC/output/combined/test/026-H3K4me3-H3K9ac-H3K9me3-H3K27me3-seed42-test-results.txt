@@ -2,6 +2,7 @@ Seed: 42
 === DirectRanker ===
 Accuracy:  76.60 %
 AUC:       0.8514
+AUCPRC:    0.8487
 Precision: 0.7495
 Recall:    0.7862
 F1-Score:  0.7674
@@ -25,6 +26,7 @@ Confusion Matrix:
 === LogisticRegression ===
 Accuracy:  76.60 %
 AUC:       0.8380
+AUCPRC:    0.8222
 Precision: 0.7660
 Recall:    0.7536
 F1-Score:  0.7598
@@ -36,6 +38,7 @@ Confusion Matrix:
 === RandomForest ===
 Accuracy:  78.30 %
 AUC:       0.8688
+AUCPRC:    0.8549
 Precision: 0.7965
 Recall:    0.7495
 F1-Score:  0.7723
@@ -47,6 +50,7 @@ Confusion Matrix:
 === SVM_Linear ===
 Accuracy:  75.20 %
 AUC:       0.8310
+AUCPRC:    0.8126
 Precision: 0.7495
 Recall:    0.7434
 F1-Score:  0.7464

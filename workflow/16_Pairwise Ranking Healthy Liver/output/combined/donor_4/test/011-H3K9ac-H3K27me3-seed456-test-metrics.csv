@@ -1,5 +1,5 @@
-model,seed,histone_marker,epochs_trained,val_accuracy,val_auc,test_accuracy,test_auc,test_precision,test_recall,test_f1,antisymmetry
-DirectRanker,456,H3K9ac-H3K27me3,100,74.1,0.84,70.3,0.8026,0.6621,0.7942,0.7222,0.826
-LogisticRegression,456,H3K9ac-H3K27me3,,74.9,0.8088,71.0,0.7592,0.7462,0.6111,0.6719,0.741
-RandomForest,456,H3K9ac-H3K27me3,,75.7,0.8434,71.0,0.7873,0.7426,0.6173,0.6742,0.76
-SVM_Linear,456,H3K9ac-H3K27me3,,74.9,0.8121,70.6,0.7584,0.7437,0.6029,0.6659,0.738
+model,seed,histone_marker,epochs_trained,val_accuracy,val_auc,test_accuracy,test_auc,test_aucprc,test_precision,test_recall,test_f1,antisymmetry
+DirectRanker,456,H3K9ac-H3K27me3,100,74.1,0.84,70.3,0.8026,0.7946,0.6621,0.7942,0.7222,0.826
+LogisticRegression,456,H3K9ac-H3K27me3,,74.9,0.8088,71.0,0.7592,0.7354,0.7462,0.6111,0.6719,0.741
+RandomForest,456,H3K9ac-H3K27me3,,75.7,0.8434,71.0,0.7873,0.7569,0.7426,0.6173,0.6742,0.76
+SVM_Linear,456,H3K9ac-H3K27me3,,74.9,0.8121,70.6,0.7584,0.7463,0.7437,0.6029,0.6659,0.738
